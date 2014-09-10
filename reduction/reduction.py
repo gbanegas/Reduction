@@ -1,12 +1,19 @@
+'''
+Created on 10 Sep 2014
 
-from sage.rings.polynomial.polynomial_gf2x import Polynomial_GF2X
-class Reduction:
-	def reduction(self, Polynomial_GF2X p):
-		if not Polynomial_GF2X.is_irreducible():
-			raise Exception("Oops NOT an Irreducible polynomial")
+@author: gustavo
+'''
 
-		print "passei"
-
-
+class Reduction(object):
+    '''
+    classdocs
+    '''
 
 
+    def __init__(self, params):
+        self.exp = [];
+        
+
+    def reduction(self,exp):
+        
+        
