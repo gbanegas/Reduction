@@ -23,18 +23,87 @@ class Reduction(object):
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self.reduceFirst(matrix, exp_sorted[i])
+        #self.printMatrix(matrix)
+        for i in range(1,nr):
+            self.reduceOthers(matrix,exp_sorted)
+        self.removeRepeat(matrix)
+        self.clean(matrix)
         self.printMatrix(matrix)
 
+
+    def reduceOthers(self, matrix, exp):
+        toReduce = self.needToReduce(matrix)
+        for index in toReduce:
+            for e in exp:
+                reduceRow = self.reduce(matrix[index],e)
+                matrix.append(reduceRow)
+            self.cleanReduced(matrix,index)
+
+    def removeRepeat(self, matrix):
+        for j in range(1, len(matrix)):
+            row = matrix[j]
+            #print row
+            for i in range(self.mdegree-1, len(row)):
+                found = False
+                valueToCompare = row[i]
+                if valueToCompare <> NULL:
+                    for m in range(j+1, len(matrix)):
+                        rowToCompare = matrix[m]
+                        #print "RowFixe: "+str(j)+ " rowTo Compare: " + str(m) + " colum: " + str(i) 
+                        #print rowToCompare
+                        toCompare = rowToCompare[i]
+                        if toCompare <> NULL:
+                            if valueToCompare == toCompare:
+                                rowToCompare[i] = NULL;
+                                row[i] = NULL;
+                                found = True;
+                        matrix[m] = rowToCompare
+                        if found:
+                            break
+            matrix[j] = row
+
+
+
+
+
+
+
+
+    def cleanReduced(self, matrix, index):
+        row = matrix[index]
+        for j in range(0,self.mdegree-1):
+            row[j] = NULL
+        matrix[index] = row
+
+    def reduce(self, row, exp):
+        index = self.max_collum-1;
+        rowReduced = [-1 for x in xrange(self.max_collum)]
+        for j in range(self.mdegree-2,-1,-1):
+            element = row[j]
+            rowReduced[index - exp] = element
+            index = index -1
+        return rowReduced
+
+    def needToReduce(self, matrix):
+        indexOfRows = []
+        index = (self.max_collum - 1 - self.mdegree);
+        for i in range(1,len(matrix)):
+            row = matrix[i]
+            if row[index] <> NULL:
+                indexOfRows.append(i)
+        
+        return indexOfRows
 
 
     def reduceFirst(self, matrix, exp):
         index = self.max_collum-1;
         #self.printMatrix(matrix)
         row = [-1 for x in xrange(self.max_collum)]
-        for j in range(0,self.mdegree-1):
-            element = matrix[1][j]
+        for j in xrange(self.mdegree-2,-1,-1):
+            element = matrix[0][j]
             row[index - exp] = element
-            index = index -1            
+            index = index -1
+
         matrix.append(row) 
 
     def calcNR(self, exp_sorted):
@@ -43,12 +112,13 @@ class Reduction(object):
         deg = math.floor(temp)
         if exp_sorted[1] > deg:
             nr = 2* (exp_sorted[0] + 1) - exp_sorted[0]
+        return nr
 
     def generateMatrix(self):
         row = sorted(list(range(0, self.max_collum)), reverse=True)
         #row2 = [-1 for x in xrange(self.max_collum)]
-        matrix = [[]] 
-        matrix.append(row)
+        matrix = [row] 
+        #matrix.append(row)
         #matrix.append(row2)
         return matrix
 
