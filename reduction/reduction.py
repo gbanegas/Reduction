@@ -27,22 +27,31 @@ class Reduction(object):
             self.reduceOthers(matrix,exp_sorted)
         self.removeRepeat(matrix)
         self.clean(matrix)
+        row = [-1 for x in xrange(self.max_collum)]
+        matrix.append(row)
+        count = self.countXor(matrix)
         self.printMatrix(matrix)
-        return self.countXor(matrix)
+        return count
 
     def countXor(self, matrix):
-        count = 0;
-        for j in range(1, len(matrix)):
-            row = matrix[j]
-            for i in range(self.mdegree-1, len(row)):
-                valueToCompare = row[i]
-                if valueToCompare <> NULL:
-                    for m in range(j+1, len(matrix)):
-                        rowToCompare = matrix[m]
-                        toCompare = rowToCompare[i]
-                        if toCompare <> NULL:
-                            count = count +1
-                            
+        rowToWrite = [-1 for x in xrange(self.max_collum)]
+        row = matrix[0]
+        for j in range(self.mdegree-1,len(row)):
+            countT = 0
+            element = row[j]
+            if element <> NULL:
+                for l in range(1, len(matrix)):
+                    rowToCompare = matrix[l]
+                    elementToCompare = rowToCompare[j]
+                    if elementToCompare <> NULL:
+                        countT = countT + 1;
+            rowToWrite[j] = countT
+        matrix.append(rowToWrite)
+        rowToCalc = matrix[len(matrix)-1]
+        count = 0
+        for i in range(self.mdegree-1,len(rowToCalc)):
+            tx = rowToCalc[i]
+            count = count + tx
         return count
 
 
