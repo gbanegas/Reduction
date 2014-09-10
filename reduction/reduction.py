@@ -13,6 +13,7 @@ mdegree = 0;
 
 class Reduction(object):
 
+    @parallel
     def reduction(self,exp):
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
@@ -38,7 +39,7 @@ class Reduction(object):
             if i <> NULL:
                 return False
         return True
-        
+
     def reduceOthers(self, matrix, exp):
         toReduce = self.needToReduce(matrix)
         for index in toReduce:
