@@ -5,7 +5,7 @@ Created on 10 Sep 2014
 '''
 
 import math
-import numpy
+
 
 NULL = -1
 max_collum = 0
@@ -19,18 +19,26 @@ class Reduction(object):
         self.max_collum = (2*exp_sorted[0])-1
         nr = self.calcNR(exp_sorted)
         matrix = self.generateMatrix()
-       # self.printMatrix(matrix)
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self.reduceFirst(matrix, exp_sorted[i])
-        #self.printMatrix(matrix)
         for i in range(1,nr):
             self.reduceOthers(matrix,exp_sorted)
         self.removeRepeat(matrix)
         self.clean(matrix)
         self.printMatrix(matrix)
 
+    def clean(self, matrix):
+        for m in matrix:
+            if self.isClean(m):
+                matrix.remove(m)
 
+    def isClean(self, row):
+        for i in row:
+            if i <> NULL:
+                return False
+        return True
+        
     def reduceOthers(self, matrix, exp):
         toReduce = self.needToReduce(matrix)
         for index in toReduce:
@@ -42,15 +50,12 @@ class Reduction(object):
     def removeRepeat(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]
-            #print row
             for i in range(self.mdegree-1, len(row)):
                 found = False
                 valueToCompare = row[i]
                 if valueToCompare <> NULL:
                     for m in range(j+1, len(matrix)):
                         rowToCompare = matrix[m]
-                        #print "RowFixe: "+str(j)+ " rowTo Compare: " + str(m) + " colum: " + str(i) 
-                        #print rowToCompare
                         toCompare = rowToCompare[i]
                         if toCompare <> NULL:
                             if valueToCompare == toCompare:
@@ -61,13 +66,6 @@ class Reduction(object):
                         if found:
                             break
             matrix[j] = row
-
-
-
-
-
-
-
 
     def cleanReduced(self, matrix, index):
         row = matrix[index]
@@ -97,7 +95,6 @@ class Reduction(object):
 
     def reduceFirst(self, matrix, exp):
         index = self.max_collum-1;
-        #self.printMatrix(matrix)
         row = [-1 for x in xrange(self.max_collum)]
         for j in xrange(self.mdegree-2,-1,-1):
             element = matrix[0][j]
@@ -116,10 +113,7 @@ class Reduction(object):
 
     def generateMatrix(self):
         row = sorted(list(range(0, self.max_collum)), reverse=True)
-        #row2 = [-1 for x in xrange(self.max_collum)]
         matrix = [row] 
-        #matrix.append(row)
-        #matrix.append(row2)
         return matrix
 
     def printMatrix(self,matrix):
