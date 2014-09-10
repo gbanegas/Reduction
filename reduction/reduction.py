@@ -13,7 +13,7 @@ mdegree = 0;
 
 class Reduction(object):
 
-    @parallel
+
     def reduction(self,exp):
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
@@ -28,6 +28,24 @@ class Reduction(object):
         self.removeRepeat(matrix)
         self.clean(matrix)
         self.printMatrix(matrix)
+        return self.countXor(matrix)
+
+    def countXor(self, matrix):
+        count = 0;
+        for j in range(1, len(matrix)):
+            row = matrix[j]
+            for i in range(self.mdegree-1, len(row)):
+                valueToCompare = row[i]
+                if valueToCompare <> NULL:
+                    for m in range(j+1, len(matrix)):
+                        rowToCompare = matrix[m]
+                        toCompare = rowToCompare[i]
+                        if toCompare <> NULL:
+                            count = count +1
+                            
+        return count
+
+
 
     def clean(self, matrix):
         for m in matrix:
