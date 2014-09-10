@@ -39,7 +39,7 @@ class Polynomial:
 
     def integral(self): return Polynomial(integral(self.plist))
     def derivative(self): return Polynomial(derivative(self.plist))
-    def coefs(self): return coef(self.plist)
+    def coefs(self): return self.plist
 
 # Define some simple utility functions. These manipulate "plists", polynomials
 #  that are stored as python lists. Thus, 3x^2 + 2x + 1 would be stored
@@ -158,20 +158,18 @@ def parse_string(str=None):
     or
     x**2 - 1
     """
-    termpat = re.compile('([-+]?\s*\d*\.?\d*)(x?\^?\d?)')
-    #print "Parsing string: ",str
-    #print termpat.findall(str)
-    res_dict = {}
-    for n,p in termpat.findall(str):
-        n,p = n.strip(),p.strip()
-        if not n and not p: continue
-        n,p = parse_n(n),parse_p(p)
-        if res_dict.has_key(p): res_dict[p] += n
-        else: res_dict[p] = n
-    highest_order = max(res_dict.keys())
-    res = [0]*(highest_order+1)
-    for key,value in res_dict.items(): res[key] = value
-    return res
+    n = str.replace(" ", "")
+    n = n.replace("+1", "+0")
+    n = n.replace("x^", "")
+    n = n.replace("x", "1")
+    n = n.replace("\n", "")
+    l = n.split("+")
+    #print l
+    exp = []
+    for i in l:
+        number = int(i)
+        exp.append(number)
+    return exp
 
 def parse_n(str):
     "Parse the number part of a polynomial string term"
@@ -200,7 +198,7 @@ def coef(p):
     for i in range(len(p)-1,-1,-1):
         if p[i]:
             c.append(i)
-    return c;
+    return c
 
 def tostring(p):
     """\
