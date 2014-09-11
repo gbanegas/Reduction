@@ -23,11 +23,10 @@ class Reduction(object):
         matrix = self.generateMatrix()
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
-            self.reduceFirst(matrix, exp_sorted[i])
-        self.printMatrix(matrix)
-        #self.clean(matrix)
-        #for i in range(1,nr):
-        #        self.reduceOthers(matrix,exp_sorted)
+            matrix = self.reduceFirst(matrix, exp_sorted[i])
+        #self.printMatrix(matrix)
+        for i in range(1,nr):
+                self.reduceOthers(matrix,exp_sorted)
         #self.clean(matrix)
         #self.removeRepeat(matrix)
         #self.clean(matrix)
@@ -123,6 +122,7 @@ class Reduction(object):
         index = (self.max_collum - 1 - self.mdegree);
         for i in range(1,len(matrix)):
             row = matrix[i]
+            print row[index]
             if row[index] <> NULL:
                 indexOfRows.append(i)
         
@@ -138,8 +138,10 @@ class Reduction(object):
             insert(row,(index - exp),element )
             row[index - exp] = element
             index = index -1
-        print row
-        row_stack([matrix, row])
+        matrix = vstack([matrix, row])
+        return matrix
+        
+        
 
     def calcNR(self, exp_sorted):
         nr = 2
@@ -156,7 +158,7 @@ class Reduction(object):
         return matrix
 
     def printMatrix(self,matrix):
-        print matrix[:]
+        print matrix
 
 
 
