@@ -33,7 +33,7 @@ class Reduction(object):
         matrix.append(row)
         count = self.countXor(matrix)
 	self.clean(matrix)
-        self.printMatrix(matrix)
+#        self.printMatrix(matrix)
         return count
 
     def countXor(self, matrix):
