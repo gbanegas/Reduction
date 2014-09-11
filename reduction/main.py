@@ -9,14 +9,18 @@ from polynomial import Polynomial
 
 if __name__ == '__main__':
 	degree = 32
-	f = open('list_' + str(degree) + '.txt','r')
+#	f = open('list_' + str(degree) + '.txt','r')
 	pols = []
-	for line in f:
-		pol = Polynomial(line)
-		pols.append(pol)
+#	for line in f:
+#		pol = Polynomial(line)
+#		pols.append(pol)
 
 
 	dic = { }
 	red = Reduction()
-	print red.reduction([16,8,0])
+	print red.reduction([16,12,8,4,0])
+#	for i in pols:
+#		dic[i] = red.reduction(i.coefs())
+#	for i in dic:
+#		print str(i.coefs()) + " xors: " + str(dic[i])
 	

@@ -30,6 +30,7 @@ class Reduction(object):
         row = [-1 for x in xrange(self.max_collum)]
         matrix.append(row)
         count = self.countXor(matrix)
+	self.clean(matrix)
         self.printMatrix(matrix)
         return count
 
@@ -57,9 +58,12 @@ class Reduction(object):
 
 
     def clean(self, matrix):
+	toRemove = []
         for m in matrix:
             if self.isClean(m):
-                matrix.remove(m)
+                toRemove.append(m)
+	for i in toRemove:
+		matrix.remove(i)
 
     def isClean(self, row):
         for i in row:
