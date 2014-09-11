@@ -18,17 +18,23 @@ if __name__ == '__main__':
 		pol = Polynomial(line)
 		pols.append(pol)
 
-	dic = { }
-	fn = len(pols)/2
+	dic = {}
+	fn = len(pols)/4
+	fn2 = len(pols)/2
+
 	t1 = ThreadCount(1,lock, pols[0:fn], dic)
-	t2 = ThreadCount(2,lock, pols[fn:len(pols)-1], dic)
+	t2 = ThreadCount(2,lock, pols[fn:fn2], dic)
+	t3 = ThreadCount(3,lock, pols[fn2:len(pols)-1], dic)
 	t1.start()
 	t2.start()
+	t3.start()
 	t1.join()
 	t2.join()
+	t3.join()
 #	red = Reduction()
 #	print red.reduction([16,12,8,4,0])
-	for i in dic:
-		r = str(i.coefs()) + " xors: " + str(dic[i])
-		save.write(r + '\n')
+	if (not t1.is_alive()) and (not t2.is_alive()): 
+		for i in dic:
+			r = str(i.coefs()) + " xors: " + str(dic[i])
+			save.write(r + '\n')
 	

@@ -20,6 +20,7 @@ class ThreadCount(threading.Thread):
 		for i in self.polynomials:
 			count = red(i.coefs())
 			self.locker.acquire()
+			print str(i.coefs()) + " : Xors : " + str(count)
 			self.dicr[i] = count
 			self.locker.release()
 
