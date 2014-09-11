@@ -23,8 +23,10 @@ class Reduction(object):
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self.reduceFirst(matrix, exp_sorted[i])
-        for i in range(1,nr):
+        self.clean(matrix)
+	for i in range(1,nr):
             self.reduceOthers(matrix,exp_sorted)
+	self.clean(matrix)
         self.removeRepeat(matrix)
         self.clean(matrix)
         row = [-1 for x in xrange(self.max_collum)]
