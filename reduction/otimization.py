@@ -31,20 +31,20 @@ class Otimization(object):
                             dic[matrix[i+1][j]] = 1
         
         key = 0;
-        app = -1
+        app = 1
         for i in dic:
             if dic[i] > app:
                 key = i
                 app = dic[i]
-
-        for i in xrange(0, len(matrix)-1):
-            row = matrix[i]
-            for j in xrange(0, len(row)):
-                if row[j] == element:
-                    if matrix[i+1][j] ==  key:
-                        matrix[i+1][j] = 'T'
-                        row[j] = 'T'
-                        matrix[i] = row
+        if key <> 0:
+            for i in xrange(0, len(matrix)-1):
+                row = matrix[i]
+                for j in xrange(0, len(row)):
+                    if row[j] == element:
+                        if matrix[i+1][j] ==  key:
+                            matrix[i+1][j] = 'T'
+                            row[j] = 'T'
+                            matrix[i] = row
                        
 
     def findNotNull(self, row):

@@ -39,7 +39,7 @@ class Reduction(object):
         self.matrix.append(row)
         count = self.countXor(self.matrix)
         #self.clean(self.matrix)
-        #self.save(self.matrix,exp_sorted)
+        self.save(self.matrix,exp_sorted)
         self.delete()
 #        self.printMatrix(self.matrix)
         return count
