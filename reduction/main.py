@@ -16,21 +16,28 @@ if __name__ == '__main__':
 	pols = []
 	for line in f:
 		pol = Polynomial(line)
-		pols.append(pol)
+		red = Reduction()
+		count = red.reduction(pol.coefs())
+		r = str(pol.coefs())  + ":" + str(count)
+		print r
+		save.write(r)
+		del red
+
+	save.close()
 	fn = len(pols)/4
 	fn2 = len(pols)/2
 
-	t1 = ThreadCount(1,lock, pols[0:fn], save)
-	t2 = ThreadCount(2,lock, pols[fn:fn2], save)
-	t3 = ThreadCount(3,lock, pols[fn2:len(pols)-1], save)
-	t1.start()
-	t2.start()
-	t3.start()
-	t1.join()
-	t2.join()
-	t3.join()
+	#t1 = ThreadCount(1,lock, pols, save)
+	#t2 = ThreadCount(2,lock, pols[fn:fn2], save)
+	#t3 = ThreadCount(3,lock, pols[fn2:len(pols)-1], save)
+	#t1.start()
+	#t2.start()
+	#t3.start()
+	#t1.join()
+	#t2.join()
+	#t3.join()
 #	red = Reduction()
 #	print red.reduction([16,12,8,4,0])
-	if (not t1.isAlive()) and (not t2.isAlive()) and (not t3.isAlive()):
-		save.close();
+	#if (not t1.isAlive()):
+	#	save.close();
 	
