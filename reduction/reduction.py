@@ -7,15 +7,19 @@ Created on 10 Sep 2014
 import math
 from xlsx import Xslxsaver
 
+from otimization import Otimization
 
 NULL = -1
 max_collum = 0
 mdegree = 0;
 
+
 class Reduction(object):
 
 
+
     def reduction(self,exp):
+        otimizator = Otimization()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
@@ -30,11 +34,12 @@ class Reduction(object):
         self.clean(self.matrix)
         self.removeRepeat(self.matrix)
         self.clean(self.matrix)
+        otimizator.otimize(self.matrix, self.mdegree-1, 1)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix)
-        self.clean(self.matrix)
-        self.save(self.matrix,exp_sorted)
+        #self.clean(self.matrix)
+        #self.save(self.matrix,exp_sorted)
         self.delete()
 #        self.printMatrix(self.matrix)
         return count

@@ -24,8 +24,7 @@ if __name__ == '__main__':
 		del red
 
 	save.close()
-	fn = len(pols)/4
-	fn2 = len(pols)/2
+	
 
 	#t1 = ThreadCount(1,lock, pols, save)
 	#t2 = ThreadCount(2,lock, pols[fn:fn2], save)
