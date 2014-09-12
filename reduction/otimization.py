@@ -30,13 +30,13 @@ class Otimization(object):
                         else:
                             dic[matrix[i+1][j]] = 1
         
-        key = 0;
+        key = -1;
         app = 1
         for i in dic:
             if dic[i] > app:
                 key = i
                 app = dic[i]
-        if key <> 0:
+        if key <> -1:
             for i in xrange(0, len(matrix)-1):
                 row = matrix[i]
                 for j in xrange(0, len(row)):
