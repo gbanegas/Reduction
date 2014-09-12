@@ -7,25 +7,26 @@ import threading
 from reduction import Reduction
 
 class ThreadCount(threading.Thread):
-	
 
-	def __init__(self, threadID,  locker, polynomials, save):
+	def __init__(self, threadID,  locker, polynomials, dicr):
 		threading.Thread.__init__(self)
 		self.threadID = threadID
 		self.locker = locker
 		self.polynomials = polynomials
-		self.save = save
+		self.dicr = dicr
 	
 	def run(self):
 		print "Starting thread: " + str(self.threadID) + '\n'
 		for i in self.polynomials:
-			reduc = Reduction()
-			count = reduc.reduction(i.coefs())
+			count = red(i.coefs())
 			self.locker.acquire()
-			r = str(i.coefs()) + ":" + str(count)
-			print r
-			self.save.write(r + '\n')
+			print str(i.coefs()) + " : Xors : " + str(count)
+			self.dicr[i] = count
 			self.locker.release()
-			del reduc
-			
+
+
+def red(i):
+	reduc = Reduction()
+	count = reduc.reduction(i)
+	return count
 

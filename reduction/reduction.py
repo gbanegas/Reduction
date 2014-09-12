@@ -5,8 +5,8 @@ Created on 10 Sep 2014
 '''
 
 import math
-from xlsx import Xslxsaver
-
+from numpy import *
+#http://wiki.scipy.org/Tentative_NumPy_Tutorial#head-926a6c9b68b752eed8a330636c41829e6358b1d3
 
 NULL = -1
 max_collum = 0
@@ -20,25 +20,22 @@ class Reduction(object):
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
         nr = self.calcNR(exp_sorted)
-        self.matrix = self.generateMatrix()
+        matrix = self.generateMatrix()
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
-            self.reduceFirst(self.matrix, exp_sorted[i])
-        self.clean(self.matrix)
+            matrix = self.reduceFirst(matrix, exp_sorted[i])
+        #self.printMatrix(matrix)
         for i in range(1,nr):
-            self.reduceOthers(self.matrix,exp_sorted)
-        self.clean(self.matrix)
-        self.removeRepeat(self.matrix)
-        self.clean(self.matrix)
-        row = [-1 for x in xrange(self.max_collum)]
-        self.matrix.append(row)
-        count = self.countXor(self.matrix)
-        self.clean(self.matrix)
-        self.save(self.matrix,exp_sorted)
-        self.delete()
-#        self.printMatrix(self.matrix)
-        return count
-
+                self.reduceOthers(matrix,exp_sorted)
+        #self.clean(matrix)
+        #self.removeRepeat(matrix)
+        #self.clean(matrix)
+        #row = [-1 for x in xrange(self.max_collum)]
+        #matrix.append(row)
+        #count = self.countXor(matrix)
+        #self.clean(matrix)
+    #        self.printMatrix(matrix)
+        return 0
 
     def countXor(self, matrix):
         rowToWrite = [-1 for x in xrange(self.max_collum)]
@@ -62,13 +59,6 @@ class Reduction(object):
         return count
 
 
-    def delete(self):
-        del self.matrix 
-
-    def save(self,matrix,exp_sorted):
-        xls = Xslxsaver()
-        xls.save(exp_sorted,matrix)
-        xls.close()
 
     def clean(self, matrix):
         toRemove = []
@@ -89,8 +79,8 @@ class Reduction(object):
         for index in toReduce:
             for e in exp:
                 reduceRow = self.reduce(matrix[index],e)
-                matrix.append(reduceRow)
-            self.cleanReduced(matrix,index)
+                matrix = vstack([matrix, reduceRow])
+        self.cleanReduced(matrix,index)
 
     def removeRepeat(self, matrix):
         for j in range(1, len(matrix)):
@@ -113,16 +103,19 @@ class Reduction(object):
             matrix[j] = row
 
     def cleanReduced(self, matrix, index):
-        row = matrix[index]
+        row = matrix[index].getA()
+        print matrix
+        print type(row)
         for j in range(0,self.mdegree-1):
             row[j] = NULL
         matrix[index] = row
 
     def reduce(self, row, exp):
         index = self.max_collum-1;
-        rowReduced = [-1 for x in xrange(self.max_collum)]
+        rowReduced = sort(arange(self.max_collum))
+        rowReduced.fill(NULL)
         for j in range(self.mdegree-2,-1,-1):
-            element = row[j]
+            element = row.item(j)
             rowReduced[index - exp] = element
             index = index -1
         return rowReduced
@@ -132,7 +125,7 @@ class Reduction(object):
         index = (self.max_collum - 1 - self.mdegree);
         for i in range(1,len(matrix)):
             row = matrix[i]
-            if row[index] <> NULL:
+            if row.getA().item(index) <> NULL:
                 indexOfRows.append(i)
         
         return indexOfRows
@@ -140,13 +133,17 @@ class Reduction(object):
 
     def reduceFirst(self, matrix, exp):
         index = self.max_collum-1;
-        row = [-1 for x in xrange(self.max_collum)]
+        row = sort(arange(self.max_collum))
+        row.fill(NULL)
         for j in xrange(self.mdegree-2,-1,-1):
-            element = matrix[0][j]
+            element = matrix[0,j]
+            insert(row,(index - exp),element )
             row[index - exp] = element
             index = index -1
-
-        matrix.append(row) 
+        matrix = vstack([matrix, row])
+        return matrix
+        
+        
 
     def calcNR(self, exp_sorted):
         nr = 2
@@ -157,11 +154,13 @@ class Reduction(object):
         return nr
 
     def generateMatrix(self):
-        row = sorted(list(range(0, self.max_collum)), reverse=True)
-        matrix = [row] 
+        row = sort(arange(self.max_collum), kind='mergesort')
+        rr = row[::-1]
+        matrix = mat(rr.copy())
         return matrix
 
     def printMatrix(self,matrix):
-        for r in matrix:
-            print ''.join(str(r))
+        print matrix
+
+
 
