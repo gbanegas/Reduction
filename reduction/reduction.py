@@ -34,7 +34,7 @@ class Reduction(object):
         self.clean(self.matrix)
         self.removeRepeat(self.matrix)
         self.clean(self.matrix)
-        otimizator.otimize(self.matrix, self.mdegree-1, 1)
+        otimizator.otimize(self.matrix, self.mdegree-1, 10)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix)
