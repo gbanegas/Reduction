@@ -10,10 +10,12 @@ class Otimization(object):
 
     def otimize(self, matrix, degree, deepth):
         print 'matrix'
-        sums = {}
+        columns = {}
         for i in xrange(0,len(matrix[0])):
-            sums[i] = self.sum_column(matrix,i)
-        print sums
+            column = self.column(matrix,i)
+            for j in xrange(i,len(matrix[0])-1):
+                column_2 = self.column(matrix,i)
+
         #self.printMatrix(matrix)
 
 
