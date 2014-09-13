@@ -10,47 +10,19 @@ class Otimization(object):
 
     def otimize(self, matrix, degree, deepth):
         print 'matrix'
-        for i in xrange(1, len(matrix)):
-            row = matrix[i]
-            index = self.findNotNull(row)
-            self.optimize(matrix,row[index])
+        sums = {}
+        for i in xrange(0,len(matrix[0])):
+            sums[i] = self.sum_column(matrix,i)
+        print sums
+        #self.printMatrix(matrix)
 
-        self.printMatrix(matrix)
 
-
-    def optimize(self, matrix, element):
-        dic = {}
-        for i in xrange(0, len(matrix)-1):
-            row = matrix[i]
-            for j in xrange(0, len(row)):
-                if row[j] == element:
-                    if matrix[i+1][j] <> -1:
-                        if  matrix[i+1][j] in dic:
-                            value = dic[ matrix[i+1][j]] +1
-                        else:
-                            dic[matrix[i+1][j]] = 1
-        
-        key = -1;
-        app = 1
-        for i in dic:
-            if dic[i] > app:
-                key = i
-                app = dic[i]
-        if key <> -1:
-            for i in xrange(0, len(matrix)-1):
-                row = matrix[i]
-                for j in xrange(0, len(row)):
-                    if row[j] == element:
-                        if matrix[i+1][j] ==  key:
-                            matrix[i+1][j] = 'T'
-                            row[j] = 'T'
-                            matrix[i] = row
-                       
-
-    def findNotNull(self, row):
-        for i in xrange(0, len(row)):
-            if row[i] <> -1:
-                return i
+    def sum_column(self, matrix, i):
+        column = [row[i] for row in matrix]
+        return sum(column)
+    
+    def column(self, matrix, i):
+        return [row[i] for row in matrix]            
 
     def printMatrix(self,matrix):
         for r in matrix:
