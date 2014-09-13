@@ -18,11 +18,13 @@ class Otimization(object):
                 column_2 = self.column(matrix,j)
                 if self.compare_column(column,column_2) > (len(matrix) - deepth):
                     columns[i].append(j)
-
-
-                    
-        print columns
+        
+        self.change(columns,matrix)                   
+        
         #self.printMatrix(matrix)
+
+    def change(self, columns,matrix):
+        print "change"
 
     def compare_column(self,column1, column2):
         match = 0;
