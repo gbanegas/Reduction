@@ -27,15 +27,22 @@ class Otimization(object):
         #self.printMatrix(matrix)
 
     def change(self, columns, matrix, deepth):
+        matches = defaultdict(set)
         for row in range(1,len(matrix)):
             for i in columns:
                 if (len(columns[i]) > deepth):
-                    change = False
                     for e in columns[i]:
                         for row_2 in range(row+1, len(matrix)):
                             if(matrix[row][i] == matrix[row_2][e]) and (matrix[row][i] <> -1) and (matrix[row_2][e] <> -1):
-                                matrix[row_2][e] = "A" + str(i - self.degree)
-                                change = True
+                                temp_str = "A" + str(matrix[0][i]);
+                                matches[temp_str].add(matrix[row_2][e])
+                                matches[temp_str].add(matrix[row][i])
+                                matrix[row_2][e] = temp_str
+                                matrix[row][i] = temp_str
+        
+        for i in matches:
+            matches[i] = sorted(matches[i])
+        print matches
 
 
     def compare_column(self,column1, column2):

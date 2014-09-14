@@ -17,7 +17,6 @@ class Xslxsaver(object):
 
 	def save(self, matrix, name):
 		#TODO to save in an xlsx
-		print name
 		worksheet = self.workbook.add_worksheet(name)
 		for i in xrange(0,len(matrix)):
 			row = matrix[i]
