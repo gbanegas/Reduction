@@ -34,14 +34,18 @@ class Reduction(object):
         self.clean(self.matrix)
         self.removeRepeat(self.matrix)
         self.clean(self.matrix)
-        otimizator.otimize(self.matrix, self.mdegree-1, 10)
+        xls = Xslxsaver()
+        xls.create_worksheet(exp)
+        xls.save(self.matrix, 'Not Optimized')
+        self.matrix = otimizator.otimize(self.matrix, self.mdegree, 1)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix)
         #self.clean(self.matrix)
-        self.save(self.matrix,exp_sorted)
+        xls.save(self.matrix, 'Optimized')
         self.delete()
 #        self.printMatrix(self.matrix)
+        xls.close()
         return count
 
 
@@ -70,10 +74,8 @@ class Reduction(object):
     def delete(self):
         del self.matrix 
 
-    def save(self,matrix,exp_sorted):
-        xls = Xslxsaver()
-        xls.save(exp_sorted,matrix)
-        xls.close()
+   
+
 
     def clean(self, matrix):
         toRemove = []

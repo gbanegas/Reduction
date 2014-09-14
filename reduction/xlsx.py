@@ -7,14 +7,18 @@ Created on 10 Sep 2014
 import xlsxwriter
 
 class Xslxsaver(object):
-	def save(self, exp, matrix):
-		#TODO to save in an xlsx
+
+	def create_worksheet(self,exp):
 		name = "degree_"
 		for i in exp:
-			name = name + str(i) + "_"
+			name = name +  str(i) + "_"
 		name = name + ".xlsx"
 		self.workbook = xlsxwriter.Workbook(name)
-		worksheet = self.workbook.add_worksheet()
+
+	def save(self, matrix, name):
+		#TODO to save in an xlsx
+		print name
+		worksheet = self.workbook.add_worksheet(name)
 		for i in xrange(0,len(matrix)):
 			row = matrix[i]
 			for j in xrange(0,len(row)):
