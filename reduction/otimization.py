@@ -10,7 +10,7 @@ from collections import defaultdict
 class Otimization(object):
 
     def otimize(self, matrix, degree, deepth):
-        print 'matrix'
+        #print 'matrix'
         self.degree = degree
         columns = defaultdict(list)
         for i in xrange(0,len(matrix[0])):
@@ -21,10 +21,14 @@ class Otimization(object):
                     columns[i].append(j)
         
         self.change(columns,matrix, deepth)
-        print columns
+        #print columns
         return matrix              
         
         #self.printMatrix(matrix)
+
+
+    def matches(self):
+        return self.matches
 
     def change(self, columns, matrix, deepth):
         matches = defaultdict(set)
@@ -42,7 +46,7 @@ class Otimization(object):
         
         for i in matches:
             matches[i] = sorted(matches[i])
-        print matches
+        self.matches = matches
 
 
     def compare_column(self,column1, column2):

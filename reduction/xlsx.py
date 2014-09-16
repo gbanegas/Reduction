@@ -16,6 +16,22 @@ class Xslxsaver(object):
 		name = name + ".xlsx"
 		self.workbook = xlsxwriter.Workbook(name)
 
+
+	def saveMatches(self, matches):
+		worksheet = self.workbook.add_worksheet("matches")
+		row = 0
+		colum = 0
+		for i in matches:
+			colum = 1
+			worksheet.write(row,colum, i)
+			colum = 2
+			for j in matches[i]:
+				worksheet.write(row,colum, j)
+				colum = colum+1
+			row = row + 1
+
+
+
 	def save(self, matrix, name):
 		#TODO to save in an xlsx
 		worksheet = self.workbook.add_worksheet(name)
