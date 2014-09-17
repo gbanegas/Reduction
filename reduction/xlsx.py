@@ -33,16 +33,17 @@ class Xslxsaver(object):
 
 
 	def save(self, matrix, name):
-		#TODO to save in an xlsx
 		worksheet = self.workbook.add_worksheet(name)
-		print self.degree
+#		print self.degree
 		for i in xrange(0,len(matrix)):
 			row = matrix[i]
-			for j in xrange(0,len(row)):
+			h = 0
+			for j in xrange(self.degree-1,len(row)):
 				if row[j] == -1:
-					worksheet.write(i, j, '')
+					worksheet.write(i, h, '')
 				else:
-					worksheet.write(i, j, row[j])
+					worksheet.write(i, h, row[j])
+				h += 1
 				 
 
 

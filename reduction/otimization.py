@@ -15,14 +15,16 @@ class Otimization(object):
         columns = defaultdict(list)
         for i in xrange(0,len(matrix[0])):
             column = self.column(matrix,i)
-            for j in xrange(i+1,len(matrix[0])-1):
+            for j in xrange(i+1,len(matrix[0])):
                 column_2 = self.column(matrix,j)
                 if self.compare_column(column,column_2) > 2:
                     columns[i].append(j)
-        
+       	#for i in xrange(0,3): 
         self.change(columns,matrix, deepth)
         #print columns
-        return matrix              
+        
+	self.printMatrix(matrix)
+	return matrix              
         
         #self.printMatrix(matrix)
 
@@ -46,7 +48,8 @@ class Otimization(object):
         
         for i in matches:
             matches[i] = sorted(matches[i])
-        self.matches = matches
+        print matches
+	self.matches = matches
 
 
     def compare_column(self,column1, column2):
