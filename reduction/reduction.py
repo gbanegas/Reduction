@@ -28,41 +28,36 @@ class Reduction(object):
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self.reduceFirst(self.matrix, exp_sorted[i])
-        self.clean(self.matrix)
         for i in range(1,nr):
             self.reduceOthers(self.matrix,exp_sorted)
-        self.clean(self.matrix)
         self.removeRepeat(self.matrix)
         self.clean(self.matrix)
         xls = Xslxsaver()
         xls.create_worksheet(exp)
         xls.save(self.matrix, 'Not Optimized')
-        self.matrix = otimizator.otimize(self.matrix, self.mdegree, 1)
+        self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix)
-
-        #self.clean(self.matrix)
         xls.save(self.matrix, 'Optimized')
         xls.saveMatches(otimizator.matches)
         #TODO: Terminar conta XOR
         self.delete()
-#        self.printMatrix(self.matrix)
         xls.close()
         return count
 
 
     def countXor(self, matrix):
-	rowToWrite = [-1 for x in xrange(self.max_collum)]
+        rowToWrite = [-1 for x in xrange(self.max_collum)]
         row = matrix[0]
         for j in range(self.mdegree-1,len(row)):
             countT = 0
-	    element = row[j]
+            element = row[j]
             if element <> NULL:
                 for l in range(1, len(matrix)):
                     rowToCompare = matrix[l]
                     elementToCompare = rowToCompare[j]
-#		    print elementToCompare
+#           print elementToCompare
                     if elementToCompare <> NULL or (re.search('[a-zA-Z]', str(elementToCompare)) <> None):
                         countT = countT + 1;
             rowToWrite[j] = countT
@@ -77,9 +72,6 @@ class Reduction(object):
 
     def delete(self):
         del self.matrix 
-
-   
-
 
     def clean(self, matrix):
         toRemove = []
