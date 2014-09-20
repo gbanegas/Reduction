@@ -36,9 +36,11 @@ class Reduction(object):
         xls.create_worksheet(exp)
         xls.save(self.matrix, 'Not Optimized')
         self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
+        self.removeOne(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix)
+        count = count + self.countMatchs(otimizator.matches)
         xls.save(self.matrix, 'Optimized')
         xls.saveMatches(otimizator.matches)
         #TODO: Terminar conta XOR
@@ -47,6 +49,13 @@ class Reduction(object):
         return count
 
 
+
+    def countMatchs(self, matches):
+        count = 0;
+        for i in matches:
+            count = count + (len(matches[i])-1)
+        return count
+        
     def countXor(self, matrix):
         rowToWrite = [-1 for x in xrange(self.max_collum)]
         row = matrix[0]
@@ -94,6 +103,22 @@ class Reduction(object):
                 reduceRow = self.reduce(matrix[index],e)
                 matrix.append(reduceRow)
             self.cleanReduced(matrix,index)
+
+    def removeOne(self, matrix):
+        for j in range(1, len(matrix)):
+            row = matrix[j]
+            for i in range(self.mdegree-1, len(row)):
+                valueToCompare = row[i]
+                if valueToCompare <> NULL:
+                    for m in range(j+1, len(matrix)):
+                        rowToCompare = matrix[m]
+                        toCompare = rowToCompare[i]
+                        if toCompare <> NULL:
+                            if valueToCompare == toCompare:
+                                rowToCompare[i] = NULL;
+                        matrix[m] = rowToCompare
+            matrix[j] = row
+
 
     def removeRepeat(self, matrix):
         for j in range(1, len(matrix)):
