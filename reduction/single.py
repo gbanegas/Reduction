@@ -28,7 +28,7 @@ if __name__ == '__main__':
      #   print result
 
     #save.close()
-    pol = Polynomial('x^409 + x^322 + 1')
+    pol = Polynomial('x^409 + x^87 + 1')
     red = Reduction()
     count = red.reduction(pol.coefs())
     print count

@@ -39,7 +39,7 @@ class Xslxsaver(object):
 		for i in xrange(0,len(matrix)):
 			row = matrix[i]
 			h = 0
-			for j in xrange(0,len(row)):
+			for j in xrange(self.degree-1,len(row)):
 				if row[j] == -1:
 					worksheet.write(i, h, '')
 				else:

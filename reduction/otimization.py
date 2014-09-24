@@ -12,13 +12,29 @@ class Otimization(object):
     def otimize(self, matrix, degree, deepth):
         self.degree = degree
         columns = self.create_match(matrix)
-
         self.change(columns,matrix, deepth)
-        self.printMatrix(matrix)
+        self.secondVerification(matrix)
+        #self.printMatrix(matrix)
         return matrix              
 
     def matches(self):
         return self.matches
+
+
+    def secondVerification(self, matrix):
+        for i in self.matches:
+            for r in xrange(1,len(matrix)):
+                row = matrix[r]
+                for e in xrange(0, len(row)):
+                    element = row[e];                    
+                    if (element in self.matches[i]):
+                        for j in xrange(r+1,len(matrix)):
+                            row_2 = matrix[j]
+                            if(row_2[e] in self.matches[i] and element in self.matches[i]):
+                                matrix[r][e] = i
+                                
+
+
 
     def create_match(self, matrix):
         columns = defaultdict(list)
