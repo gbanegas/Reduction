@@ -6,13 +6,17 @@ Created on 10 Sep 2014
 from reduction import Reduction
 from polynomial import Polynomial
 from threadc import ThreadCount
+import os
 
 import threading
 if __name__ == '__main__':
 	lock = threading.Lock()
 	degree = 163
-	f = open('pent_list_' + str(degree) + '.txt','r')
-	save = open('pent_result_' + str(degree) + '.txt','w')
+	directory = str(degree)
+	if not os.path.exists(directory):
+		os.makedirs(directory)
+	f = open('pol_' + str(degree) + '_.txt','r')
+	save = open('result_' + str(degree) + '.txt','w')
 	pols = []
 	for line in f:
 		pol = Polynomial(line)
@@ -30,8 +34,8 @@ if __name__ == '__main__':
 	t1.join()
 	t2.join()
 	t3.join()
-	red = Reduction()
-	print red.reduction([16,12,8,4,0])
-	if (not t1.isAlive()):
+	#red = Reduction()
+	#print red.reduction([16,12,8,4,0])
+	if (not t1.isAlive() and t2.isAlive() and t3.isAlive()):
 		save.close();
 	
