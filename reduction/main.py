@@ -17,7 +17,7 @@ if __name__ == '__main__':
 		os.makedirs(directory)
 	f = open('pol_' + str(degree) + '_.txt','r')
 	save = open('result_' + str(degree) + '.txt','w')
-	pols = []
+	pols = [
 	for line in f:
 		pol = Polynomial(line)
 		pols.append(pol)
