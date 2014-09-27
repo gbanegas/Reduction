@@ -7,7 +7,7 @@ from polynomial import Polynomial
 import os
 
 if __name__ == '__main__':
-    degree = 163
+    degree = 571
     directory = str(degree)
     #if not os.path.exists(directory):
     #    os.makedirs(directory)
@@ -28,7 +28,7 @@ if __name__ == '__main__':
      #   print result
 
     #save.close()
-    pol = Polynomial('x^163 + x^7 + x^6 + x^3 + 1')
+    pol = Polynomial('x^571 + x^5 + x^4 + x^2 + 1')
     red = Reduction()
     count = red.reduction(pol.coefs())
     print count

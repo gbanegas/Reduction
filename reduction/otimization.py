@@ -45,7 +45,7 @@ class Otimization(object):
                 howMuchEquals = self.find_match(column,column_2)
                 if howMuchEquals > 1:
                     columns[i].append(j)
-        print columns
+        #print columns
 
         return columns
 
