@@ -13,9 +13,29 @@ class Ot(object):
 	def optimize(self, matrix, degree, deepth):
 		self.matrix = matrix
 		self.deepth = deepth
-		pairs = self.__find_pairs__()
+		self.p = defaultdict(list)
+		for rounds in xrange(0,1):
+			pairs = self.__find_pairs__()
+			toOptimze = []
+			for i in pairs.keys():
+				if pairs[i] > 1:
+					toOptimze.append(i)
+			print toOptimze
+			match = self.removeMatrix(self.matrix, toOptimze)
+			print "pairs : " + str(match)
 
-		print "pairs : " + str(pairs)
+	
+	def removeMatrix(self, matrix, toOptimze):
+		for pair in toOptimze:
+			name = "A"+str(len(self.p))
+			self.p[name] = pair
+			self.findAndChange(pair, matrix, name)
+
+	def findAndChange(self, pair, matrix, name):
+		
+
+
+
 
 
 
@@ -34,9 +54,14 @@ class Ot(object):
 		for pair in pairs:
 			for j in xrange(0, len(self.matrix[0])):
 				matches = self.find_matches(pair, self.matrix, j)
-				columns[pair] = matches 
+				print matches
+				if pair in columns:
+					columns[pair] = matches + columns[pair]
+				else:
+					columns[pair] = matches 
+
 		return columns
-		
+
 
 	def mount_all_pairs(self, matrix):
 		allPairs = []
@@ -55,6 +80,7 @@ class Ot(object):
 		for pair_to_compare in pairs:
 			print "Comparing = " + str(pair) + " == " + str(pair_to_compare)
 			if self.pair_equal(pair_to_compare, pair):
+				print "it's equal"
 				matches = matches + 1
 		return matches
 
