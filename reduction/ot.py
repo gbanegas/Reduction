@@ -23,6 +23,7 @@ class Ot(object):
 			print toOptimze
 			match = self.removeMatrix(self.matrix, toOptimze)
 			print "pairs : " + str(match)
+		print self.p
 
 	
 	def removeMatrix(self, matrix, toOptimze):
@@ -32,10 +33,39 @@ class Ot(object):
 			self.findAndChange(pair, matrix, name)
 
 	def findAndChange(self, pair, matrix, name):
-		
+		for j in xrange(0, len(self.matrix[0])):
+				column = self.column(matrix, j)
+				result = self.generate_pairs(column)
+				if pair in result:
+					self.removePair(pair, name, j, matrix)
 
+	def removePair(self, pair, name, j, matrix):
+		print "Pair to Remove" + str(pair) + " in column: " + str(j)
+		column = self.column(matrix, j)
+		for i in xrange(0, len(column)):
+			if column[i] == pair[0]:
+				column[i] = name
+				break
+		for i in xrange(0, len(column)):
+			if column[i] == pair[1]:
+				column[i] = -1
+				break
+		print column
+		self.matrix = self.putColumn(column, matrix, j)
+		self.printMatrix(matrix)
 
+	def putColumn(self, column, matrix, j):
+		for row in matrix:
+			print "row : " + str(row)
+			for i in xrange(0, len(column)):
+				print " element : " + str(column[i])
+				row[j] = column[i]
+				print "after row : " + str(row)
 
+	def printMatrix(self,matrix):
+		for r in matrix:
+			print ''.join(str(r))
+		print '-------------------------------------------'
 
 
 
