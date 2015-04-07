@@ -34,8 +34,9 @@ class Ot(object):
 		for pair in pairs:
 			for j in xrange(0, len(self.matrix[0])):
 				matches = self.find_matches(pair, self.matrix, j)
-				columns[pair] = matches + columns[pair]
+				columns[pair] = matches 
 		return columns
+		
 
 	def mount_all_pairs(self, matrix):
 		allPairs = []
