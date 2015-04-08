@@ -42,7 +42,7 @@ class Reduction(object):
         xls.create_worksheet(exp)
         xls.save(self.matrix, 'Not Optimized')
         self.printMatrix(self.matrix)
-        otimizator.optimize(self.matrix, self.mdegree, 0)
+        otimizator.optimize(self.matrix, self.mdegree, 1)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         self.printMatrix(self.matrix)
         self.removeOne(self.matrix)

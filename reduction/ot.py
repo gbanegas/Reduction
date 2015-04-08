@@ -12,17 +12,16 @@ class Ot(object):
 
 	def optimize(self, matrix, degree, deepth):
 		self.matrix = matrix
-		self.deepth = deepth
 		self.p = defaultdict(list)
-		for rounds in xrange(0,1):
+		for rounds in xrange(0,deepth):
 			pairs = self.__find_pairs__()
 			toOptimze = []
 			for i in pairs.keys():
 				if pairs[i] > 1:
 					toOptimze.append(i)
-			print toOptimze
+			#print toOptimze
 			match = self.removeMatrix(self.matrix, toOptimze)
-			print "pairs : " + str(match)
+			#print "pairs : " + str(match)
 		print self.p
 
 	
@@ -33,15 +32,16 @@ class Ot(object):
 			self.findAndChange(pair, matrix, name)
 
 	def findAndChange(self, pair, matrix, name):
-		for j in xrange(0, len(self.matrix[0])):
+		for j in xrange((len(self.matrix[0])/2)-1, len(self.matrix[0])):
 				column = self.column(matrix, j)
 				result = self.generate_pairs(column)
 				if pair in result:
 					self.removePair(pair, name, j, matrix)
 
 	def removePair(self, pair, name, j, matrix):
-		print "Pair to Remove" + str(pair) + " in column: " + str(j)
+		#print "Pair to Remove" + str(pair) + " in column: " + str(j)
 		column = self.column(matrix, j)
+		print "Column before: " + str(column)
 		for i in xrange(0, len(column)):
 			if column[i] == pair[0]:
 				column[i] = name
@@ -52,15 +52,11 @@ class Ot(object):
 				break
 		print column
 		self.matrix = self.putColumn(column, matrix, j)
-		self.printMatrix(matrix)
+		#self.printMatrix(matrix)
 
 	def putColumn(self, column, matrix, j):
-		for row in matrix:
-			print "row : " + str(row)
-			for i in xrange(0, len(column)):
-				print " element : " + str(column[i])
-				row[j] = column[i]
-				print "after row : " + str(row)
+		for i in xrange(0,len(matrix)):
+			matrix[i][j] = column[i]
 
 	def printMatrix(self,matrix):
 		for r in matrix:
@@ -80,11 +76,11 @@ class Ot(object):
 					repeated.append(j)
 		for j in repeated:
 			del pairs[j]
-		print "All - repeated:" + str(pairs)
+		#print "All - repeated:" + str(pairs)
 		for pair in pairs:
 			for j in xrange(0, len(self.matrix[0])):
 				matches = self.find_matches(pair, self.matrix, j)
-				print matches
+				#print matches
 				if pair in columns:
 					columns[pair] = matches + columns[pair]
 				else:
@@ -98,7 +94,7 @@ class Ot(object):
 		for i in xrange(0,len(self.matrix[0])):
 			result = self.generate_pairs(self.column(self.matrix,i))
 			allPairs = allPairs + result
-		print "all pairs_ : " + str(allPairs)
+		#print "all pairs_ : " + str(allPairs)
 		return allPairs
 
 
@@ -106,11 +102,11 @@ class Ot(object):
 		matches = 0
 		collumn = self.column(matrix, j)
 		pairs = self.generate_pairs(collumn)
-		print "all pairs per collumn: " + str(pairs)
+		#print "all pairs per collumn: " + str(pairs)
 		for pair_to_compare in pairs:
-			print "Comparing = " + str(pair) + " == " + str(pair_to_compare)
+			#print "Comparing = " + str(pair) + " == " + str(pair_to_compare)
 			if self.pair_equal(pair_to_compare, pair):
-				print "it's equal"
+				#print "it's equal"
 				matches = matches + 1
 		return matches
 
@@ -129,7 +125,7 @@ class Ot(object):
 					p2 = collumn[j]
 					if p2 <> -1:
 						result.append((p1, p2))
-		print result
+		#print result
 		return result
 		
 
@@ -162,7 +158,7 @@ class Ot(object):
 					p2 = column[i]
 				else:
 					p1 = column[i]
-		print "Column : " + str(column)
+		#print "Column : " + str(column)
 		return (p1, p2)
 
 	
