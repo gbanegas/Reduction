@@ -13,16 +13,20 @@ class Ot(object):
 	def optimize(self, matrix, degree, deepth):
 		self.matrix = matrix
 		self.m = defaultdict()
-		for i in xrange(0,3):
+		is_break = False
+		while (not is_break):
 			pairs = self._generate_all_pairs(self.matrix)
 			pairs_removed = self._remove_repets(pairs)
-			pair = self._max_matches(pairs_removed)
+			pair, is_break = self._max_matches(pairs_removed)
+			if is_break:
+				break
 			print_matrix(self.matrix)
 			name, self.matrix = self._change_pair(pair, self.matrix)
 			print_matrix(self.matrix)
 			self._save_pair(pair, name)
 			print_matrix(self.matrix)
-		print self.m
+		#print self.m
+		return self.m, self.matrix
 
 	def _generate_all_pairs(self, matrix):
 		return self._mount_all_pairs(matrix)
@@ -67,7 +71,10 @@ class Ot(object):
 			if dict_of_matches[pair] > index:
 				to_return = pair
 				index = dict_of_matches[pair]
-		return to_return
+		if self._pair_equal(to_return , (-1,-1)):
+			return to_return, True
+		else:
+			return to_return, False
 
 	def _find_matches(self, pair, matrix, j):
 		matches = 0
@@ -123,9 +130,9 @@ class Ot(object):
 
 	def _mount_all_pairs(self, matrix):
 		allPairs = []
-		print matrix
+		#print matrix
 		size = len(matrix[0])
-		print "Size : " + str(size)
+		#print "Size : " + str(size)
 		for i in xrange(0,size):
 			result = self._generate_pairs(self._column(self.matrix,i))
 			allPairs = allPairs + result

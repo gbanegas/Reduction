@@ -42,7 +42,8 @@ class Reduction(object):
         xls.create_worksheet(exp)
         xls.save(self.matrix, 'Not Optimized')
         self.printMatrix(self.matrix)
-        self.p = otimizator.optimize(self.matrix, self.mdegree, 1)
+        self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree, 1)
+        print self.p
         #print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         #self.printMatrix(self.matrix)
@@ -87,8 +88,8 @@ class Reduction(object):
         for i in range(self.mdegree-1,len(rowToCalc)):
             tx = rowToCalc[i]
             count = count + tx
-        #count = count
-        #print len(self.p)
+        count = count + len(self.p)
+        #print 
         return count
 
 
