@@ -36,7 +36,7 @@ if __name__ == '__main__':
 	# t2.join()
 	# t3.join()
 	red = Reduction()
-	print red.reduction([5,2,0])
+	print red.reduction([5,4,0])
 	# if (not t1.isAlive() and t2.isAlive() and t3.isAlive()):
 	# 	save.close();
 	

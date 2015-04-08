@@ -43,15 +43,15 @@ class Reduction(object):
         xls.save(self.matrix, 'Not Optimized')
         self.printMatrix(self.matrix)
         self.p = otimizator.optimize(self.matrix, self.mdegree, 1)
-        print len(self.p)
+        #print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
-        self.printMatrix(self.matrix)
+        #self.printMatrix(self.matrix)
         self.removeOne(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
         count = self.countXor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        #xls.save(self.matrix, 'Optimized')
+        xls.save(self.matrix, 'Optimized')
         #xls.saveMatches(otimizator.matches)
         #TODO: Terminar conta XOR
         #self.printMatrix(self.matrix)
@@ -87,7 +87,8 @@ class Reduction(object):
         for i in range(self.mdegree-1,len(rowToCalc)):
             tx = rowToCalc[i]
             count = count + tx
-        count = count + len(self.p)
+        #count = count
+        #print len(self.p)
         return count
 
 
@@ -204,5 +205,5 @@ class Reduction(object):
     def printMatrix(self,matrix):
         for r in matrix:
             print ''.join(str(r))
-        print '-------------------------------------------'
+        print '----------------------FIM---------------------'
 

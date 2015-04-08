@@ -12,36 +12,95 @@ class Ot(object):
 
 	def optimize(self, matrix, degree, deepth):
 		self.matrix = matrix
-		self.p = defaultdict()
-		for rounds in xrange(0,deepth):
-			pairs = self.__find_pairs__()
-			toOptimze = []
-			for i in pairs.keys():
-				if pairs[i] > 1:
-					toOptimze.append(i)
-			#print toOptimze
-			match = self.removeMatrix(self.matrix, toOptimze)
-			#print "pairs : " + str(match)
-		return self.p
-		#print self.p
+		self.m = defaultdict()
+		for i in xrange(0,3):
+			pairs = self._generate_all_pairs(self.matrix)
+			pairs_removed = self._remove_repets(pairs)
+			pair = self._max_matches(pairs_removed)
+			print_matrix(self.matrix)
+			name, self.matrix = self._change_pair(pair, self.matrix)
+			print_matrix(self.matrix)
+			self._save_pair(pair, name)
+			print_matrix(self.matrix)
+		print self.m
 
-	
-	def removeMatrix(self, matrix, toOptimze):
-		for pair in toOptimze:
-			name = "A"+str(len(self.p))
-			self.p[name] = pair
-			self.findAndChange(pair, matrix, name)
+	def _generate_all_pairs(self, matrix):
+		return self._mount_all_pairs(matrix)
 
-	def findAndChange(self, pair, matrix, name):
-		for j in xrange((len(self.matrix[0])/2)-1, len(self.matrix[0])):
-				column = self.column(matrix, j)
-				result = self.generate_pairs(column)
+
+	def _remove_repets(self, pairs):
+		#print pairs
+		repeated = []
+		for i in xrange(0,len(pairs)):
+			for j in xrange(i+1, len(pairs)):
+				if self._pair_equal(pairs[i], pairs[j]):
+					if pairs[j] not in repeated:
+						repeated.append(pairs[j])
+		
+		#print repeated
+		for j in repeated:
+			pairs.remove(j)
+		return pairs
+
+	def _pair_equal(self, pair_to_compare, pair):
+		if pair_to_compare[0] == pair[0]:
+			if pair_to_compare[1] == pair[1]:
+				return True
+		return False
+
+
+	def _max_matches(self, pairs_removed):
+		#print pairs_removed
+		dict_of_matches = defaultdict()
+		for pair in pairs_removed:
+			for j in xrange(0, len(self.matrix[0])):
+				matches = self._find_matches(pair, self.matrix, j)
+				#print matches
+				if pair in dict_of_matches:
+					dict_of_matches[pair] = matches + dict_of_matches[pair]
+				else:
+					dict_of_matches[pair] = matches
+		#print dict_of_matches
+		to_return = (-1,-1)
+		index = -1
+		for pair in dict_of_matches:
+			if dict_of_matches[pair] > index:
+				to_return = pair
+				index = dict_of_matches[pair]
+		return to_return
+
+	def _find_matches(self, pair, matrix, j):
+		matches = 0
+		collumn = self._column(matrix, j)
+		pairs = self._generate_pairs(collumn)
+		#print "all pairs per collumn: " + str(pairs)
+		for pair_to_compare in pairs:
+			#print "Comparing = " + str(pair) + " == " + str(pair_to_compare)
+			if self._pair_equal(pair_to_compare, pair):
+				#print "it's equal"
+				matches = matches + 1
+		return matches
+
+
+	def _change_pair(self, pair, matrix):
+		print pair
+		name = "A" + str(len(self.m))
+		self.m[name] = pair
+		self._find_and_change(pair, matrix, name)
+		print_matrix(matrix)
+		return name, matrix
+
+
+	def _find_and_change(self, pair, matrix, name):
+		for j in xrange(0, len(matrix[0])):
+				column = self._column(matrix, j)
+				result = self._generate_pairs(column)
 				if pair in result:
 					self.removePair(pair, name, j, matrix)
 
 	def removePair(self, pair, name, j, matrix):
 		#print "Pair to Remove" + str(pair) + " in column: " + str(j)
-		column = self.column(matrix, j)
+		column = self._column(matrix, j)
 		#print "Column before: " + str(column)
 		for i in xrange(0, len(column)):
 			if column[i] == pair[0]:
@@ -58,66 +117,22 @@ class Ot(object):
 	def putColumn(self, column, matrix, j):
 		for i in xrange(0,len(matrix)):
 			matrix[i][j] = column[i]
+	def _save_pair(self, pair, name):
+		print "Name : " + str(name) + " pair: " + str(pair)
+		
 
-	def printMatrix(self,matrix):
-		for r in matrix:
-			print ''.join(str(r))
-		print '-------------------------------------------'
-
-
-
-	def __find_pairs__(self):
-		columns = defaultdict()
-		pairs = self.mount_all_pairs(self.matrix)
-
-		repeated = []
-		for i in xrange(0,len(pairs)):
-			for j in xrange(i+1, len(pairs)):
-				if self.pair_equal(pairs[i], pairs[j]):
-					repeated.append(j)
-		for j in repeated:
-			del pairs[j]
-		#print "All - repeated:" + str(pairs)
-		for pair in pairs:
-			for j in xrange(0, len(self.matrix[0])):
-				matches = self.find_matches(pair, self.matrix, j)
-				#print matches
-				if pair in columns:
-					columns[pair] = matches + columns[pair]
-				else:
-					columns[pair] = matches 
-
-		return columns
-
-
-	def mount_all_pairs(self, matrix):
+	def _mount_all_pairs(self, matrix):
 		allPairs = []
-		for i in xrange(0,len(self.matrix[0])):
-			result = self.generate_pairs(self.column(self.matrix,i))
+		print matrix
+		size = len(matrix[0])
+		print "Size : " + str(size)
+		for i in xrange(0,size):
+			result = self._generate_pairs(self._column(self.matrix,i))
 			allPairs = allPairs + result
-		#print "all pairs_ : " + str(allPairs)
+		
 		return allPairs
 
-
-	def find_matches(self, pair, matrix, j):
-		matches = 0
-		collumn = self.column(matrix, j)
-		pairs = self.generate_pairs(collumn)
-		#print "all pairs per collumn: " + str(pairs)
-		for pair_to_compare in pairs:
-			#print "Comparing = " + str(pair) + " == " + str(pair_to_compare)
-			if self.pair_equal(pair_to_compare, pair):
-				#print "it's equal"
-				matches = matches + 1
-		return matches
-
-	def pair_equal(self, pair_to_compare, pair):
-		if pair_to_compare[0] == pair[0]:
-			if pair_to_compare[1] == pair[1]:
-				return True
-		return False
-
-	def generate_pairs(self, collumn):
+	def _generate_pairs(self, collumn):
 		result = []
 		for i in xrange(1, len(collumn)):
 			if collumn[i] <> -1:
@@ -128,40 +143,11 @@ class Ot(object):
 						result.append((p1, p2))
 		#print result
 		return result
-		
 
+	def _column(self, matrix, i):
+		return [row[i] for row in matrix]  
+def print_matrix(matrix):
+	for r in matrix:
+		print ''.join(str(r))
+	print '-------------------------------------------'
 
-
-	def pair_not_contain_null(self, pair):
-		p1 = pair[0]
-		p2 = pair[1]
-		if p1 == -1 or p2 == -1:
-			return False
-		else:
-			return True
-
-	def find_match(self, collumn1, collumn2):
-		match = 0
-		for i in collumn1:
-			for j in collumn2:
-				if i <> -1 and j <> -1:
-					if i == j:
-						match += 1
-		return match
-
-	def mount_pair(self, matrix, i):
-		column = self.column(matrix, i)
-		p1 = -1
-		p2 = -1
-		for i in xrange(1, len(column)):
-			if column[i] <> -1:
-				if p1 <> -1:
-					p2 = column[i]
-				else:
-					p1 = column[i]
-		#print "Column : " + str(column)
-		return (p1, p2)
-
-	
-	def column(self, matrix, i):
-		return [row[i] for row in matrix]       
