@@ -24,49 +24,46 @@ class Reduction(object):
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
-        nr = self.calcNR(exp_sorted)
-        self.matrix = self.generateMatrix()
+        nr = self._calc_NR(exp_sorted)
+        self.matrix = self._generate_matrix()
         #self.printMatrix(self.matrix)
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
-            self.reduceFirst(self.matrix, exp_sorted[i])
+            self._reduce_first(self.matrix, exp_sorted[i])
         #self.printMatrix(self.matrix)
         #print "First reduction"
         for i in range(1,nr):
-            self.reduceOthers(self.matrix,exp_sorted)
+            self._reduce_others(self.matrix,exp_sorted)
         #self.printMatrix(self.matrix)
         self.matrix_copy = copy.deepcopy(self.matrix)
-        self.removeRepeat(self.matrix)
+        self._remove_repeat(self.matrix)
 
 
         #self.clean(self.matrix)
         
         #self.printMatrix(self.matrix)
-        xls = Xslxsaver()
-        xls.create_worksheet(exp)
-        xls.save(self.matrix, 'Not Optimized')
-        self.printMatrix(self.matrix)
+        #xls = Xslxsaver()
+        #xls.create_worksheet(exp)
+        #xls.save(self.matrix, 'Not Optimized')
+        print_matrix(self.matrix)
         self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree, 1)
         print self.p
         #print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         #self.printMatrix(self.matrix)
-        self.removeOne(self.matrix)
+        self._remove_one(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
-        count = self.countXor(self.matrix,self.p)
+        count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        xls.save(self.matrix, 'Optimized')
+        #xls.save(self.matrix, 'Optimized')
         self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        xls.saveMatches(self.p_)
-        xls.save(self.matrix_copy, 'Optimized_2')
-        count_copy = self.countXor(self.matrix_copy,self.p_)
-        self.printMatrix(self.matrix_copy)
-        #TODO: Terminar conta XOR
-        
-
+        #xls.save_matches(self.p_)
+        #xls.save(self.matrix_copy, 'Optimized_2')
+        count_copy = self._count_xor(self.matrix_copy,self.p_)
+        print_matrix(self.matrix_copy)
         #self.delete()
-        xls.close()
+        #xls.close()
         print count
         print count_copy
         if(count > count_copy):
@@ -76,13 +73,13 @@ class Reduction(object):
 
 
 
-    def countMatchs(self, matches):
+    def _count_matchs(self, matches):
         count = 0;
         for i in matches:
             count = count + (len(matches[i])-1)
         return count
         
-    def countXor(self, matrix, p):
+    def _count_xor(self, matrix, p):
         rowToWrite = [-1 for x in xrange(self.max_collum)]
         row = matrix[0]
         for j in range(self.mdegree-1,len(row)):
@@ -92,7 +89,6 @@ class Reduction(object):
                 for l in range(1, len(matrix)):
                     rowToCompare = matrix[l]
                     elementToCompare = rowToCompare[j]
-#           print elementToCompare
                     if elementToCompare <> NULL or (re.search('[a-zA-Z]', str(elementToCompare)) <> None):
                         countT = countT + 1;
             rowToWrite[j] = countT
@@ -124,15 +120,15 @@ class Reduction(object):
                 return False
         return True
 
-    def reduceOthers(self, matrix, exp):
-        toReduce = self.needToReduce(matrix)
-        for index in toReduce:
+    def _reduce_others(self, matrix, exp):
+        to_reduce = self._need_to_reduce(matrix)
+        for index in to_reduce:
             for e in exp:
                 reduceRow = self.reduce(matrix[index],e)
                 matrix.append(reduceRow)
-            self.cleanReduced(matrix,index)
+            self._clean_reduced(matrix,index)
 
-    def removeOne(self, matrix):
+    def _remove_one(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]
             for i in range(self.mdegree-1, len(row)):
@@ -148,7 +144,7 @@ class Reduction(object):
             matrix[j] = row
 
 
-    def removeRepeat(self, matrix):
+    def _remove_repeat(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]
             for i in range(self.mdegree-1, len(row)):
@@ -168,7 +164,7 @@ class Reduction(object):
                             break
             matrix[j] = row
 
-    def cleanReduced(self, matrix, index):
+    def _clean_reduced(self, matrix, index):
         row = matrix[index]
         for j in range(0,self.mdegree-1):
             row[j] = NULL
@@ -183,7 +179,7 @@ class Reduction(object):
             index = index -1
         return rowReduced
 
-    def needToReduce(self, matrix):
+    def _need_to_reduce(self, matrix):
         indexOfRows = []
         index = (self.max_collum - 1 - self.mdegree);
         for i in range(1,len(matrix)):
@@ -194,7 +190,7 @@ class Reduction(object):
         return indexOfRows
 
 
-    def reduceFirst(self, matrix, exp):
+    def _reduce_first(self, matrix, exp):
         index = self.max_collum-1;
         row = [-1 for x in xrange(self.max_collum)]
         for j in xrange(self.mdegree-2,-1,-1):
@@ -204,7 +200,7 @@ class Reduction(object):
 
         matrix.append(row) 
 
-    def calcNR(self, exp_sorted):
+    def _calc_NR(self, exp_sorted):
         nr = 2
         temp = (exp_sorted[0]+1)/2
         deg = math.floor(temp)
@@ -212,12 +208,12 @@ class Reduction(object):
             nr = 2* (exp_sorted[0] + 1) - exp_sorted[0]
         return nr
 
-    def generateMatrix(self):
+    def _generate_matrix(self):
         row = sorted(list(range(0, self.max_collum)), reverse=True)
         matrix = [row] 
         return matrix
 
-    def printMatrix(self,matrix):
+def print_matrix(matrix):
         for r in matrix:
             print ''.join(str(r))
         print '----------------------FIM---------------------'

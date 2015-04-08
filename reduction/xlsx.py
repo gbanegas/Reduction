@@ -18,7 +18,7 @@ class Xslxsaver(object):
 		self.workbook = xlsxwriter.Workbook(name)
 
 
-	def saveMatches(self, matches):
+	def save_matches(self, matches):
 		worksheet = self.workbook.add_worksheet("matches")
 		row = 0
 		colum = 0

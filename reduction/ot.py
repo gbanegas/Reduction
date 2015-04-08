@@ -20,11 +20,11 @@ class Ot(object):
 			pair, is_break = self._max_matches(pairs_removed)
 			if is_break:
 				break
-			print_matrix(self.matrix)
+			#print_matrix(self.matrix)
 			name, self.matrix = self._change_pair(pair, self.matrix)
-			print_matrix(self.matrix)
+			#print_matrix(self.matrix)
 			self._save_pair(pair, name)
-			print_matrix(self.matrix)
+			#print_matrix(self.matrix)
 		#print self.m
 		return self.m, self.matrix
 
@@ -90,11 +90,11 @@ class Ot(object):
 
 
 	def _change_pair(self, pair, matrix):
-		print pair
+		#print pair
 		name = "A" + str(len(self.m))
 		self.m[name] = pair
 		self._find_and_change(pair, matrix, name)
-		print_matrix(matrix)
+		#print_matrix(matrix)
 		return name, matrix
 
 
