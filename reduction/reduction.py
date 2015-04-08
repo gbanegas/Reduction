@@ -8,6 +8,7 @@ import math
 from xlsx import Xslxsaver
 import re
 from ot import Ot
+import copy
 
 NULL = -1
 max_collum = 0
@@ -34,7 +35,10 @@ class Reduction(object):
         for i in range(1,nr):
             self.reduceOthers(self.matrix,exp_sorted)
         #self.printMatrix(self.matrix)
+        self.matrix_copy = copy.deepcopy(self.matrix)
         self.removeRepeat(self.matrix)
+
+
         #self.clean(self.matrix)
         
         #self.printMatrix(self.matrix)
@@ -53,12 +57,22 @@ class Reduction(object):
         count = self.countXor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
         xls.save(self.matrix, 'Optimized')
-        #xls.saveMatches(otimizator.matches)
+        self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
+        xls.saveMatches(self.p_)
+        xls.save(self.matrix_copy, 'Optimized_2')
+        count_copy = self.countXor(self.matrix_copy,self.p_)
+        self.printMatrix(self.matrix_copy)
         #TODO: Terminar conta XOR
-        #self.printMatrix(self.matrix)
-        self.delete()
+        
+
+        #self.delete()
         xls.close()
-        return count
+        print count
+        print count_copy
+        if(count > count_copy):
+            return count_copy
+        else:
+            return count
 
 
 
@@ -88,7 +102,7 @@ class Reduction(object):
         for i in range(self.mdegree-1,len(rowToCalc)):
             tx = rowToCalc[i]
             count = count + tx
-        count = count + len(self.p)
+        count = count + len(p)
         #print 
         return count
 

@@ -6,7 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict
-from pair import Pair
+
 
 class Ot(object):
 
