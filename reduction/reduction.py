@@ -42,13 +42,14 @@ class Reduction(object):
         xls.create_worksheet(exp)
         xls.save(self.matrix, 'Not Optimized')
         self.printMatrix(self.matrix)
-        otimizator.optimize(self.matrix, self.mdegree, 1)
+        self.p = otimizator.optimize(self.matrix, self.mdegree, 1)
+        print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         self.printMatrix(self.matrix)
         self.removeOne(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
-        count = self.countXor(self.matrix)
+        count = self.countXor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
         #xls.save(self.matrix, 'Optimized')
         #xls.saveMatches(otimizator.matches)
@@ -66,7 +67,7 @@ class Reduction(object):
             count = count + (len(matches[i])-1)
         return count
         
-    def countXor(self, matrix):
+    def countXor(self, matrix, p):
         rowToWrite = [-1 for x in xrange(self.max_collum)]
         row = matrix[0]
         for j in range(self.mdegree-1,len(row)):
@@ -86,6 +87,7 @@ class Reduction(object):
         for i in range(self.mdegree-1,len(rowToCalc)):
             tx = rowToCalc[i]
             count = count + tx
+        count = count + len(self.p)
         return count
 
 

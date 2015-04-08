@@ -12,7 +12,7 @@ class Ot(object):
 
 	def optimize(self, matrix, degree, deepth):
 		self.matrix = matrix
-		self.p = defaultdict(list)
+		self.p = defaultdict()
 		for rounds in xrange(0,deepth):
 			pairs = self.__find_pairs__()
 			toOptimze = []
@@ -22,7 +22,8 @@ class Ot(object):
 			#print toOptimze
 			match = self.removeMatrix(self.matrix, toOptimze)
 			#print "pairs : " + str(match)
-		print self.p
+		return self.p
+		#print self.p
 
 	
 	def removeMatrix(self, matrix, toOptimze):
@@ -41,7 +42,7 @@ class Ot(object):
 	def removePair(self, pair, name, j, matrix):
 		#print "Pair to Remove" + str(pair) + " in column: " + str(j)
 		column = self.column(matrix, j)
-		print "Column before: " + str(column)
+		#print "Column before: " + str(column)
 		for i in xrange(0, len(column)):
 			if column[i] == pair[0]:
 				column[i] = name
@@ -50,7 +51,7 @@ class Ot(object):
 			if column[i] == pair[1]:
 				column[i] = -1
 				break
-		print column
+		#print column
 		self.matrix = self.putColumn(column, matrix, j)
 		#self.printMatrix(matrix)
 
