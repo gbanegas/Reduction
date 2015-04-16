@@ -15,7 +15,7 @@ if __name__ == '__main__':
 	#degree = 163
 	#directory = str(degree)
 	# if not os.path.exists(directory):
-	# 	os.makedirs(directory)
+	# 	os.makedirs(directory)8
 	# f = open('pol_' + str(degree) + '_.txt','r')
 	# save = open('result_' + str(degree) + '.txt','w')
 	# pols = []
@@ -36,7 +36,18 @@ if __name__ == '__main__':
 	# t2.join()
 	# t3.join()
 	red = Reduction()
-	print red.reduction([20,11,6,5,0])
+	di = dict()
+	#for i in xrange(0,29):
+#		x = red.reduction([30,i,0])
+#		
+
+#	print di
+
+	#for k in xrange(2,20):
+	#x^283 + x^142 + x^70 + x + 1
+	resultado = red.reduction([283,142,70,1,0])
+	#di[k] = resultado
+	print resultado
 	# if (not t1.isAlive() and t2.isAlive() and t3.isAlive()):
 	# 	save.close();
 	
