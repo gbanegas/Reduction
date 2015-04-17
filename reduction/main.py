@@ -12,14 +12,14 @@ import threading
 if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
-	degree = 163
+	degree = 283
 	directory = str(degree)
 	if not os.path.exists(directory):
 	 	os.makedirs(directory)
 	f = open('pol_' + str(degree) + '_.txt','r')
 	save = open('result_' + str(degree) + '.txt','w')
 	pols = []
-	 for line in f:
+	for line in f:
 	 	pol = Polynomial(line)
 	 	pols.append(pol)
 
