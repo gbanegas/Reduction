@@ -5,7 +5,7 @@ Created on 10 Sep 2014
 '''
 
 import math
-from xlsx import Xslxsaver
+#from xlsx import Xslxsaver
 import re
 from ot import Ot
 import copy
@@ -36,8 +36,8 @@ class Reduction(object):
             self._reduce_others(self.matrix,exp_sorted)
         print "Sem remocoes"
         print_matrix(self.matrix)
-        xls = Xslxsaver()
-        xls.create_worksheet(exp)
+        #xls = Xslxsaver()
+        #xls.create_worksheet(exp)
         #self.matrix_copy = copy.deepcopy(self.matrix)
         #xls.save(self.matrix, 'Not Optimized_1')
         self._remove_repeat(self.matrix)
@@ -47,9 +47,9 @@ class Reduction(object):
         self.clean(self.matrix)
         print_matrix(self.matrix)
         #self.printMatrix(self.matrix)
-        xls = Xslxsaver()
-        xls.create_worksheet(exp)
-        xls.save(self.matrix, 'Not Optimized')
+        #xls = Xslxsaver()
+        #xls.create_worksheet(exp)
+        #xls.save(self.matrix, 'Not Optimized')
         print_matrix(self.matrix)
         self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree, 1)
         #print self.p
@@ -62,14 +62,14 @@ class Reduction(object):
         self.matrix.append(row)
         count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        xls.save(self.matrix, 'Optimized')
+        #xls.save(self.matrix, 'Optimized')
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        xls.save_matches(self.p)
+        #xls.save_matches(self.p)
         #xls.save(self.matrix_copy, 'Optimized_2')
         #count_copy = self._count_xor(self.matrix_copy,self.p_)
         #print_matrix(self.matrix_copy)
         #self.delete()
-        xls.close()
+        #xls.close()
         print count
         
 
