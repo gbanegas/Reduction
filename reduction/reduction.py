@@ -56,6 +56,7 @@ class Reduction(object):
         #print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         #self.printMatrix(self.matrix)
+        print_matrix(self.matrix)
         self._remove_one(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)

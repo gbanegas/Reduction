@@ -176,11 +176,11 @@ class Ot(object):
 	def _generate_pairs(self, collumn):
 		result = []
 		for i in xrange(1, len(collumn)):
-			if collumn[i] <> NULL and str.isdigit(str(collumn[i])):
+			if collumn[i] <> NULL :
 				p1 = collumn[i]
 				for j in xrange(i+1, len(collumn)):
 					p2 = collumn[j]
-					if p2 <> NULL and str.isdigit(str(p2)):
+					if p2 <> NULL :
 						result.append((p1, p2))
 		#print result
 		return result
