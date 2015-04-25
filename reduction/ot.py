@@ -7,7 +7,7 @@ Created on 06 Apr 2015
 import math
 from collections import defaultdict
 
-
+NULL = -1
 class Ot(object):
 
 	def optimize(self, matrix, degree, deepth):
@@ -15,6 +15,7 @@ class Ot(object):
 		self.m = defaultdict()
 		is_break = False
 		while (not is_break):
+		#for i in xrange(0,1):
 			pairs = self._generate_all_pairs(self.matrix)
 			pairs_removed = self._remove_repets(pairs)
 			pair, is_break = self._max_matches(pairs_removed)
@@ -28,9 +29,32 @@ class Ot(object):
 		#print self.m
 		return self.m, self.matrix
 
-	def _generate_all_pairs(self, matrix):
-		return self._mount_all_pairs(matrix)
+	def sort(self, matrix):
+		matrix = self.__remove__(matrix, -1, "")
+		for i in xrange(0, len(matrix[0])):
+			column = self._column(matrix, i)
+			column.sort()
+			#print column
+			self.putColumn(column, matrix, i)
+		matrix = self.__remove__(matrix, "", -1)
+		return matrix
 
+	def __remove__(self, matrix, toCompare, toChange):
+		for i in xrange(0, len(matrix)):
+			for j in xrange(0, len(matrix[i])):
+				if matrix[i][j] == toCompare:
+					matrix[i][j] = toChange
+		return matrix
+
+	def _generate_all_pairs(self, matrix):
+		allPairs = []
+		#print matrix
+		size = len(matrix[0])
+		#print "Size : " + str(size)
+		for i in xrange(0,size):
+			result = self._generate_pairs(self._column(self.matrix,i))
+			allPairs = allPairs + result
+		return allPairs
 
 	def _remove_repets(self, pairs):
 		#print pairs
@@ -64,14 +88,15 @@ class Ot(object):
 					dict_of_matches[pair] = matches + dict_of_matches[pair]
 				else:
 					dict_of_matches[pair] = matches
+
 		#print dict_of_matches
-		to_return = (-1,-1)
-		index = -1
+		to_return = (NULL,NULL)
+		index = 1
 		for pair in dict_of_matches:
 			if dict_of_matches[pair] > index:
 				to_return = pair
 				index = dict_of_matches[pair]
-		if self._pair_equal(to_return , (-1,-1)):
+		if self._pair_equal(to_return , (NULL,NULL)):
 			return to_return, True
 		else:
 			return to_return, False
@@ -115,7 +140,7 @@ class Ot(object):
 				break
 		for i in xrange(0, len(column)):
 			if column[i] == pair[1]:
-				column[i] = -1
+				column[i] = NULL
 				break
 		#print column
 		self.matrix = self.putColumn(column, matrix, j)
@@ -124,35 +149,26 @@ class Ot(object):
 	def putColumn(self, column, matrix, j):
 		for i in xrange(0,len(matrix)):
 			matrix[i][j] = column[i]
+
 	def _save_pair(self, pair, name):
 		print "Name : " + str(name) + " pair: " + str(pair)
 		
 
-	def _mount_all_pairs(self, matrix):
-		allPairs = []
-		#print matrix
-		size = len(matrix[0])
-		#print "Size : " + str(size)
-		for i in xrange(0,size):
-			result = self._generate_pairs(self._column(self.matrix,i))
-			allPairs = allPairs + result
-		
-		return allPairs
-
 	def _generate_pairs(self, collumn):
 		result = []
 		for i in xrange(1, len(collumn)):
-			if collumn[i] <> -1:
+			if collumn[i] <> NULL and str.isdigit(str(collumn[i])):
 				p1 = collumn[i]
 				for j in xrange(i+1, len(collumn)):
 					p2 = collumn[j]
-					if p2 <> -1:
+					if p2 <> NULL and str.isdigit(str(p2)):
 						result.append((p1, p2))
 		#print result
 		return result
 
 	def _column(self, matrix, i):
 		return [row[i] for row in matrix]  
+
 def print_matrix(matrix):
 	for r in matrix:
 		print ''.join(str(r))
