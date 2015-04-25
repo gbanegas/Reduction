@@ -10,7 +10,7 @@ import os
 
 import threading
 if __name__ == '__main__':
-	        lock = threading.Lock()
+        lock = threading.Lock()
         lockScreen = threading.Lock()
         degree = 283
         directory = str(degree)
