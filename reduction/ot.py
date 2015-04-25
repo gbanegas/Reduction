@@ -16,9 +16,9 @@ class Ot(object):
 		is_break = False
 		while (not is_break):
 		#for i in xrange(0,1):
-			pairs = self._generate_all_pairs(self.matrix)
-			pairs_removed = self._remove_repets(pairs)
-			pair, is_break = self._max_matches(pairs_removed)
+			pair, is_break = self._generate_all_pairs(self.matrix)
+			#pairs_removed = self._remove_repets(pairs)
+			#pair, is_break = self._max_matches(pairs_removed)
 			if is_break:
 				break
 			#print_matrix(self.matrix)
@@ -47,14 +47,33 @@ class Ot(object):
 		return matrix
 
 	def _generate_all_pairs(self, matrix):
-		allPairs = []
+		allPairs = defaultdict()
+		#allPairs = []
 		#print matrix
 		size = len(matrix[0])
 		#print "Size : " + str(size)
 		for i in xrange(0,size):
 			result = self._generate_pairs(self._column(self.matrix,i))
-			allPairs = allPairs + result
-		return allPairs
+			for pair in result:
+				if pair in allPairs:
+					allPairs[pair] = allPairs[pair] + 1
+				else:
+					allPairs[pair] = 1
+
+
+		to_return = (NULL,NULL)
+		index = 1
+		for pair in allPairs:
+			if allPairs[pair] > index:
+				to_return = pair
+				index = allPairs[pair]
+		if self._pair_equal(to_return , (NULL,NULL)):
+			return to_return, True
+		else:
+			return to_return, False
+
+			
+		#return allPairs
 
 	def _remove_repets(self, pairs):
 		#print pairs
