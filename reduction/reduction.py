@@ -70,7 +70,8 @@ class Reduction(object):
         #print_matrix(self.matrix_copy)
         #self.delete()
         #xls.close()
-        print count
+        #print count
+        return count
         
 
 
@@ -217,7 +218,7 @@ class Reduction(object):
         return matrix
 
 def print_matrix(matrix):
-        for r in matrix:
-            print ''.join(str(r))
+        #for r in matrix:
+            #print ''.join(str(r))
         print '----------------------FIM---------------------'
 

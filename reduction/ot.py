@@ -24,7 +24,7 @@ class Ot(object):
 			#print_matrix(self.matrix)
 			name, self.matrix = self._change_pair(pair, self.matrix)
 			#print_matrix(self.matrix)
-			self._save_pair(pair, name)
+			#self._save_pair(pair, name)
 			#print_matrix(self.matrix)
 		#print self.m
 		return self.m, self.matrix
@@ -169,8 +169,8 @@ class Ot(object):
 		for i in xrange(0,len(matrix)):
 			matrix[i][j] = column[i]
 
-	def _save_pair(self, pair, name):
-		print "Name : " + str(name) + " pair: " + str(pair)
+	#def _save_pair(self, pair, name):
+		#print "Name : " + str(name) + " pair: " + str(pair)
 		
 
 	def _generate_pairs(self, collumn):
@@ -189,7 +189,7 @@ class Ot(object):
 		return [row[i] for row in matrix]  
 
 def print_matrix(matrix):
-	for r in matrix:
-		print ''.join(str(r))
+	#for r in matrix:
+	#	print ''.join(str(r))
 	print '-------------------------------------------'
 
