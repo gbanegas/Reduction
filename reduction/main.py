@@ -18,7 +18,7 @@ if __name__ == '__main__':
 	#	pol = Polynomial(line)
 #		pols.append(pol)
 	redu = Reduction()
-	result = redu.reduction([5,2,0])
+	result = redu.reduction([150,10,5,1,0])
 	print result
 	#for pol in pols:
 	#	print pol.coefs()
