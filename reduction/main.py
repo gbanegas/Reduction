@@ -11,18 +11,20 @@ import os
 
 #import threading
 if __name__ == '__main__':
-	f = open('pol_283_.txt','r')
-	save = open('result_pol_283_.txt','w')
-	pols = []
-	for line in f:
-		pol = Polynomial(line)
-		pols.append(pol)
+	#f = open('pol_163_.txt','r')
+	#save = open('result_pol_163_.txt','w')
+	#pols = []
+	#for line in f:
+	#	pol = Polynomial(line)
+#		pols.append(pol)
 	redu = Reduction()
-	for pol in pols:
-		print pol.coefs()
-		valor = redu.reduction(pol.coefs())
-		save.write(str(pol.coefs()) + ":" + str(valor) + "\n")
-	
+	result = redu.reduction([5,2,0])
+	print result
+	#for pol in pols:
+	#	print pol.coefs()
+	#	valor = redu.reduction(pol.coefs())
+	#	save.write(str(pol.coefs()) + ":" + str(valor) + "\n")
+
 	# f = open('result_nova_familia.txt','r')
 	# for line in f:
 	# 	line = line.replace("[", "")

@@ -8,6 +8,7 @@ import math
 #from xlsx import Xslxsaver
 import re
 from ot import Ot
+from optimizator import Optmizator
 import copy
 
 NULL = -1
@@ -20,7 +21,7 @@ class Reduction(object):
 
 
     def reduction(self,exp):
-        otimizator = Ot()
+        otimizator = Optmizator()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
@@ -50,13 +51,13 @@ class Reduction(object):
         #xls = Xslxsaver()
         #xls.create_worksheet(exp)
         #xls.save(self.matrix, 'Not Optimized')
-        print_matrix(self.matrix)
-        self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree, 1)
+        #print_matrix(self.matrix)
+        self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree)
         #print self.p
         #print len(self.p)
         #self.matrix = otimizator.otimize(self.matrix, self.mdegree, 0)
         #self.printMatrix(self.matrix)
-        print_matrix(self.matrix)
+        #print_matrix(self.matrix)
         self._remove_one(self.matrix)
         row = [-1 for x in xrange(self.max_collum)]
         self.matrix.append(row)
@@ -218,7 +219,7 @@ class Reduction(object):
         return matrix
 
 def print_matrix(matrix):
-        #for r in matrix:
-            #print ''.join(str(r))
+        for r in matrix:
+            print ''.join(str(r))
         print '----------------------FIM---------------------'
 
