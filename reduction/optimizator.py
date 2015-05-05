@@ -23,7 +23,7 @@ class Optmizator(object):
             self.matrix = self.sort(self.matrix)
             self.matrix = self.doIt(self.matrix)
         
-        print_matrix(self.matrix)
+        #print_matrix(self.matrix)
         return self.variables, self.matrix
 
     def doIt(self, matrix):  
