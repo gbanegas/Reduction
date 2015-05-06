@@ -14,8 +14,8 @@ import threading
 if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
-	save = open('result_pol_test_.txt','w')
-	degree = 163
+	save = open('result_pol_283_.txt','w')
+	degree = 283
 	#directory = str(degree)
 	# if not os.path.exists(directory):
 	# 	os.makedirs(directory)

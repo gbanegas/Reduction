@@ -18,25 +18,19 @@ class Optmizator(object):
         self.variable = 2*degree-1
         self.degree = degree
         self.variables = defaultdict()
-        for i in xrange(0, (self._max_size_colum(self.matrix))):
-        #for i in xrange(0,1):
+        size = self._max_size_colum(self.matrix)
+        for i in xrange(0, size):
             self.matrix = self.sort(self.matrix)
             self.matrix = self.doIt(self.matrix)
-        
-        #print_matrix(self.matrix)
+
         return self.variables, self.matrix
 
     def doIt(self, matrix):  
         pairs = self._generate_all_pairs(matrix)
         pairs_repeated = self._get_repeated(pairs)
         while len(pairs_repeated) > 0:
-            #print pairs_repeated
-            pair = pairs_repeated[0]
-            #print "Pair : " + str(pair)
-            matrix, pairs_repeated = self._find_and_replace(pair, matrix)
-        
-        for i in self.variables:
-            matrix, pairs_repeated = self._find_and_replace(self.variables[i], matrix)
+            pair = pairs_repeated.pop(0)
+            matrix, pairs_repeated = self._find_and_replace(pair, matrix, pairs_repeated)
         return matrix
 
     def _generate_all_pairs(self, matrix, variables = None):
@@ -73,28 +67,29 @@ class Optmizator(object):
                     if pair not in repeated:
                         repeated.append(pair)
         return repeated
-    def _find_and_replace(self, pair_to_compare, matrix):
-        #print "Buscando Par :" + str(pair_to_compare)
+
+    def _find_and_replace(self, pair_to_compare, matrix, pairs_repeated):
+        changes = False
         for i in xrange(len(matrix[0])-1, self.degree-2, -1):
             column = self._column(matrix, i)
-        #    print "Antes: " + str(column)
             for j in xrange(0, len(column)):
                 if column[j] <> -1:
-                    for h in xrange(j, len(column)):
-                        if column[h] <> -1:
-                            pair = (column[j],column[h])
-                            if self._is_equal(pair, pair_to_compare):
-                                resutl = self._not_in(pair)
-                                if resutl:
-                                    self.variable += 1
-                                    self.variables[self.variable] = pair
-                                column[h] = -1
-                                column[j] = self.variable
-        #    print "Depois: " + str(column)
+                    if pair_to_compare[0] < column[j]+1:
+                        for h in xrange(j, len(column)):
+                            if column[h] <> -1:
+                                pair = (column[j],column[h])
+                                if self._is_equal(pair, pair_to_compare):
+                                    resutl = self._not_in(pair)
+                                    if resutl:
+                                        self.variable += 1
+                                        self.variables[self.variable] = pair
+                                    changes = True
+                                    column[h] = -1
+                                    column[j] = self.variable
             self._put_column(column, matrix, i)
-        #print "--F--"
-        pairs_= self._generate_all_pairs(matrix, self.variables)
-        pairs_repeated = self._get_repeated(pairs_)
+        if(changes):
+            pairs_= self._generate_all_pairs(matrix, self.variables)
+            pairs_repeated = self._get_repeated(pairs_)
         return matrix, pairs_repeated
 
 
@@ -105,9 +100,7 @@ class Optmizator(object):
                     if pair[1] == self.variables[i][1]:
                         return False
         else:
-            #print "Variables : " + str(variables)
             for i in variables:
-                #print variables[i]
                 if pair[0] == variables[i][0]:
                     if pair[1] == variables[i][1]:
                         return False
@@ -145,7 +138,6 @@ class Optmizator(object):
         for i in xrange(0, len(matrix[0])):
             column = self._column(matrix, i)
             column.sort()
-            #print column
             self.putColumn(column, matrix, i)
         matrix = self.__remove__(matrix, "", -1)
         return matrix
