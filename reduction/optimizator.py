@@ -31,6 +31,7 @@ class Optmizator(object):
         while len(pairs_repeated) > 0:
             pair = pairs_repeated.pop(0)
             matrix, pairs_repeated = self._find_and_replace(pair, matrix, pairs_repeated)
+            
         return matrix
 
     def _generate_all_pairs(self, matrix, variables = None):
