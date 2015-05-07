@@ -40,4 +40,6 @@ if __name__ == '__main__':
 	for current in threads:
 		current.join()
 
+	save.close()
+
 
