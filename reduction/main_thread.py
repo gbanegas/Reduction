@@ -15,7 +15,7 @@ if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
 	save = open('result_pol_283_2.txt','w')
-	degree = 283
+	degree = 163
 	#directory = str(degree)
 	# if not os.path.exists(directory):
 	# 	os.makedirs(directory)
@@ -29,13 +29,17 @@ if __name__ == '__main__':
 	print len(pols)
 	threads = []
 	i = 0
-	j = 2
-	for temp in range(0, len(pols)/2):
+	j = 15
+	for temp in range(0, len(pols)/15):
+		if (j > len(pols)):
+			j = len(pols)
 		thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
-		thread.start()
-		i = j
-		j += 2
+		i = j+1
+		j += 15
 		threads.append(thread)
+
+	for thread in threads:
+		thread.start()
 	
 	for current in threads:
 		current.join()

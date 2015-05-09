@@ -19,7 +19,8 @@ class Optmizator(object):
         self.degree = degree
         self.variables = defaultdict()
         size = self._max_size_colum(self.matrix)
-        for i in xrange(0, size):
+        print_matrix(self.matrix)
+        for i in xrange(0, size+1):
             self.matrix = self.sort(self.matrix)
             self.matrix = self.doIt(self.matrix)
 
@@ -47,7 +48,7 @@ class Optmizator(object):
                             if p2 <> -1:
                                 pairs.append((p1,p2))
         else:
-            for i in xrange(len(matrix[0])-1, self.degree, -1):
+            for i in xrange(len(matrix[0])-1, 0, -1):
                 column = self._column(matrix, i)
                 for j in xrange(1, len(column)):
                     p1 = column[j]
@@ -71,11 +72,11 @@ class Optmizator(object):
 
     def _find_and_replace(self, pair_to_compare, matrix, pairs_repeated):
         changes = False
-        for i in xrange(len(matrix[0])-1, self.degree-2, -1):
+        for i in xrange(len(matrix[0])-1, 0, -1):
             column = self._column(matrix, i)
             for j in xrange(0, len(column)):
                 if column[j] <> -1:
-                    if pair_to_compare[0] < column[j]+1:
+                    if pair_to_compare[0] <= column[j]:
                         for h in xrange(j, len(column)):
                             if column[h] <> -1:
                                 pair = (column[j],column[h])
@@ -88,6 +89,7 @@ class Optmizator(object):
                                     column[h] = -1
                                     column[j] = self.variable
             self._put_column(column, matrix, i)
+
         if(changes):
             pairs_= self._generate_all_pairs(matrix, self.variables)
             pairs_repeated = self._get_repeated(pairs_)
@@ -121,8 +123,6 @@ class Optmizator(object):
                 if column[j] <> column[i]:
                     pairs.append((column[i], column[j]))
         return pairs
-
-
 
     def _max_size_colum(self, matrix):
         size = 0

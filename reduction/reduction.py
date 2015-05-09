@@ -5,10 +5,10 @@ Created on 10 Sep 2014
 '''
 
 import math
-#from xlsx import Xslxsaver
+from xlsx import Xslxsaver
 import re
-from ot import Ot
-from optimizator import Optmizator
+#from ot import Ot
+from opt import Opt
 import copy
 
 NULL = -1
@@ -21,7 +21,7 @@ class Reduction(object):
 
 
     def reduction(self,exp):
-        otimizator = Optmizator()
+        otimizator = Opt()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
@@ -35,32 +35,42 @@ class Reduction(object):
             self._reduce_others(self.matrix,exp_sorted)
         #print "Sem remocoes"
         #print_matrix(self.matrix)
-        #xls = Xslxsaver()
-        #xls.create_worksheet(exp)
+        xls = Xslxsaver()
+        xls.create_worksheet(exp)
         #self.matrix_copy = copy.deepcopy(self.matrix)
-        #xls.save(self.matrix, 'Not Optimized_1')
+        xls.save(self.matrix, 'Not Optimized_1')
         self._remove_repeat(self.matrix)
         self.matrix = otimizator.sort(self.matrix)
-        #print_matrix(self.matrix)
         #self.matrix = otimizator.sort(self.matrix)
         self.clean(self.matrix)
+        self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
-        #xls.save(self.matrix, 'Not Optimized')
+        xls.save(self.matrix, 'Not Optimized')
         self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree)
         self._remove_one(self.matrix)
-        row = [-1 for x in xrange(self.max_collum)]
+        print_matrix(self.matrix)
+        row = [-1 for x in xrange(self.mdegree)]
         self.matrix.append(row)
         count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        #xls.save(self.matrix, 'Optimized')
+        xls.save(self.matrix, 'Optimized')
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        #xls.save_matches(self.p)
+        xls.save_matches(self.p)
         #print_matrix(self.matrix)
         return count
-        
 
+    def reduce_matrix(self, degree, matrix):
+        print "printing..."
+        matrix_copy = [[-1 for x in range(degree)] for x in range(len(matrix))] 
+        for i in xrange(0, len(matrix)):
+            h = 0
+            print i
+            for j in xrange(degree-1, len(matrix[0])):
+                matrix_copy[i][h] = matrix[i][j]
+                h += 1
 
-    
+        print_matrix(matrix_copy)
+        return matrix_copy
 
     def _count_matchs(self, matches):
         count = 0;
@@ -69,9 +79,9 @@ class Reduction(object):
         return count
         
     def _count_xor(self, matrix, p):
-        rowToWrite = [-1 for x in xrange(self.max_collum)]
+        rowToWrite = [-1 for x in xrange(self.mdegree)]
         row = matrix[0]
-        for j in range(self.mdegree-1,len(row)):
+        for j in range(0,len(row)):
             countT = 0
             element = row[j]
             if element <> NULL:
@@ -84,7 +94,7 @@ class Reduction(object):
         matrix.append(rowToWrite)
         rowToCalc = matrix[len(matrix)-1]
         count = 0
-        for i in range(self.mdegree-1,len(rowToCalc)):
+        for i in range(0,len(rowToCalc)):
             tx = rowToCalc[i]
             count = count + tx
         count = count + len(p)
