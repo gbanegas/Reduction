@@ -8,16 +8,16 @@ class Opt(object):
 
     def optimize(self, matrix, degree):
         self.var = 2*degree-1
-        print self.var
+        #print self.var
         self.variables = defaultdict()
 
         numbers = [x for x in xrange(degree, 2*degree-1)]
-        print "numbers : " + str(numbers)
+        #print "numbers : " + str(numbers)
         for m in numbers:
             self.doIt(m, matrix)
-            print_matrix(matrix)
+            #print_matrix(matrix)
         
-        print self.variables
+        #print self.variables
         
 
         return self.variables, matrix
@@ -41,7 +41,7 @@ class Opt(object):
                     pos.append(j)
             if(type(match[pair]) is int):
                 if(match[pair] >= 2):
-                    print "Match: " + str(pair)
+                    #print "Match: " + str(pair)
                     self._change(pair, pos, matrix)
             i += 1 
             if (m+i > self.var):

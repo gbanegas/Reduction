@@ -48,7 +48,7 @@ class Reduction(object):
         xls.save(self.matrix, 'Not Optimized')
         self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree)
         self._remove_one(self.matrix)
-        print_matrix(self.matrix)
+        #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
         self.matrix.append(row)
         count = self._count_xor(self.matrix,self.p)
@@ -60,16 +60,16 @@ class Reduction(object):
         return count
 
     def reduce_matrix(self, degree, matrix):
-        print "printing..."
+        #print "printing..."
         matrix_copy = [[-1 for x in range(degree)] for x in range(len(matrix))] 
         for i in xrange(0, len(matrix)):
             h = 0
-            print i
+            #print i
             for j in xrange(degree-1, len(matrix[0])):
                 matrix_copy[i][h] = matrix[i][j]
                 h += 1
 
-        print_matrix(matrix_copy)
+        #print_matrix(matrix_copy)
         return matrix_copy
 
     def _count_matchs(self, matches):
