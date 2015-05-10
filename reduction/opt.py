@@ -41,7 +41,6 @@ class Opt(object):
                     pos.append(j)
             if(type(match[pair]) is int):
                 if(match[pair] >= 2):
-                    #print "Match: " + str(pair)
                     self._change(pair, pos, matrix)
             i += 1 
             if (m+i > self.var):
@@ -58,13 +57,9 @@ class Opt(object):
                         if column[h] == pair[1]:
                             column[h] = -1
                             column[j] = self.var
-                            find = True
             self.putColumn(column, matrix, i)
 
-        if(find):
-            self.var += 1
-
-
+        self.var += 1
         self.sort(matrix)
 
 

@@ -8,18 +8,19 @@ import os
 
 if __name__ == '__main__':
 
+    #pol = Polynomial('x^7 + x^3 + 1')
     pol = Polynomial('x^571 + x^286 + x^21 + x + 1')
-    pol2 = Polynomial('x^283 + x^142 + x^70 + x + 1')
-    pol3 = Polynomial('x^163 + x^82 + x^6 + x + 1')
+    #pol2 = Polynomial('x^283 + x^142 + x^70 + x + 1')
+    #pol3 = Polynomial('x^163 + x^82 + x^6 + x + 1')
     red = Reduction()
-    l = []
+    #l = []
     count = red.reduction(pol.coefs())
-    l.append(count)
+    #l.append(count)
     print count
-    count = red.reduction(pol2.coefs())
-    l.append(count)
-    print count
-    count = red.reduction(pol3.coefs())
-    l.append(count)
-    print count
-    print l
+    #count = red.reduction(pol2.coefs())
+    #l.append(count)
+    #print count
+    #count = red.reduction(pol3.coefs())
+    #l.append(count)
+    #print count
+    #print l
