@@ -45,7 +45,7 @@ def recoverfile(saved, readed):
 if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
-	degree = 163
+	degree = 571
 	save = 'result_pol_'+str(degree)+'.txt'
 	#save = 'file_to_save.txt'
 	#directory = str(degree)
@@ -63,13 +63,13 @@ if __name__ == '__main__':
 	print len(pols)
 	threads = []
 	i = 0
-	j = 30
-	for temp in range(0, len(pols)/30):
+	j = 3000
+	for temp in range(0, len(pols)/3000):
 	 	if (j > len(pols)):
 	 		j = len(pols)
 	 	thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
 	 	i = j+1
-	 	j += 30
+	 	j += 3000
 	 	threads.append(thread)
 
 	for thread in threads:
