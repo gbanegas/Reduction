@@ -27,7 +27,9 @@ class ThreadCount(threading.Thread):
             count = reduc.reduction(i.coefs())
             self.locker.acquire()
             r = str(i.coefs()) + ":" + str(count)
-            self.save.write(r + '\n')
+            f = open(self.save, "a")
+            f.write(r + '\n')
+            f.close()
             self.locker.release()
             self.lockscreen.acquire()
             print r
