@@ -7,8 +7,8 @@ Created on 10 Sep 2014
 import math
 from xlsx import Xslxsaver
 import re
-#from ot import Ot
-from opt import Opt
+from ot import Ot
+#from opt import Opt
 import copy
 
 NULL = -1
@@ -21,7 +21,7 @@ class Reduction(object):
 
 
     def reduction(self,exp):
-        otimizator = Opt()
+        otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
@@ -57,6 +57,7 @@ class Reduction(object):
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
         xls.save_matches(self.p)
         #print_matrix(self.matrix)
+        #print self.p
         return count
 
     def reduce_matrix(self, degree, matrix):

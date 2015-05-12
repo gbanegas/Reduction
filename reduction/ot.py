@@ -10,7 +10,7 @@ from collections import defaultdict
 NULL = -1
 class Ot(object):
 
-	def optimize(self, matrix, degree, deepth):
+	def optimize(self, matrix, degree):
 		self.matrix = matrix
 		self.m = defaultdict()
 		is_break = False

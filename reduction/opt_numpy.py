@@ -16,6 +16,8 @@ class OptNumpy(object):
         numbers = xrange(degree, 2*degree-2)
         for n in numbers:
             self.doIt(n, m)
+        for i in self.variables:
+            self.doIt(i, m)
             
         return self.variables, m
 
