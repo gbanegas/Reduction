@@ -40,11 +40,23 @@ class Polynomial:
     def integral(self): return Polynomial(integral(self.plist))
     def derivative(self): return Polynomial(derivative(self.plist))
     def coefs(self): return self.plist
+    def __eq__(self, other):
+        if isinstance(other, Polynomial):
+            return self.coefs() == other.coefs()
+        else:
+            return False
+    def __hash__(self):
+        hash_ = hash(0)
+        for i in self.coefs():
+            hash_ = hash_ ^ hash(i)
+        return hash_
 
 # Define some simple utility functions. These manipulate "plists", polynomials
 #  that are stored as python lists. Thus, 3x^2 + 2x + 1 would be stored
 #  as [1,2,3] (lowest to highest power of x, even though polynomials
 #  are typically written from highest to lowest power).
+
+
 
 
 def plist(term):
