@@ -29,13 +29,13 @@ if __name__ == '__main__':
 	print len(pols)
 	threads = []
 	i = 0
-	j = 15
-	for temp in range(0, len(pols)/15):
+	j = 30
+	for temp in range(0, len(pols)/30):
 		if (j > len(pols)):
 			j = len(pols)
 		thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
 		i = j+1
-		j += 15
+		j += 30
 		threads.append(thread)
 
 	for thread in threads:
