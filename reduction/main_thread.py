@@ -13,6 +13,8 @@ import threading
 import threading
 
 def recoverfile(saved, readed):
+	if not os.path.exists(saved):
+		return True, []
 	f = open(saved,'r')
 	if(not os.stat(saved).st_size==0):
 		pols = []
@@ -44,8 +46,8 @@ if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
 	degree = 163
-	#save = 'result_pol_'+str(degree)+'.txt'
-	save = 'file_to_save.txt'
+	save = 'result_pol_'+str(degree)+'.txt'
+	#save = 'file_to_save.txt'
 	#directory = str(degree)
 	# if not os.path.exists(directory):
 	# 	os.makedirs(directory)
@@ -59,22 +61,22 @@ if __name__ == '__main__':
 			pols.append(pol)
 
 	print len(pols)
-	#threads = []
-	#i = 0
-	#j = 30
-	# #for temp in range(0, len(pols)/30):
-	# 	if (j > len(pols)):
-	# 		j = len(pols)
-	# 	thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
-	# 	i = j+1
-	# 	j += 30
-	# 	threads.append(thread)
+	threads = []
+	i = 0
+	j = 30
+	for temp in range(0, len(pols)/30):
+	 	if (j > len(pols)):
+	 		j = len(pols)
+	 	thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
+	 	i = j+1
+	 	j += 30
+	 	threads.append(thread)
 
-	# for thread in threads:
-	# 	thread.start()
-	
-	# for current in threads:
-	# 	current.join()
+	for thread in threads:
+	 	thread.start()
+
+	for current in threads:
+		current.join()
 
 
 
