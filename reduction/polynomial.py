@@ -218,16 +218,14 @@ def tostring(p):
     but most of the complexity is caused by special cases.
     """
     p = strip_leading_zeros(p)
-    str = []
+    pol = ""
     for i in range(len(p)-1,-1,-1):
-        if p[i]:
-            if i < len(p)-1:
-                if p[i] >= 0: str.append('+')
-                else: str.append('-')
-                str.append(tostring_term(abs(p[i]),i))
-            else:
-                str.append(tostring_term(p[i],i))
-    return ' '.join(str)
+	pol = pol + " + x^" + str(p[i]) 
+   
+    pol = pol + " + 1"
+    pol = pol.replace("+","",1)
+
+    return pol
 
 def tostring_term(c,i):
     "Convert a single coefficient c and power e to a string cx^i"
