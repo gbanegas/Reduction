@@ -47,13 +47,7 @@ if __name__ == '__main__':
 	lockScreen = threading.Lock()
 	degree = 571
 	save = 'result_pol_'+str(degree)+'.txt'
-	#save = 'file_to_save.txt'
-	#directory = str(degree)
-	# if not os.path.exists(directory):
-	# 	os.makedirs(directory)
-	f = open('pol_' + str(degree) + '_.txt','r')
-	# save = open('result_' + str(degree) + '.txt','w')
-	#f = ["x^63 + x^14 + x^7 + x^4 + 1", "x^63 + x^15 + x^7 + x^4 + 1", "x^63 + x^16 + x^7 + x^4 + 1" , "x^63 + x^17 + x^7 + x^4 + 1" ]
+	f = open('pol_' + str(degree)+ '.txt','r')
 	read, pols = recoverfile(save, f)
 	if read:
 		for line in f:
@@ -63,13 +57,13 @@ if __name__ == '__main__':
 	print len(pols)
 	threads = []
 	i = 0
-	j = 3000
-	for temp in range(0, len(pols)/3000):
+	j = 30000
+	for temp in range(0, len(pols)/30000):
 	 	if (j > len(pols)):
 	 		j = len(pols)
 	 	thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
 	 	i = j+1
-	 	j += 3000
+	 	j += 30000
 	 	threads.append(thread)
 
 	for thread in threads:
