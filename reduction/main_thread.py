@@ -47,7 +47,7 @@ if __name__ == '__main__':
 	lockScreen = threading.Lock()
 	degree = 571
 	save = 'result_pol_'+str(degree)+'.txt'
-	f = open('pol_' + str(degree)+ '.txt','r')
+	f = open('pol_' + str(degree)+ '_n','r')
 	read, pols = recoverfile(save, f)
 	if read:
 		for line in f:
