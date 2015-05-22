@@ -11,7 +11,7 @@ from collections import defaultdict
 
 NULL = -1
 
-class Optmizator(object):
+class OptG(object):
 
     def optimize(self, matrix, degree):
         self.matrix = matrix
@@ -29,8 +29,8 @@ class Optmizator(object):
     def doIt(self, matrix):  
         pairs = self._generate_all_pairs(matrix)
         pairs_repeated = self._get_repeated(pairs)
-        while len(pairs_repeated) > 0:
-            pair = pairs_repeated.pop(0)
+        
+        while pairs_repeated <> (-1,-1):
             matrix, pairs_repeated = self._find_and_replace(pair, matrix, pairs_repeated)
             
         return matrix
@@ -61,14 +61,24 @@ class Optmizator(object):
 
 
     def _get_repeated(self, pairs):
-        repeated = []
+        repeated = defaultdict()
+
         for i in xrange(0, len(pairs)):
             pair = pairs[i]
             for j in xrange(i+1, len(pairs)):
                 if pair == pairs[j]:
-                    if pair not in repeated:
-                        repeated.append(pair)
-        return repeated
+                   if pair in repeated:
+                        repeated[pair] = repeated+1
+                    else:
+                        repeated[pair] = 1
+        pair_to_return = (-1,-1)
+        max_ = 1
+        for i in repeated:
+            if repeated[i] > max_:
+                pair_to_return = i
+                max_ = repeated[i]
+
+        return pair_to_return
 
     def _find_and_replace(self, pair_to_compare, matrix, pairs_repeated):
         changes = False
@@ -154,22 +164,6 @@ class Optmizator(object):
         for i in xrange(0,len(matrix)):
             matrix[i][j] = column[i]
 
-    def sort(self, matrix):
-        matrix = self.__remove__(matrix, -1, "")
-        for i in xrange(0, len(matrix[0])):
-            column = self._column(matrix, i)
-            column.sort()
-            #print column
-            self.putColumn(column, matrix, i)
-        matrix = self.__remove__(matrix, "", -1)
-        return matrix
-
-    def __remove__(self, matrix, toCompare, toChange):
-        for i in xrange(0, len(matrix)):
-            for j in xrange(0, len(matrix[i])):
-                if matrix[i][j] == toCompare:
-                    matrix[i][j] = toChange
-        return matrix
 
 def print_matrix(matrix):
     for r in matrix:

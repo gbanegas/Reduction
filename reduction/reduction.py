@@ -5,10 +5,12 @@ Created on 10 Sep 2014
 '''
 
 import math
-#from xlsx import Xslxsaver
+from xlsx import Xslxsaver
 import re
 from ot import Ot
-#from opt import Opt
+from opt import Opt
+from optimizator import Optmizator
+from optg import OptG
 import copy
 
 NULL = -1
@@ -21,7 +23,7 @@ class Reduction(object):
 
 
     def reduction(self,exp):
-        otimizator = Ot()
+        self.otimizator = OptG()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
@@ -35,29 +37,29 @@ class Reduction(object):
             self._reduce_others(self.matrix,exp_sorted)
         #print "Sem remocoes"
         #print_matrix(self.matrix)
-        #xls = Xslxsaver()
-        #xls.create_worksheet(exp)
+        xls = Xslxsaver()
+        xls.create_worksheet(exp)
         #self.matrix_copy = copy.deepcopy(self.matrix)
         #xls.save(self.matrix, 'Not Optimized_1')
         self._remove_repeat(self.matrix)
-        self.matrix = otimizator.sort(self.matrix)
-        #self.matrix = otimizator.sort(self.matrix)
+        self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
-        #xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = otimizator.optimize(self.matrix, self.mdegree)
+        xls.save(self.matrix, 'Not Optimized')
+        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
         self._remove_one(self.matrix)
         #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
         self.matrix.append(row)
         count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        #xls.save(self.matrix, 'Optimized')
+        xls.save(self.matrix, 'Optimized')
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        #xls.save_matches(self.p)
+        xls.save_matches(self.p)
         #print_matrix(self.matrix)
-        #print self.p
+        print self.p
+        del self.matrix
         return count
 
     def reduce_matrix(self, degree, matrix):
