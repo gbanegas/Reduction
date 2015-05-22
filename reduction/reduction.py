@@ -8,9 +8,9 @@ import math
 from xlsx import Xslxsaver
 import re
 from ot import Ot
-from opt import Opt
-from optimizator import Optmizator
-from optg import OptG
+#from opt import Opt
+#from optimizator import Optmizator
+#from optg import OptG
 import copy
 
 NULL = -1
@@ -23,7 +23,7 @@ class Reduction(object):
 
 
     def reduction(self,exp):
-        self.otimizator = OptG()
+        self.otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1

@@ -16,7 +16,7 @@ if __name__ == '__main__':
     #pol4 = Polynomial('x^6 + x^3 + 1')
     #pol5 = Polynomial('x^18 + x^9 + 1')
     #pol6 = Polynomial('x^163 + x^162 + x^25 + x + 1')
-    pol7 = Polynomial('x^19 + x^7 + x^6 + x^5 + 1')
+    pol7 = Polynomial('x^19 + x^14 + x^13 + x^12 + 1')
     #pol8 = Polynomial('x^42 + x^35 + x^28 + x^21 + x^14 + x^7 + 1')
     #pol9 = Polynomial('x^294 + x^245 + x^196 + x^147 + x^98 + x^49 + 1')
     #pol10 = Polynomial('x^20 + x^15 + x^10 + x^5 + 1')
