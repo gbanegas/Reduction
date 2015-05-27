@@ -23,7 +23,8 @@ t - It is the number of threads
 The file with polynomials must be:
 - One polynomial per line
 - Polynomial in the format : x^m + x^a + x^b + ... + x + 1
-### Example of file 
+
+#### Example of file 
 ```
 x^19 + x^15 + x^3 + x + 1
 x^19 + x^14 + x^13 + x^12 + 1
