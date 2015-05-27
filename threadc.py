@@ -22,7 +22,7 @@ class ThreadCount(threading.Thread):
         for i in self.polynomials:
             reduc = Reduction()
             self.lockscreen.acquire()
-            print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())
+            #print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())
             self.lockscreen.release()
             count = reduc.reduction(i.coefs())
             self.locker.acquire()
@@ -32,7 +32,7 @@ class ThreadCount(threading.Thread):
             f.close()
             self.locker.release()
             self.lockscreen.acquire()
-            print r
+            #print r
             self.lockscreen.release()
             del reduc
             

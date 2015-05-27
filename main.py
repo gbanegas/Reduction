@@ -44,27 +44,33 @@ def recoverfile(saved, readed):
 def main(argv):
    inputfile = ''
    outputfile = ''
+   n_threads = 4
    try:
-      opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+      opts, args = getopt.getopt(argv,"hi:o:t:",["ifile=","ofile=", "threads="])
    except getopt.GetoptError:
-      print 'main.py -i <inputfile> -o <outputfile>'
+      print 'main.py -i <inputfile> -o <outputfile> -t <numberofthreads>'
       sys.exit(2)
-      for opt, arg in opts:
-        if opt == '-h':
-            print 'main.py -i <inputfile> -o <outputfile> '
-            sys.exit()
-        elif opt in ("-i", "--ifile"):
-            inputfile = arg
-        elif opt in ("-o", "--ofile"):
-            outputfile = arg
+   for opt, arg in opts:
+    print opt
+    if opt == '-h':
+        print 'main.py -i <inputfile> -o <outputfile> -t <numberofthreads>'
+        sys.exit()
+    elif opt in ("-i", "--ifile"):
+        inputfile = arg
+    elif opt in ("-o", "--ofile"):
+        outputfile = arg
+    elif opt in ("-t", "--threads"):
+        n_threads = int(arg)
    try:
     fi = open(inputfile,"r")
-    fl = open(outputfile,"a")
    except IOError:
-        print 'main.py -i <inputfile> -o <outputfile>'
+        print 'Error to open the file'
+        print 'main.py -i <inputfile> -o <outputfile> -t <numberofthreads>'
         sys.exit(2)
+   fl = open(outputfile,"a")
    print 'Input file is "', inputfile
    print 'Output file is "', outputfile
+   print "number of threds " + str(n_threads)
    lock = threading.Lock()
    lockScreen = threading.Lock()
    files = [inputfile]
@@ -79,20 +85,23 @@ def main(argv):
         
     print len(pols)
     threads = []
+    si = len(pols)/4
     i = 0
-    j = 1
+    j = si
     print "starting...."
-    for temp in range(0, len(pols)):
+    for temp in range(0, n_threads):
         if (j > len(pols)):
             j = len(pols)
         thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
         i = j+1
-        j += 1
+        j += si
         threads.append(thread)
     for thread in threads:
         thread.start()
     for current in threads:
         current.join()
+
+    print "Finished."
 
 if __name__ == '__main__':
     main(sys.argv[1:])
