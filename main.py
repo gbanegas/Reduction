@@ -85,7 +85,10 @@ def main(argv):
         
     print len(pols)
     threads = []
-    si = len(pols)/4
+    si = len(pols)%n_threads
+    if si == 0:
+      si = 1
+    
     i = 0
     j = si
     print "starting...."
