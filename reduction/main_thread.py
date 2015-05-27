@@ -45,34 +45,35 @@ def recoverfile(saved, readed):
 if __name__ == '__main__':
 	lock = threading.Lock()
 	lockScreen = threading.Lock()
-	files = ["pent_2.txt", "pent_3.txt", "pent_5.txt"]
-	degrees = [21, 97, 139, 163, 233, 283, 571, 1021, 1163]
-	degree = 571
+	files = ["all_pent_19.txt"]
+	#degrees = [21, 97, 139, 163, 233, 283, 571, 1021, 1163]
+	#degree = 571
 	for fileName in files:
-		for degree in degrees:
-			save = 'result_pol_'+fileName+"_"+str(degree)+'.txt'
-			f = open(fileName,'r')
-			read, pols = recoverfile(save, f)
-			if read:
-				for line in f:
-					pol = Polynomial(line)
-					pols.append(pol)
-			print len(pols)
-			threads = []
-			i = 0
-			j = 2
-			for temp in range(0, len(pols)/2):
-				if (j > len(pols)):
-					j = len(pols)
-					thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
-					i = j+1
-					j += 2
-					threads.append(thread)
-			for thread in threads:
-				thread.start()
+		save = 'result_pol_'+fileName
+		f = open(fileName,'r')
+		read, pols = recoverfile(save, f)
+		if read:
+			for line in f:
+				pol = Polynomial(line)
+				pols.append(pol)
+		
+		print len(pols)
+		threads = []
+		i = 0
+		j = 1
+		print "starting...."
+		for temp in range(0, len(pols)):
+			if (j > len(pols)):
+				j = len(pols)
+			thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
+			i = j+1
+			j += 1
+			threads.append(thread)
 
-			for current in threads:
-				current.join()
+		for thread in threads:
+			thread.start()
+		for current in threads:
+			current.join()
 
 
 
