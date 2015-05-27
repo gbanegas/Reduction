@@ -8,6 +8,7 @@ from polynomial import Polynomial
 from threadc import ThreadCount
 import os
 import threading
+import math
 import sys, getopt
 
 def recoverfile(saved, readed):
@@ -85,7 +86,8 @@ def main(argv):
         
     print len(pols)
     threads = []
-    si = len(pols)%n_threads
+    si = int(math.ceil(float(len(pols))/float(n_threads)))
+    print "si + " + str(si)
     if si == 0:
       si = 1
     
@@ -95,10 +97,13 @@ def main(argv):
     for temp in range(0, n_threads):
         if (j > len(pols)):
             j = len(pols)
+        print "i = " + str(i)
+        print "j = " + str(j)
         thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
-        i = j+1
+        i = j
         j += si
         threads.append(thread)
+
     for thread in threads:
         thread.start()
     for current in threads:
