@@ -58,7 +58,7 @@ class Reduction(object):
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
         #xls.save_matches(self.p)
         #print_matrix(self.matrix)
-        print self.p
+        #print self.p
         del self.matrix
         return count
 

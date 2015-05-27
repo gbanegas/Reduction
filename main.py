@@ -8,33 +8,99 @@ from polynomial import Polynomial
 from threadc import ThreadCount
 import os
 import threading
+import sys, getopt
+
+def recoverfile(saved, readed):
+    if not os.path.exists(saved):
+        return True, []
+    f = open(saved,'r')
+    if(not os.stat(saved).st_size==0):
+        pols = []
+        pols_done = []
+        for line in readed:
+            pol = Polynomial(line) 
+            pols.append(pol)
+        for line in f:
+            line = line.replace("[","")
+            line = line.replace("]","")
+            spl = line.split(',')
+            p = ""
+            for i in xrange(0,len(spl)-1):
+                p = p + " + x^" + str(spl[i].replace(" ","")) 
+            p = p + " + 1"
+            p = p.replace("+","",1)
+            #print p
+            pol_ = Polynomial(p) 
+            pols_done.append(pol_)
+        
+        pols_set = set(pols)
+        pols_set_done = set(pols_done)
+        result = pols_set - pols_set_done
+        return False, list(result)
+    else:
+        return True, []
 
 
-#import threading
+def main(argv):
+   inputfile = ''
+   outputfile = ''
+   try:
+      opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+   except getopt.GetoptError:
+      print 'main.py -i <inputfile> -o <outputfile>'
+      sys.exit(2)
+      for opt, arg in opts:
+        if opt == '-h':
+            print 'main.py -i <inputfile> -o <outputfile> '
+            sys.exit()
+        elif opt in ("-i", "--ifile"):
+            inputfile = arg
+        elif opt in ("-o", "--ofile"):
+            outputfile = arg
+   try:
+    fi = open(inputfile,"r")
+    fl = open(outputfile,"a")
+   except IOError:
+        print 'main.py -i <inputfile> -o <outputfile>'
+        sys.exit(2)
+   print 'Input file is "', inputfile
+   print 'Output file is "', outputfile
+   lock = threading.Lock()
+   lockScreen = threading.Lock()
+   files = [inputfile]
+   for fileName in files:
+    save = outputfile
+    f = open(fileName,'r')
+    read, pols = recoverfile(save, f)
+    if read:
+        for line in f:
+            pol = Polynomial(line)
+            pols.append(pol)
+        
+    print len(pols)
+    threads = []
+    i = 0
+    j = 1
+    print "starting...."
+    for temp in range(0, len(pols)):
+        if (j > len(pols)):
+            j = len(pols)
+        thread = ThreadCount(temp,lockScreen, lock, pols[i:j], save)
+        i = j+1
+        j += 1
+        threads.append(thread)
+    for thread in threads:
+        thread.start()
+    for current in threads:
+        current.join()
+
 if __name__ == '__main__':
-	lock = threading.Lock()
-	lockScreen = threading.Lock()
-	save = 'file_to_save.txt'
-	degree = 2
-	f = open('pol_' + str(degree) + '_.txt','r')
-	# save = open('result_' + str(degree) + '.txt','w')
-	#f = ["x^63 + x^14 + x^7 + x^4 + 1", "x^63 + x^15 + x^7 + x^4 + 1", "x^63 + x^16 + x^7 + x^4 + 1" , "x^63 + x^17 + x^7 + x^4 + 1" ]
-	pols = []
-	for line in f:
-		pol = Polynomial(line)
-		pols.append(pol)
-	print len(pols)
+    main(sys.argv[1:])
 
-	
-	
-	t1 = ThreadCount(1,lockScreen, lock, pols[0:2], save)
-	t2 = ThreadCount(2,lockScreen, lock, pols[2+1:4], save)
-	t3 = ThreadCount(3,lockScreen, lock, pols[3+1:5], save)
+    
 
-	t1.start()
-	t2.start()
-	t3.start()
 
-	t1.join()
-	t2.join()
-	t3.join()
+
+
+
+

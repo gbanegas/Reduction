@@ -1,65 +1,52 @@
 from reduction import Reduction
 from polynomial import Polynomial
-#gc.collect()  # don't care about stuff that would be garbage collected properly
-#from guppy import hpy
-#hp = hpy()
-#before = hp.heap()
 import os
 from collections import defaultdict
+import sys, getopt
 
-if __name__ == '__main__':
+def main(argv):
+    inputfile = ''
+    outputfile = ''
+    try:
+        opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+    except getopt.GetoptError:
+        print 'single.py -i <inputfile> -o <outputfile>'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'single.py -i <inputfile> -o <outputfile> '
+            sys.exit()
+        elif opt in ("-i", "--ifile"):
+            inputfile = arg
+        elif opt in ("-o", "--ofile"):
+            outputfile = arg
+    
+    try:
+        fi = open(inputfile,"r")
+        fl = open(outputfile,"a")
+    except IOError:
+        print 'main.py -i <inputfile> -o <outputfile>'
+        sys.exit(2)
 
-    #pol1 = Polynomial('x^233 + x^74 + 1')
-    #pol = Polynomial('x^19 + x^14 + x^13 + x^12 + 1')
-    #pol2 = Polynomial(' x^19 + x^7 + x^6 + x^5 + 1')
-    # pol3 = Polynomial('x^409 + x^322 + 1')
-    # pol4 = Polynomial('x^6 + x^3 + 1')
-    # pol5 = Polynomial('x^18 + x^9 + 1')
-    # pol6 = Polynomial('x^20 + x^15 + x^10 + x^5 + 1')
-    # pol7 = Polynomial('x^100 + x^75 + x^50 + x^25 + 1')
-    # pol8 = Polynomial('x^42 + x^35 + x^28 + x^21 + x^14 + x^7 + 1')
-    # pol9 = Polynomial('x^294 + x^245 + x^196 + x^147 + x^98 + x^49 + 1')
-    # #pol10 = Polynomial('x^20 + x^15 + x^10 + x^5 + 1')
-    #l = []
-    #l.append(pol1)
-    #l.append(pol)
-    #l.append(pol2)
-    #l.append(pol3)
-    #l.append(pol4)
-    #l.append(pol5)
-    #l.append(pol6)
-    #l.append(pol7)
-    #l.append(pol8)
-#    l.append(pol9)
-    #l.append(pol10)
-    result = defaultdict(list)
-    l = []
-    fi = open("all_pent_20_irred.txt","r")
     for i in fi:
         p = Polynomial(i)
         l.append(p)
-
-    fl = open("all_pent_20_irred_result.txt","a")
+    result = defaultdict(list)
+    l = []
     red = Reduction()
-    #for pol in l:
     for pol in l:
         red = Reduction()
-        #print pol.coefs()
         if len(pol.coefs()) > 1:
             count = red.reduction(pol.coefs())
             result =  str(pol.coefs()) + ":" + str(count)
             print result
             fl.write(result + "\n")
-    
 
-    #result[str(pol.coefs())] = count
-    #l.append(count)
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
+
+    
    
-    #print count
-    #count = red.reduction(pol2.coefs())
-    #l.append(count)
-    #print count
-    #count = red.reduction(pol3.coefs())
-    #l.append(count)
-    #print count
-    #print l
+   
