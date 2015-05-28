@@ -6,6 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict
+#from #xlsx import Xslxsaver
 
 NULL = -1
 class Ot(object):
@@ -15,6 +16,10 @@ class Ot(object):
         self.m = defaultdict()
         self.variable = 2*degree -1
         is_break = False
+        #xls = Xslxsaver()
+        #xls.create_worksheet([5,4,3,2])
+        i = 0
+
         while (not is_break):
         #for i in xrange(0,1):
             pair, is_break = self._generate_all_pairs(self.matrix)
@@ -24,6 +29,8 @@ class Ot(object):
                 break
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
+            #xls.save(self.matrix, str(i))
+            i += 1
             #print_matrix(self.matrix)
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)

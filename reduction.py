@@ -39,8 +39,6 @@ class Reduction(object):
         #print_matrix(self.matrix)
         #xls = Xslxsaver()
         #xls.create_worksheet(exp)
-        #self.matrix_copy = copy.deepcopy(self.matrix)
-        ##xls.save(self.matrix, 'Not Optimized_1')
         self._remove_repeat(self.matrix)
         self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
