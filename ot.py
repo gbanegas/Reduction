@@ -6,7 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict, Counter, OrderedDict
-from xlsx import Xslxsaver
+#from xlsx import Xslxsaver
 from collections import defaultdict
 
 
@@ -18,8 +18,8 @@ class Ot(object):
         self.m = defaultdict()
         self.variable = 2*degree -1
         is_break = False
-        xls = Xslxsaver()
-        xls.create_worksheet([degree,1,1])
+        #xls = Xslxsaver()
+        #xls.create_worksheet([degree,1,1])
         i = 0
 
         while (not is_break):
@@ -28,16 +28,17 @@ class Ot(object):
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)
             if is_break:
+                print "pair to break, ", pair
                 break
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
-            xls.save(self.matrix, str(i))
+            #xls.save(self.matrix, str(i))
             i += 1
             #print_matrix(self.matrix)
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)
         #print self.m
-        xls.close()
+        #xls.close()
         return self.m, self.matrix
 
     def sort(self, matrix):
@@ -76,13 +77,16 @@ class Ot(object):
         to_return = (NULL,NULL)
         od = OrderedDict(sorted(allPairs.items()))
 
-        print od
         
+        index = 0
         for pair, key in od.iteritems():
-            if key == keys_ordered[0] and key <> 1:
-                to_return = pair
-                break
-        print "pair: ", pair
+            if key == keys_ordered[0]:
+                if key > 1:
+                    to_return = pair
+                    index = key
+                    break
+
+        print "pair: ", pair, " index ", index
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:
