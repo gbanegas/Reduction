@@ -6,7 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict, Counter, OrderedDict
-from xlsx import Xslxsaver
+#from xlsx import Xslxsaver
 from collections import defaultdict
 
 
@@ -18,15 +18,15 @@ class Ot(object):
         self.m = defaultdict()
         self.variable = 2*degree -1
         is_break = False
-        xls = Xslxsaver()
-        xls.create_work([degree])
+        #xls = Xslxsaver()
+        #xls.create_work([degree])
         i = 0
 
         while (not is_break):
         #for i in xrange(0,1):
 
             pair, is_break = self._generate_all_pairs(self.matrix)
-            xls.save(self.matrix, str(i))
+            #xls.save(self.matrix, str(i))
             i += 1
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)
