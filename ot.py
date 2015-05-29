@@ -7,6 +7,8 @@ Created on 06 Apr 2015
 import math
 from collections import defaultdict, Counter, OrderedDict
 from xlsx import Xslxsaver
+from collections import defaultdict
+
 
 NULL = -1
 class Ot(object):
@@ -19,6 +21,7 @@ class Ot(object):
         xls = Xslxsaver()
         xls.create_worksheet([degree,1,1])
         i = 0
+
         while (not is_break):
         #for i in xrange(0,1):
             pair, is_break = self._generate_all_pairs(self.matrix)
