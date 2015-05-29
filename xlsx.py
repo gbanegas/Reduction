@@ -8,6 +8,15 @@ import xlsxwriter
 
 class Xslxsaver(object):
 
+
+	def create_work(self,exp):
+		name = "Passo_a_passo"
+		self.degree = exp[0]
+		name = name + str(self.degree)
+		name = name + ".xlsx"
+		name = "" + name
+		self.workbook = xlsxwriter.Workbook(name)
+
 	def create_worksheet(self,exp):
 		name = "degree_"
 		self.degree = exp[0]
