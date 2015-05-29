@@ -5,7 +5,7 @@ import xlsxwriter
 
 
 if __name__ == '__main__':
-    f = open('all_pent_20_i_result.txt','r')
+    f = open('to_extract','r')
     pols = defaultdict(list)
     
     for line in f:

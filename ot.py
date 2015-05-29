@@ -5,7 +5,8 @@ Created on 06 Apr 2015
 '''
 
 import math
-from collections import defaultdict
+from collections import defaultdict, Counter, OrderedDict
+from xlsx import Xslxsaver
 
 NULL = -1
 class Ot(object):
@@ -15,6 +16,9 @@ class Ot(object):
         self.m = defaultdict()
         self.variable = 2*degree -1
         is_break = False
+        xls = Xslxsaver()
+        xls.create_worksheet([degree,1,1])
+        i = 0
         while (not is_break):
         #for i in xrange(0,1):
             pair, is_break = self._generate_all_pairs(self.matrix)
@@ -24,10 +28,13 @@ class Ot(object):
                 break
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
+            xls.save(self.matrix, str(i))
+            i += 1
             #print_matrix(self.matrix)
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)
         #print self.m
+        xls.close()
         return self.m, self.matrix
 
     def sort(self, matrix):
@@ -48,7 +55,7 @@ class Ot(object):
         return matrix
 
     def _generate_all_pairs(self, matrix):
-        allPairs = defaultdict()
+        allPairs = OrderedDict()
         #allPairs = []
         #print matrix
         size = len(matrix[0])
@@ -61,13 +68,18 @@ class Ot(object):
                 else:
                     allPairs[pair] = 1
 
-
+        keys_ordered = sorted(allPairs.values(), reverse=True)
+        
         to_return = (NULL,NULL)
-        index = 1
-        for pair in allPairs:
-            if allPairs[pair] > index:
+        od = OrderedDict(sorted(allPairs.items()))
+
+        print od
+        
+        for pair, key in od.iteritems():
+            if key == keys_ordered[0] and key <> 1:
                 to_return = pair
-                index = allPairs[pair]
+                break
+        print "pair: ", pair
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:

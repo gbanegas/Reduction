@@ -28,11 +28,12 @@ def main(argv):
         print 'main.py -i <inputfile> -o <outputfile>'
         sys.exit(2)
 
+    l = []
     for i in fi:
         p = Polynomial(i)
         l.append(p)
     result = defaultdict(list)
-    l = []
+    
     red = Reduction()
     for pol in l:
         red = Reduction()
