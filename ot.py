@@ -28,7 +28,7 @@ class Ot(object):
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)
             if is_break:
-                print "pair to break, ", pair
+                #print "pair to break, ", pair
                 break
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
@@ -86,7 +86,7 @@ class Ot(object):
                     index = key
                     break
 
-        print "pair: ", pair, " index ", index
+        #print "pair: ", pair, " index ", index
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:
