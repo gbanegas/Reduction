@@ -89,8 +89,8 @@ class Ot(object):
                     to_return = pair
                     index = key
                     break
-
-        #print "pair: ", pair, " index ", index
+        #print allPairs
+        print "pair: ", to_return, " index ", index
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:
@@ -207,7 +207,11 @@ class Ot(object):
                 for j in xrange(i+1, len(collumn)):
                     p2 = collumn[j]
                     if p2 <> NULL :
-                        result.append((p1, p2))
+                        if p1 > p2:
+                            pair = (p2, p1)
+                        else:
+                            pair = (p1, p2)
+                        result.append(pair)
         #print result
         return result
 
