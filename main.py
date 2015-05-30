@@ -81,8 +81,12 @@ def main(argv):
     read, pols = recoverfile(save, f)
     if read:
         for line in f:
-            pol = Polynomial(line)
-            pols.append(pol)
+            try:
+              pol = Polynomial(line)
+              pols.append(pol)
+            except Exception as e:
+              print line
+              sys.exit(2)
         
     print len(pols)
     threads = []

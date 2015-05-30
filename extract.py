@@ -5,7 +5,7 @@ import xlsxwriter
 
 
 if __name__ == '__main__':
-    f = open('saida_pent_irred_19.txt','r')
+    f = open('saida_irre_19.txt','r')
     pols = defaultdict(list)
     
     for line in f:
