@@ -33,7 +33,7 @@ class Ot(object):
             if is_break:
                 #print "pair to break, ", pair
                 break
-            xls.save(self.matrix, str(i))
+#            xls.save(self.matrix, str(i))
             i += 1
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
@@ -42,7 +42,7 @@ class Ot(object):
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)
         #print self.m
-        xls.close()
+        #xls.close()
         return self.m, self.matrix
 
     def sort(self, matrix):
@@ -90,7 +90,7 @@ class Ot(object):
                     index = key
                     break
         #print allPairs
-        print "pair: ", to_return, " index ", index
+#        print "pair: ", to_return, " index ", index
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:
