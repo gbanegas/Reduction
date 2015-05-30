@@ -1,11 +1,37 @@
 import os
 from collections import defaultdict,OrderedDict
-
+import sys, getopt
 import xlsxwriter
 
+def main(argv):
+    inputfile = ''
+    outputfile = ''
+    try:
+      opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile=",])
+    except getopt.GetoptError:
+      print 'extract.py -i <inputfile> -o <outputfile>'
+      sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'extract.py -i <inputfile> -o <outputfile>'
+            sys.exit()
+        elif opt in ("-i", "--ifile"):
+            print "-i", arg
+            inputfile = arg
+        elif opt in ("-o", "--ofile"):
+            print "-o", arg + ".xlsx"
+            outputfile = arg
 
-if __name__ == '__main__':
-    f = open('saida_irred_pent_233.txt','r')
+
+    try:
+        f = open(inputfile,'r')
+    except IOError:
+        print 'Error to open the file'
+        print 'extract.py -i <inputfile> -o <outputfile>'
+        sys.exit(2)
+
+
+    
     pols = defaultdict(list)
     
     for line in f:
@@ -26,7 +52,7 @@ if __name__ == '__main__':
             
             #pols.sort(reverse=True)
 
-    name = "result_1"
+    name = outputfile
     name = name + ".xlsx"
     name = "" + name
     workbook = xlsxwriter.Workbook(name)
@@ -51,6 +77,11 @@ if __name__ == '__main__':
             row = row + 1    
 
     workbook.close()
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
+    
     
     
     #for i in pols:
