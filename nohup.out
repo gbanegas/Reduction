@@ -256,4 +256,145 @@ Thread: 1 Doing: [233, 200, 125, 90, 0]
 Thread: 1 Doing: [233, 209, 105, 67, 0]
 Thread: 1 Doing: [233, 127, 103, 26, 0]
 Thread: 1 Doing: [233, 198, 194, 152, 0]
-Th
+Th-i
+-o
+-t
+Input file is " irred_pent_163.txt
+Output file is " saida_irred_pent_163.txt
+number of threds 10
+11181
+si + 1119
+starting....
+i = 0
+j = 1119
+i = 1119
+j = 2238
+i = 2238
+j = 3357
+i = 3357
+j = 4476
+i = 4476
+j = 5595
+i = 5595
+j = 6714
+i = 6714
+j = 7833
+i = 7833
+j = 8952
+i = 8952
+j = 10071
+i = 10071
+j = 11181
+Starting thread: 0
+
+Thread: 0 Doing: [163, 130, 42, 11, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [163, 153, 124, 9, 0]
+Starting thread: 2
+
+Thread: 2 Doing: [163, 93, 92, 88, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [163, 80, 49, 18, 0]
+Starting thread: 4
+
+Thread: 4 Doing: [163, 136, 134, 18, 0]
+Starting thread: 5
+
+Starting thread: 6
+
+Thread: 5 Doing: [163, 110, 30, 5, 0]
+Thread: 6 Doing: [163, 155, 118, 90, 0]
+Starting thread: 7
+
+Thread: 7 Doing: [163, 58, 53, 35, 0]
+Starting thread: 8
+
+Thread: 8 Doing: [163, 77, 34, 17, 0]
+Starting thread: 9
+
+Thread: 9 Doing: [163, 153, 52, 26, 0]
+Thread: 3 Doing: [163, 89, 23, 16, 0]
+Thread: 8 Doing: [163, 82, 65, 62, 0]
+Thread: 7 Doing: [163, 140, 122, 109, 0]
+Thread: 5 Doing: [163, 161, 64, 33, 0]
+Thread: 3 Doing: [163, 80, 79, 77, 0]
+Thread: 8 Doing: [163, 66, 58, 24, 0]
+Thread: 0 Doing: [163, 144, 58, 8, 0]
+Thread: 8 Doing: [163, 145, 100, 69, 0]
+Thread: 3 Doing: [163, 97, 75, 48, 0]
+Thread: 2 Doing: [163, 133, 37, 18, 0]
+Thread: 3 Doing: [163, 122, 83, 82, 0]
+Thread: 2 Doing: [163, 117, 76, 67, 0]
+Thread: 0 Doing: [163, 152, 41, 16, 0]
+Thread: 3 Doing: [163, 94, 85, 60, 0]
+Thread: 2 Doing: [163, 119, 108, 50, 0]
+Thread: 3 Doing: [163, 137, 116, 100, 0]
+Thread: 8 Doing: [163, 119, 70, 8, 0]
+Thread: 2 Doing: [163, 110, 109, 71, 0]
+Thread: 8 Doing: [163, 102, 87, 9, 0]
+Thread: 4 Doing: [163, 158, 117, 88, 0]
+Thread: 8 Doing: [163, 132, 113, 4, 0]
+Thread: 2 Doing: [163, 65, 56, 24, 0]
+Thread: 2 Doing: [163, 111, 77, 61, 0]
+Thread: 9 Doing: [163, 96, 45, 3, 0]
+Thread: 2 Doing: [163, 86, 67, 60, 0]
+Thread: 8 Doing: [163, 147, 68, 61, 0]
+Thread: 9 Doing: [163, 98, 86, 16, 0]
+Thread: 3 Doing: [163, 141, 46, 36, 0]
+Thread: 2 Doing: [163, 130, 129, 23, 0]
+Thread: 0 Doing: [163, 161, 101, 100, 0]
+Thread: 9 Doing: [163, 159, 61, 53, 0]
+Thread: 7 Doing: [163, 32, 22, 3, 0]
+Thread: 7 Doing: [163, 137, 37, 18, 0]
+Thread: 3 Doing: [163, 56, 47, 13, 0]
+Thread: 3 Doing: [163, 154, 130, 66, 0]
+Thread: 2 Doing: [163, 109, 96, 8, 0]
+Thread: 7 Doing: [163, 69, 60, 1, 0]
+Thread: 7 Doing: [163, 151, 123, 58, 0]
+Thread: 2 Doing: [163, 162, 68, 41, 0]
+Thread: 8 Doing: [163, 137, 109, 18, 0]
+Thread: 8 Doing: [163, 106, 24, 19, 0]
+Thread: 8 Doing: [163, 122, 4, 3, 0]
+Thread: 8 Doing: [163, 105, 82, 69, 0]
+Thread: 8 Doing: [163, 136, 45, 33, 0]
+Thread: 8 Doing: [163, 135, 90, 40, 0]
+Thread: 8 Doing: [163, 154, 119, 68, 0]
+Thread: 1 Doing: [163, 97, 70, 61, 0]
+Thread: 1 Doing: [163, 133, 102, 88, 0]
+Thread: 1 Doing: [163, 141, 73, 40, 0]
+Thread: 1 Doing: [163, 153, 123, 10, 0]
+Thread: 7 Doing: [163, 154, 147, 130, 0]
+Thread: 9 Doing: [163, 59, 38, 18, 0]
+Thread: 9 Doing: [163, 127, 42, 26, 0]
+Thread: 9 Doing: [163, 97, 41, 32, 0]
+Thread: 9 Doing: [163, 135, 43, 30, 0]
+Thread: 9 Doing: [163, 159, 114, 87, 0]
+Thread: 6 Doing: [163, 110, 61, 44, 0]
+Thread: 6 Doing: [163, 127, 110, 89, 0]
+Thread: 6 Doing: [163, 159, 157, 65, 0]
+Thread: 8 Doing: [163, 86, 33, 19, 0]
+Thread: 8 Doing: [163, 147, 102, 76, 0]
+Thread: 1 Doing: [163, 82, 57, 21, 0]
+Thread: 1 Doing: [163, 124, 34, 18, 0]
+Thread: 1 Doing: [163, 145, 106, 85, 0]
+Thread: 8 Doing: [163, 85, 61, 34, 0]
+Thread: 8 Doing: [163, 128, 82, 3, 0]
+Thread: 1 Doing: [163, 123, 91, 6, 0]
+Thread: 8 Doing: [163, 137, 123, 16, 0]
+Thread: 1 Doing: [163, 150, 142, 81, 0]
+Thread: 8 Doing: [163, 44, 42, 25, 0]
+Thread: 8 Doing: [163, 147, 100, 22, 0]
+Thread: 3 Doing: [163, 109, 77, 18, 0]
+Thread: 3 Doing: [163, 143, 77, 69, 0]
+Thread: 8 Doing: [163, 112, 63, 53, 0]
+Thread: 3 Doing: [163, 121, 100, 39, 0]
+Thread: 8 Doing: [163, 60, 38, 1, 0]
+Thread: 8 Doing: [163, 30, 16, 1, 0]
+Thread: 8 Doing: [163, 120, 64, 57, 0]
+Thread: 3 Doing: [163, 129, 91, 90, 0]
+Thread: 8 Doing: [163, 145, 81, 57, 0]
+Thread: 3 Doing: [163, 157, 127, 105, 0]
+Thread: 8 Doing: [163, 157, 15, 11, 0]
+T
