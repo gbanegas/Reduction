@@ -39,15 +39,15 @@ def main(argv):
         number = splited[1].replace('\n','')
 
         if pols[int(number)] == None:   
-            pols[int(number)] = []
+            pols[int(number)] = set()
 
         spl = splited[0].replace(",","").replace("[","").replace("]","").split(' ')
         numbers = []
         for i in spl:
             numbers.append(int(i))
 
-        
-        pols[int(number)].append(numbers)
+        numbers_set = set(numbers)
+        pols[int(number)].append(list(numbers_set))
 
             
             #pols.sort(reverse=True)
