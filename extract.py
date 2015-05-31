@@ -3,6 +3,17 @@ from collections import defaultdict,OrderedDict
 import sys, getopt
 import xlsxwriter
 
+def uniq(lst):
+    last = object()
+    for item in lst:
+        if item == last:
+            continue
+        yield item
+        last = item
+
+def sort_and_deduplicate(l):
+    return sorted(list(uniq(sorted(l, reverse=True))),reverse=True)
+
 def main(argv):
     inputfile = ''
     outputfile = ''
@@ -49,7 +60,13 @@ def main(argv):
         numbers_set = set(numbers)
         pols[int(number)].append(list(numbers_set))
 
-            
+
+    
+    for i in pols:
+        l = pols[i] 
+        result = sort_and_deduplicate(l)
+        pols[i] = result   
+        #print i, pols[i]
             #pols.sort(reverse=True)
 
     name = outputfile
@@ -71,6 +88,7 @@ def main(argv):
             colum = 0
             worksheet.write(row,colum, i)
             colum = 1
+            j = sorted(j, reverse=True)
             for num in j:
                 worksheet.write(row,colum, num)
                 colum = colum+1
