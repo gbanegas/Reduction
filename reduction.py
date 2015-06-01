@@ -42,8 +42,12 @@ class Reduction(object):
        # xls.create_worksheet(exp)
         #self.matrix_copy = copy.deepcopy(self.matrix)
         #xls.save(self.matrix, 'Not Optimized_1')
-
+        #print_matrix(self.matrix)
+        t = self.reduce_matrix(self.mdegree, self.matrix)
+        #print_matrix(t)
         self._remove_repeat(self.matrix)
+        self.clean(self.matrix)
+        
         self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
@@ -218,6 +222,7 @@ class Reduction(object):
         return matrix
 
 def print_matrix(matrix):
+
         for r in matrix:
             print ''.join(str(r))
         print '----------------------FIM---------------------'
