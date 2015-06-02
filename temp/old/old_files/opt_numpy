@@ -1,0 +1,10 @@
+import math
+from collections import defaultdict
+
+
+NULL = -1
+
+class OptNumpy(object):
+
+	def opt(self, matrix, degree):
+		print matrix
