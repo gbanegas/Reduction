@@ -197,4 +197,805 @@ Thread: 1 Doing: [571, 360, 275, 85, 0]
 Thread: 7 Doing: [571, 478, 421, 57, 0]
 Thread: 4 Doing: [571, 222, 145, 77, 0]
 Thread: 12 Doing: [571, 512, 411, 101, 0]
-Thread: 13 Doing: [571, 513, 389, 124,
+Thread: 13 Doing: [571, 513, 389, 124,-i
+-o
+-t
+Input file is " pol_571.txt
+Output file is " result_pol_571.txt
+number of threds 100
+140177
+si + 1402
+starting....
+i = 0
+j = 1402
+i = 1402
+j = 2804
+i = 2804
+j = 4206
+i = 4206
+j = 5608
+i = 5608
+j = 7010
+i = 7010
+j = 8412
+i = 8412
+j = 9814
+i = 9814
+j = 11216
+i = 11216
+j = 12618
+i = 12618
+j = 14020
+i = 14020
+j = 15422
+i = 15422
+j = 16824
+i = 16824
+j = 18226
+i = 18226
+j = 19628
+i = 19628
+j = 21030
+i = 21030
+j = 22432
+i = 22432
+j = 23834
+i = 23834
+j = 25236
+i = 25236
+j = 26638
+i = 26638
+j = 28040
+i = 28040
+j = 29442
+i = 29442
+j = 30844
+i = 30844
+j = 32246
+i = 32246
+j = 33648
+i = 33648
+j = 35050
+i = 35050
+j = 36452
+i = 36452
+j = 37854
+i = 37854
+j = 39256
+i = 39256
+j = 40658
+i = 40658
+j = 42060
+i = 42060
+j = 43462
+i = 43462
+j = 44864
+i = 44864
+j = 46266
+i = 46266
+j = 47668
+i = 47668
+j = 49070
+i = 49070
+j = 50472
+i = 50472
+j = 51874
+i = 51874
+j = 53276
+i = 53276
+j = 54678
+i = 54678
+j = 56080
+i = 56080
+j = 57482
+i = 57482
+j = 58884
+i = 58884
+j = 60286
+i = 60286
+j = 61688
+i = 61688
+j = 63090
+i = 63090
+j = 64492
+i = 64492
+j = 65894
+i = 65894
+j = 67296
+i = 67296
+j = 68698
+i = 68698
+j = 70100
+i = 70100
+j = 71502
+i = 71502
+j = 72904
+i = 72904
+j = 74306
+i = 74306
+j = 75708
+i = 75708
+j = 77110
+i = 77110
+j = 78512
+i = 78512
+j = 79914
+i = 79914
+j = 81316
+i = 81316
+j = 82718
+i = 82718
+j = 84120
+i = 84120
+j = 85522
+i = 85522
+j = 86924
+i = 86924
+j = 88326
+i = 88326
+j = 89728
+i = 89728
+j = 91130
+i = 91130
+j = 92532
+i = 92532
+j = 93934
+i = 93934
+j = 95336
+i = 95336
+j = 96738
+i = 96738
+j = 98140
+i = 98140
+j = 99542
+i = 99542
+j = 100944
+i = 100944
+j = 102346
+i = 102346
+j = 103748
+i = 103748
+j = 105150
+i = 105150
+j = 106552
+i = 106552
+j = 107954
+i = 107954
+j = 109356
+i = 109356
+j = 110758
+i = 110758
+j = 112160
+i = 112160
+j = 113562
+i = 113562
+j = 114964
+i = 114964
+j = 116366
+i = 116366
+j = 117768
+i = 117768
+j = 119170
+i = 119170
+j = 120572
+i = 120572
+j = 121974
+i = 121974
+j = 123376
+i = 123376
+j = 124778
+i = 124778
+j = 126180
+i = 126180
+j = 127582
+i = 127582
+j = 128984
+i = 128984
+j = 130386
+i = 130386
+j = 131788
+i = 131788
+j = 133190
+i = 133190
+j = 134592
+i = 134592
+j = 135994
+i = 135994
+j = 137396
+i = 137396
+j = 138798
+i = 138798
+j = 140177
+Starting thread: 0
+
+Thread: 0 Doing: [571, 516, 38, 25, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [571, 466, 415, 348, 0]
+Starting thread: 2
+
+Thread: 2 Doing: [571, 411, 257, 38, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [571, 291, 198, 39, 0]
+Starting thread: 4
+
+Thread: 4 Doing: [571, 562, 231, 133, 0]
+Starting thread: 5
+
+Thread: 5 Doing: [571, 354, 325, 35, 0]
+Starting thread: 6
+
+Thread: 6 Doing: [571, 513, 475, 40, 0]
+Starting thread: 7
+
+Starting thread: 8
+
+Thread: 8 Doing: [571, 373, 320, 125, 0]
+Thread: 7 Doing: [571, 526, 352, 15, 0]
+Starting thread: 9
+
+Starting thread: 10
+
+Thread: 9 Doing: [571, 376, 334, 25, 0]
+Starting thread: 11
+
+Thread: 10 Doing: [571, 564, 505, 471, 0]
+Thread: 11 Doing: [571, 165, 152, 139, 0]
+Starting thread: 12
+
+Thread: 12 Doing: [571, 525, 343, 234, 0]
+Starting thread: 13
+
+Thread: 13 Doing: [571, 552, 249, 192, 0]
+Starting thread: 14
+
+Thread: 14 Doing: [571, 234, 130, 97, 0]
+Starting thread: 15
+
+Thread: 15 Doing: [571, 506, 335, 259, 0]
+Starting thread: 16
+
+Thread: 16 Doing: [571, 474, 422, 157, 0]
+Starting thread: 17
+
+Thread: 17 Doing: [571, 465, 455, 383, 0]
+Starting thread: 18
+
+Thread: 18 Doing: [571, 557, 500, 381, 0]
+Starting thread: 19
+
+Thread: 19 Doing: [571, 563, 250, 57, 0]
+Starting thread: 20
+
+Thread: 20 Doing: [571, 538, 349, 130, 0]
+Starting thread: 21
+
+Thread: 21 Doing: [571, 381, 374, 77, 0]
+Starting thread: 22
+
+Thread: 22 Doing: [571, 490, 202, 81, 0]
+Starting thread: 23
+
+Thread: 23 Doing: [571, 545, 247, 192, 0]
+Starting thread: 24
+
+Thread: 24 Doing: [571, 466, 276, 77, 0]
+Starting thread: 25
+
+Thread: 25 Doing: [571, 438, 286, 105, 0]
+Starting thread: 26
+
+Thread: 26 Doing: [571, 430, 216, 187, 0]
+Starting thread: 27
+
+Starting thread: 28
+
+Thread: 27 Doing: [571, 450, 383, 311, 0]
+Thread: 28 Doing: [571, 493, 185, 44, 0]
+Starting thread: 29
+
+Thread: 29 Doing: [571, 493, 380, 299, 0]
+Starting thread: 30
+
+Thread: 30 Doing: [571, 514, 415, 15, 0]
+Starting thread: 31
+
+Thread: 31 Doing: [571, 226, 59, 8, 0]
+Starting thread: 32
+
+Thread: 32 Doing: [571, 552, 521, 488, 0]
+Starting thread: 33
+
+Thread: 33 Doing: [571, 538, 328, 303, 0]
+Starting thread: 34
+
+Thread: 34 Doing: [571, 560, 519, 406, 0]
+Starting thread: 35
+
+Thread: 35 Doing: [571, 404, 150, 145, 0]
+Starting thread: 36
+
+Thread: 36 Doing: [571, 257, 216, 8, 0]
+Starting thread: 37
+
+Thread: 37 Doing: [571, 344, 265, 255, 0]
+Starting thread: 38
+
+Thread: 38 Doing: [571, 501, 493, 158, 0]
+Starting thread: 39
+
+Thread: 39 Doing: [571, 378, 275, 259, 0]
+Starting thread: 40
+
+Thread: 40 Doing: [571, 193, 185, 41, 0]
+Starting thread: 41
+
+Starting thread: 42
+
+Thread: 41 Doing: [571, 312, 301, 263, 0]
+Thread: 42 Doing: [571, 504, 150, 21, 0]
+Starting thread: 43
+
+Thread: 43 Doing: [571, 552, 502, 39, 0]
+Starting thread: 44
+
+Thread: 44 Doing: [571, 365, 230, 217, 0]
+Starting thread: 45
+
+Thread: 45 Doing: [571, 295, 240, 166, 0]
+Starting thread: 46
+
+Thread: 46 Doing: [571, 493, 272, 128, 0]
+Starting thread: 47
+
+Thread: 47 Doing: [571, 311, 198, 86, 0]
+Starting thread: 48
+
+Thread: 48 Doing: [571, 531, 438, 49, 0]
+Starting thread: 49
+
+Thread: 49 Doing: [571, 509, 468, 25, 0]
+Starting thread: 50
+
+Thread: 50 Doing: [571, 524, 419, 186, 0]
+Starting thread: 51
+
+Thread: 51 Doing: [571, 499, 238, 219, 0]
+Starting thread: 52
+
+Thread: 52 Doing: [571, 269, 251, 120, 0]
+Starting thread: 53
+
+Thread: 53 Doing: [571, 466, 243, 240, 0]
+Starting thread: 54
+
+Thread: 54 Doing: [571, 361, 192, 59, 0]
+Starting thread: 55
+
+Thread: 55 Doing: [571, 503, 456, 250, 0]
+Starting thread: 56
+
+Thread: 56 Doing: [571, 478, 241, 61, 0]
+Starting thread: 57
+
+Thread: 57 Doing: [571, 328, 149, 26, 0]
+Starting thread: 58
+
+Thread: 58 Doing: [571, 316, 286, 97, 0]
+Starting thread: 59
+
+Thread: 59 Doing: [571, 541, 451, 178, 0]
+Starting thread: 60
+
+Thread: 60 Doing: [571, 310, 267, 213, 0]
+Starting thread: 61
+
+Thread: 61 Doing: [571, 546, 497, 308, 0]
+Starting thread: 62
+
+Thread: 62 Doing: [571, 465, 277, 216, 0]
+Starting thread: 63
+
+Thread: 63 Doing: [571, 506, 495, 418, 0]
+Starting thread: 64
+
+Thread: 64 Doing: [571, 548, 194, 109, 0]
+Starting thread: 65
+
+Thread: 65 Doing: [571, 448, 354, 115, 0]
+Starting thread: 66
+
+Thread: 66 Doing: [571, 517, 424, 195, 0]
+Starting thread: 67
+
+Thread: 67 Doing: [571, 474, 133, 46, 0]
+Starting thread: 68
+
+Starting thread: 69
+
+Thread: 68 Doing: [571, 270, 256, 4, 0]
+Thread: 69 Doing: [571, 529, 288, 275, 0]
+Starting thread: 70
+
+Thread: 70 Doing: [571, 493, 447, 40, 0]
+Starting thread: 71
+
+Thread: 71 Doing: [571, 250, 152, 2, 0]
+Starting thread: 72
+
+Thread: 72 Doing: [571, 540, 376, 133, 0]
+Starting thread: 73
+
+Thread: 73 Doing: [571, 497, 290, 31, 0]
+Starting thread: 74
+
+Thread: 74 Doing: [571, 544, 285, 133, 0]
+Starting thread: 75
+
+Thread: 75 Doing: [571, 200, 123, 106, 0]
+Starting thread: 76
+
+Thread: 76 Doing: [571, 156, 148, 34, 0]
+Starting thread: 77
+
+Thread: 77 Doing: [571, 522, 223, 47, 0]
+Starting thread: 78
+
+Thread: 78 Doing: [571, 209, 174, 94, 0]
+Starting thread: 79
+
+Thread: 79 Doing: [571, 276, 253, 188, 0]
+Starting thread: 80
+
+Thread: 80 Doing: [571, 342, 301, 216, 0]
+Starting thread: 81
+
+Thread: 81 Doing: [571, 517, 348, 50, 0]
+Starting thread: 82
+
+Thread: 82 Doing: [571, 369, 189, 118, 0]
+Starting thread: 83
+
+Thread: 83 Doing: [571, 431, 278, 199, 0]
+Starting thread: 84
+
+Thread: 84 Doing: [571, 540, 346, 197, 0]
+Starting thread: 85
+
+Thread: 85 Doing: [571, 320, 139, 137, 0]
+Starting thread: 86
+
+Thread: 86 Doing: [571, 456, 310, 247, 0]
+Starting thread: 87
+
+Thread: 87 Doing: [571, 517, 349, 246, 0]
+Starting thread: 88
+
+Thread: 88 Doing: [571, 283, 146, 102, 0]
+Starting thread: 89
+
+Thread: 89 Doing: [571, 518, 338, 273, 0]
+Starting thread: 90
+
+Thread: 90 Doing: [571, 518, 83, 67, 0]
+Starting thread: 91
+
+Thread: 91 Doing: [571, 203, 154, 140, 0]
+Starting thread: 92
+
+Thread: 92 Doing: [571, 556, 186, 77, 0]
+Starting thread: 93
+
+Thread: 93 Doing: [571, 506, 65, 1, 0]
+Starting thread: 94
+
+Thread: 94 Doing: [571, 373, 182, 137, 0]
+Starting thread: 95
+
+Thread: 95 Doing: [571, 344, 331, 62, 0]
+Starting thread: 96
+
+Thread: 96 Doing: [571, 460, 443, 174, 0]
+Starting thread: 97
+
+Starting thread: 98
+
+Thread: 97 Doing: [571, 354, 291, 130, 0]
+Thread: 98 Doing: [571, 570, 385, 45, 0]
+Starting thread: 99
+
+Thread: 99 Doing: [571, 184, 178, 115, 0]
+Thread: 11 Doing: [571, 406, 59, 38, 0]
+Thread: 36 Doing: [571, 546, 220, 49, 0]
+Thread: 31 Doing: [571, 524, 497, 270, 0]
+Thread: 40 Doing: [571, 570, 371, 277, 0]
+Thread: 14 Doing: [571, 411, 338, 263, 0]
+Thread: 76 Doing: [571, 561, 175, 151, 0]
+Thread: 75 Doing: [571, 242, 108, 32, 0]
+Thread: 71 Doing: [571, 342, 221, 103, 0]
+Thread: 3 Doing: [571, 174, 130, 1, 0]
+Thread: 68 Doing: [571, 274, 111, 97, 0]
+Thread: 78 Doing: [571, 526, 443, 8, 0]
+Thread: 91 Doing: [571, 495, 490, 330, 0]
+Thread: 52 Doing: [571, 440, 377, 319, 0]
+Thread: 88 Doing: [571, 418, 235, 52, 0]
+Thread: 79 Doing: [571, 525, 140, 86, 0]
+Thread: 99 Doing: [571, 159, 158, 44, 0]
+Thread: 47 Doing: [571, 458, 373, 257, 0]
+Thread: 57 Doing: [571, 523, 466, 433, 0]
+Thread: 45 Doing: [571, 433, 108, 8, 0]
+Thread: 54 Doing: [571, 88, 68, 41, 0]
+Thread: 85 Doing: [571, 426, 122, 32, 0]
+Thread: 3 Doing: [571, 178, 151, 105, 0]
+Thread: 82 Doing: [571, 256, 161, 63, 0]
+Thread: 58 Doing: [571, 518, 362, 355, 0]
+Thread: 94 Doing: [571, 320, 305, 30, 0]
+Thread: 60 Doing: [571, 560, 388, 129, 0]
+Thread: 75 Doing: [571, 486, 310, 261, 0]
+Thread: 37 Doing: [571, 495, 306, 168, 0]
+Thread: 68 Doing: [571, 324, 297, 181, 0]
+Thread: 99 Doing: [571, 388, 276, 57, 0]
+Thread: 44 Doing: [571, 454, 41, 18, 0]
+Thread: 39 Doing: [571, 495, 353, 4, 0]
+Thread: 54 Doing: [571, 273, 159, 88, 0]
+Thread: 35 Doing: [571, 281, 138, 59, 0]
+Thread: 8 Doing: [571, 69, 50, 35, 0]
+Thread: 11 Doing: [571, 462, 315, 46, 0]
+Thread: 2 Doing: [571, 475, 365, 264, 0]
+Thread: 97 Doing: [571, 558, 314, 191, 0]
+Thread: 71 Doing: [571, 185, 86, 78, 0]
+Thread: 80 Doing: [571, 514, 204, 29, 0]
+Thread: 3 Doing: [571, 386, 228, 167, 0]
+Thread: 41 Doing: [571, 561, 137, 50, 0]
+Thread: 5 Doing: [571, 80, 68, 46, 0]
+Thread: 82 Doing: [571, 508, 433, 133, 0]
+Thread: 9 Doing: [571, 319, 93, 74, 0]
+Thread: 95 Doing: [571, 510, 310, 61, 0]
+Thread: 21 Doing: [571, 502, 432, 39, 0]
+Thread: 8 Doing: [571, 492, 130, 105, 0]
+Thread: 35 Doing: [571, 454, 395, 387, 0]
+Thread: 54 Doing: [571, 480, 301, 153, 0]
+Thread: 88 Doing: [571, 522, 489, 171, 0]
+Thread: 71 Doing: [571, 201, 199, 158, 0]
+Thread: 5 Doing: [571, 440, 294, 107, 0]
+Thread: 26 Doing: [571, 452, 409, 342, 0]
+Thread: 83 Doing: [571, 344, 10, 8, 0]
+Thread: 22 Doing: [571, 337, 202, 166, 0]
+Thread: 25 Doing: [571, 523, 83, 42, 0]
+Thread: 94 Doing: [571, 567, 361, 112, 0]
+Thread: 45 Doing: [571, 528, 290, 107, 0]
+Thread: 85 Doing: [571, 527, 473, 397, 0]
+Thread: 9 Doing: [571, 443, 421, 146, 0]
+Thread: 67 Doing: [571, 205, 27, 14, 0]
+Thread: 93 Doing: [571, 496, 378, 165, 0]
+Thread: 68 Doing: [571, 358, 309, 29, 0]
+Thread: 71 Doing: [571, 421, 200, 198, 0]
+Thread: 24 Doing: [571, 388, 189, 14, 0]
+Thread: 99 Doing: [571, 418, 87, 32, 0]
+Thread: 56 Doing: [571, 390, 37, 13, 0]
+Thread: 83 Doing: [571, 537, 211, 98, 0]
+Thread: 44 Doing: [571, 237, 134, 34, 0]
+Thread: 67 Doing: [571, 562, 441, 207, 0]
+Thread: 3 Doing: [571, 354, 197, 134, 0]
+Thread: 22 Doing: [571, 416, 201, 49, 0]
+Thread: 62 Doing: [571, 424, 385, 103, 0]
+Thread: 53 Doing: [571, 546, 309, 54, 0]
+Thread: 86 Doing: [571, 569, 406, 210, 0]
+Thread: 65 Doing: [571, 230, 172, 33, 0]
+Thread: 14 Doing: [571, 386, 209, 168, 0]
+Thread: 44 Doing: [571, 306, 296, 167, 0]
+Thread: 28 Doing: [571, 556, 491, 125, 0]
+Thread: 56 Doing: [571, 87, 85, 38, 0]
+Thread: 24 Doing: [571, 498, 428, 1, 0]
+Thread: 3 Doing: [571, 530, 163, 39, 0]
+Thread: 65 Doing: [571, 179, 133, 84, 0]
+Thread: 99 Doing: [571, 568, 405, 398, 0]
+Thread: 68 Doing: [571, 445, 214, 172, 0]
+Thread: 46 Doing: [571, 493, 180, 53, 0]
+Thread: 71 Doing: [571, 550, 366, 149, 0]
+Thread: 22 Doing: [571, 324, 169, 22, 0]
+Thread: 56 Doing: [571, 276, 121, 56, 0]
+Thread: 65 Doing: [571, 204, 55, 34, 0]
+Thread: 5 Doing: [571, 405, 154, 96, 0]
+Thread: 11 Doing: [571, 553, 460, 459, 0]
+Thread: 73 Doing: [571, 344, 219, 106, 0]
+Thread: 44 Doing: [571, 151, 117, 42, 0]
+Thread: 56 Doing: [571, 528, 161, 122, 0]
+Thread: 65 Doing: [571, 268, 165, 99, 0]
+Thread: 14 Doing: [571, 558, 465, 228, 0]
+Thread: 22 Doing: [571, 561, 314, 14, 0]
+Thread: 44 Doing: [571, 474, 163, 61, 0]
+Thread: 47 Doing: [571, 276, 201, 153, 0]
+Thread: 65 Doing: [571, 485, 413, 46, 0]
+Thread: 52 Doing: [571, 233, 224, 46, 0]
+Thread: 73 Doing: [571, 490, 441, 387, 0]
+Thread: 8 Doing: [571, 291, 46, 42, 0]
+Thread: 5 Doing: [571, 489, 51, 6, 0]
+Thread: 47 Doing: [571, 401, 378, 184, 0]
+Thread: 54 Doing: [571, 489, 426, 235, 0]
+Thread: 95 Doing: [571, 522, 249, 105, 0]
+Thread: 27 Doing: [571, 258, 254, 229, 0]
+Thread: 52 Doing: [571, 555, 519, 114, 0]
+Thread: 68 Doing: [571, 442, 254, 219, 0]
+Thread: 8 Doing: [571, 425, 237, 130, 0]
+Thread: 2 Doing: [571, 523, 381, 57, 0]
+Thread: 42 Doing: [571, 457, 168, 16, 0]
+Thread: 62 Doing: [571, 496, 73, 15, 0]
+Thread: 27 Doing: [571, 345, 313, 108, 0]
+Thread: 37 Doing: [571, 568, 531, 125, 0]
+Thread: 75 Doing: [571, 490, 389, 269, 0]
+Thread: 16 Doing: [571, 495, 466, 14, 0]
+Thread: 96 Doing: [571, 441, 400, 319, 0]
+Thread: 51 Doing: [571, 569, 388, 131, 0]
+Thread: 44 Doing: [571, 244, 241, 22, 0]
+Thread: 46 Doing: [571, 459, 342, 157, 0]
+Thread: 9 Doing: [571, 209, 204, 184, 0]
+Thread: 8 Doing: [571, 540, 536, 373, 0]
+Thread: 44 Doing: [571, 539, 487, 206, 0]
+Thread: 27 Doing: [571, 442, 131, 77, 0]
+Thread: 68 Doing: [571, 360, 254, 14, 0]
+Thread: 9 Doing: [571, 564, 562, 161, 0]
+Thread: 42 Doing: [571, 512, 510, 217, 0]
+Thread: 47 Doing: [571, 380, 321, 203, 0]
+Thread: 5 Doing: [571, 557, 266, 105, 0]
+Thread: 80 Doing: [571, 559, 465, 247, 0]
+Thread: 68 Doing: [571, 338, 96, 34, 0]
+Thread: 93 Doing: [571, 239, 26, 6, 0]
+Thread: 27 Doing: [571, 453, 225, 180, 0]
+Thread: 68 Doing: [571, 497, 229, 111, 0]
+Thread: 1 Doing: [571, 375, 294, 162, 0]
+Thread: 47 Doing: [571, 390, 389, 209, 0]
+Thread: 26 Doing: [571, 530, 252, 139, 0]
+Thread: 93 Doing: [571, 410, 307, 203, 0]
+Thread: 39 Doing: [571, 441, 141, 126, 0]
+Thread: 62 Doing: [571, 555, 265, 223, 0]
+Thread: 46 Doing: [571, 570, 274, 12, 0]
+Thread: 1 Doing: [571, 378, 289, 129, 0]
+Thread: 27 Doing: [571, 563, 433, 123, 0]
+Thread: 47 Doing: [571, 352, 203, 105, 0]
+Thread: 35 Doing: [571, 501, 358, 342, 0]
+Thread: 93 Doing: [571, 432, 215, 121, 0]
+Thread: 39 Doing: [571, 134, 102, 1, 0]
+Thread: 1 Doing: [571, 543, 441, 228, 0]
+Thread: 15 Doing: [571, 398, 361, 315, 0]
+Thread: 39 Doing: [571, 245, 228, 203, 0]
+Thread: 47 Doing: [571, 429, 365, 212, 0]
+Thread: 96 Doing: [571, 480, 281, 43, 0]
+Thread: 29 Doing: [571, 317, 265, 132, 0]
+Thread: 30 Doing: [571, 469, 260, 176, 0]
+Thread: 39 Doing: [571, 264, 214, 47, 0]
+Thread: 93 Doing: [571, 528, 234, 121, 0]
+Thread: 29 Doing: [571, 245, 78, 68, 0]
+Thread: 39 Doing: [571, 542, 520, 21, 0]
+Thread: 68 Doing: [571, 466, 269, 185, 0]
+Thread: 29 Doing: [571, 535, 309, 241, 0]
+Thread: 54 Doing: [571, 484, 370, 349, 0]
+Thread: 15 Doing: [571, 241, 99, 48, 0]
+Thread: 47 Doing: [571, 362, 295, 237, 0]
+Thread: 96 Doing: [571, 565, 162, 96, 0]
+Thread: 15 Doing: [571, 333, 309, 114, 0]
+Thread: 65 Doing: [571, 513, 374, 206, 0]
+Thread: 30 Doing: [571, 513, 322, 122, 0]
+Thread: 75 Doing: [571, 297, 211, 194, 0]
+Thread: 0 Doing: [571, 555, 350, 335, 0]
+Thread: 68 Doing: [571, 273, 210, 136, 0]
+Thread: 75 Doing: [571, 551, 270, 94, 0]
+Thread: 77 Doing: [571, 471, 165, 142, 0]
+Thread: 15 Doing: [571, 367, 324, 254, 0]
+Thread: 47 Doing: [571, 486, 125, 4, 0]
+Thread: 68 Doing: [571, 527, 486, 451, 0]
+Thread: 24 Doing: [571, 310, 219, 65, 0]
+Thread: 24 Doing: [571, 534, 495, 118, 0]
+Thread: 15 Doing: [571, 501, 342, 280, 0]
+Thread: 77 Doing: [571, 491, 176, 85, 0]
+Thread: 47 Doing: [571, 546, 379, 322, 0]
+Thread: 17 Doing: [571, 404, 261, 131, 0]
+Thread: 81 Doing: [571, 510, 289, 70, 0]
+Thread: 70 Doing: [571, 442, 159, 100, 0]
+Thread: 17 Doing: [571, 328, 78, 55, 0]
+Thread: 95 Doing: [571, 309, 196, 27, 0]
+Thread: 90 Doing: [571, 352, 246, 239, 0]
+Thread: 70 Doing: [571, 561, 544, 118, 0]
+Thread: 17 Doing: [571, 526, 213, 197, 0]
+Thread: 95 Doing: [571, 448, 198, 157, 0]
+Thread: 77 Doing: [571, 514, 170, 3, 0]
+Thread: 90 Doing: [571, 495, 478, 221, 0]
+Thread: 87 Doing: [571, 513, 493, 301, 0]
+Thread: 15 Doing: [571, 450, 229, 69, 0]
+Thread: 55 Doing: [571, 425, 322, 209, 0]
+Thread: 95 Doing: [571, 475, 256, 105, 0]
+Thread: 21 Doing: [571, 518, 395, 145, 0]
+Thread: 30 Doing: [571, 569, 399, 95, 0]
+Thread: 66 Doing: [571, 357, 256, 230, 0]
+Thread: 15 Doing: [571, 279, 186, 175, 0]
+Thread: 66 Doing: [571, 414, 132, 87, 0]
+Thread: 45 Doing: [571, 485, 250, 5, 0]
+Thread: 15 Doing: [571, 306, 118, 21, 0]
+Thread: 55 Doing: [571, 323, 257, 138, 0]
+Thread: 15 Doing: [571, 480, 385, 260, 0]
+Thread: 66 Doing: [571, 566, 494, 315, 0]
+Thread: 89 Doing: [571, 336, 293, 244, 0]
+Thread: 95 Doing: [571, 500, 386, 57, 0]
+Thread: 82 Doing: [571, 546, 358, 309, 0]
+Thread: 55 Doing: [571, 309, 296, 274, 0]
+Thread: 81 Doing: [571, 563, 518, 474, 0]
+Thread: 89 Doing: [571, 397, 142, 25, 0]
+Thread: 54 Doing: [571, 362, 71, 21, 0]
+Thread: 55 Doing: [571, 503, 181, 164, 0]
+Thread: 45 Doing: [571, 401, 392, 174, 0]
+Thread: 65 Doing: [571, 520, 255, 30, 0]
+Thread: 25 Doing: [571, 568, 212, 185, 0]
+Thread: 89 Doing: [571, 568, 425, 152, 0]
+Thread: 54 Doing: [571, 236, 205, 195, 0]
+Thread: 54 Doing: [571, 569, 240, 130, 0]
+Thread: 73 Doing: [571, 445, 378, 215, 0]
+Thread: 77 Doing: [571, 397, 213, 48, 0]
+Thread: 56 Doing: [571, 520, 503, 297, 0]
+Thread: 45 Doing: [571, 518, 275, 273, 0]
+Thread: 77 Doing: [571, 314, 115, 2, 0]
+Thread: 15 Doing: [571, 312, 262, 49, 0]
+Thread: 77 Doing: [571, 379, 186, 140, 0]
+Thread: 2 Doing: [571, 527, 245, 76, 0]
+Thread: 15 Doing: [571, 552, 50, 16, 0]
+Thread: 77 Doing: [571, 498, 227, 215, 0]
+Thread: 73 Doing: [571, 525, 281, 50, 0]
+Thread: 79 Doing: [571, 567, 449, 386, 0]
+Thread: 12 Doing: [571, 400, 330, 163, 0]
+Thread: 59 Doing: [571, 526, 398, 263, 0]
+Thread: 6 Doing: [571, 492, 241, 58, 0]
+Thread: 12 Doing: [571, 443, 383, 250, 0]
+Thread: 3 Doing: [571, 493, 489, 123, 0]
+Thread: 7 Doing: [571, 570, 9, 1, 0]
+Thread: 55 Doing: [571, 226, 203, 200, 0]
+Thread: 50 Doing: [571, 558, 508, 325, 0]
+Thread: 35 Doing: [571, 333, 85, 22, 0]
+Thread: 55 Doing: [571, 409, 249, 248, 0]
+Thread: 95 Doing: [571, 469, 244, 183, 0]
+Thread: 35 Doing: [571, 526, 525, 203, 0]
+Thread: 6 Doing: [571, 333, 148, 90, 0]
+Thread: 55 Doing: [571, 200, 164, 109, 0]
+Thread: 6 Doing: [571, 465, 436, 19, 0]
+Thread: 55 Doing: [571, 310, 171, 26, 0]
+Thread: 77 Doing: [571, 410, 270, 203, 0]
+Thread: 12 Doing: [571, 401, 135, 10, 0]
+Thread: 55 Doing: [571, 320, 47, 10, 0]
+Thread: 93 Doing: [571, 127, 50, 2, 0]
+Thread: 55 Doing: [571, 518, 439, 159, 0]
+Thread: 77 Doing: [571, 526, 315, 70, 0]
+Thread: 95 Doing: [571, 407, 380, 277, 0]
+Thread: 93 Doing: [571, 525, 464, 65, 0]
+Thread: 12 Doing: [571, 259, 220, 178, 0]
+Thread: 12 Doing: [571, 439, 122, 60, 0]
+Thread: 65 Doing: [571, 211, 30, 16, 0]
+Thread: 65 Doing: [571, 431, 221, 108, 0]
+Thread: 12 Doing: [571, 189, 172, 14, 0]
+Thread: 12 Doing: [571, 240, 171, 57, 0]
+Thread: 95 Doing: [571, 496, 453, 150, 0]
+Thread: 12 Doing: [571, 550, 29, 14, 0]
+Thread: 65 Doing: [571, 396, 153, 3, 0]
+Thread: 26 Doing: [571, 367, 76, 34, 0]
+Thread: 6 Doing: [571, 234, 166, 61, 0]
+Thread: 65 Doing: [571, 525, 392, 113, 0]
+Thread: 26 Doing: [571, 554, 551, 343, 0]
+Thread: 6 Doing: [571, 449, 448, 161, 0]
+Thread: 59 Doing: [571, 383, 279, 253, 0]
+Thread: 21 Doing: [571, 559, 96, 86, 0]
+Thread: 59 Doing: [571, 100, 64, 22, 0]
+Thread: 59 Doing: [571, 438, 418, 261, 0]
+Thread: 16 Doing: [571, 455, 143, 42, 0]
+Thread: 73 Doing: [571, 392, 265, 233, 0]
+Thread: 2 Doing: [571, 198, 92, 41, 0]
+Thread: 2 Doing: [571, 129, 120, 111, 0]
+Thread: 2 Doing: [571, 504, 485, 451, 0]
+Thread: 16 Doing: [571, 397, 95, 42, 0]
+Thread: 6 Doing: [571, 551, 413, 384, 0]
+Thread: 59 Doing: [571, 561, 223, 184, 0]
+Thread: 73 Doing: [571, 416, 260, 117, 0]
+Thread: 95 Doing: [571, 479, 413, 208, 0]
+Thread: 16 Doing: [571, 339, 256, 38, 0]
+Thread: 73 Doing: [571, 244, 84, 13, 0]
+Thread: 16 Doing: [571, 499, 201, 108, 0]
+Thread: 45 Doing: [571, 161, 127, 6, 0]
+Thread: 17 Doing: [571, 550, 501, 260, 0]
+Thread: 73 Doing: [571, 368, 174, 98, 0]
