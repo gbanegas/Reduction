@@ -90,7 +90,7 @@ class Ot(object):
                     index = key
                     break
         #print allPairs
-#        print "pair: ", to_return, " index ", index
+        print "pair: ", to_return, " index ", index
         if self._pair_equal(to_return , (NULL,NULL)):
             return to_return, True
         else:

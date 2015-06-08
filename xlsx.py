@@ -27,6 +27,9 @@ class Xslxsaver(object):
 		self.workbook = xlsxwriter.Workbook(name)
 
 
+
+
+
 	def save_matches(self, matches):
 		worksheet = self.workbook.add_worksheet("matches")
 		row = 0
@@ -39,6 +42,22 @@ class Xslxsaver(object):
 				worksheet.write(row,colum, j)
 				colum = colum+1
 			row = row + 1
+
+
+	def save_complete(self, matrix):
+		worksheet = self.workbook.add_worksheet("complete")
+		
+		row = 0;
+		for i in xrange(0, len(matrix)):
+			print i 
+			colum = 0
+			for j in matrix[i]:
+				if j == -1:
+					worksheet.write(row, colum, '')
+				else:
+					worksheet.write(row, colum, j)
+				colum += 1
+			row += 1
 
 
 
