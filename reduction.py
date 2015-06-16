@@ -37,6 +37,7 @@ class Reduction(object):
             self._reduce_others(self.matrix,exp_sorted)
         #print "Sem remocoes"
         #print_matrix(self.matrix)
+        print "Size of Columns ", len(self.matrix)
         print "Finish Reducing..."
         
         #xls = Xslxsaver()
