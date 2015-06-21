@@ -96243,4 +96243,3304 @@ Size of Columns  29
 Finish Reducing...
 Thread: 404 Doing: [233, 56, 50, 23, 0]
 Size of Columns  34241
-Fin
+Fin-i
+-o
+-t
+Input file is " irred_pent_163.txt
+Output file is " saida_irred_pent_163.txt
+number of threds 200
+2800
+si + 14
+starting....
+i = 0
+j = 14
+i = 14
+j = 28
+i = 28
+j = 42
+i = 42
+j = 56
+i = 56
+j = 70
+i = 70
+j = 84
+i = 84
+j = 98
+i = 98
+j = 112
+i = 112
+j = 126
+i = 126
+j = 140
+i = 140
+j = 154
+i = 154
+j = 168
+i = 168
+j = 182
+i = 182
+j = 196
+i = 196
+j = 210
+i = 210
+j = 224
+i = 224
+j = 238
+i = 238
+j = 252
+i = 252
+j = 266
+i = 266
+j = 280
+i = 280
+j = 294
+i = 294
+j = 308
+i = 308
+j = 322
+i = 322
+j = 336
+i = 336
+j = 350
+i = 350
+j = 364
+i = 364
+j = 378
+i = 378
+j = 392
+i = 392
+j = 406
+i = 406
+j = 420
+i = 420
+j = 434
+i = 434
+j = 448
+i = 448
+j = 462
+i = 462
+j = 476
+i = 476
+j = 490
+i = 490
+j = 504
+i = 504
+j = 518
+i = 518
+j = 532
+i = 532
+j = 546
+i = 546
+j = 560
+i = 560
+j = 574
+i = 574
+j = 588
+i = 588
+j = 602
+i = 602
+j = 616
+i = 616
+j = 630
+i = 630
+j = 644
+i = 644
+j = 658
+i = 658
+j = 672
+i = 672
+j = 686
+i = 686
+j = 700
+i = 700
+j = 714
+i = 714
+j = 728
+i = 728
+j = 742
+i = 742
+j = 756
+i = 756
+j = 770
+i = 770
+j = 784
+i = 784
+j = 798
+i = 798
+j = 812
+i = 812
+j = 826
+i = 826
+j = 840
+i = 840
+j = 854
+i = 854
+j = 868
+i = 868
+j = 882
+i = 882
+j = 896
+i = 896
+j = 910
+i = 910
+j = 924
+i = 924
+j = 938
+i = 938
+j = 952
+i = 952
+j = 966
+i = 966
+j = 980
+i = 980
+j = 994
+i = 994
+j = 1008
+i = 1008
+j = 1022
+i = 1022
+j = 1036
+i = 1036
+j = 1050
+i = 1050
+j = 1064
+i = 1064
+j = 1078
+i = 1078
+j = 1092
+i = 1092
+j = 1106
+i = 1106
+j = 1120
+i = 1120
+j = 1134
+i = 1134
+j = 1148
+i = 1148
+j = 1162
+i = 1162
+j = 1176
+i = 1176
+j = 1190
+i = 1190
+j = 1204
+i = 1204
+j = 1218
+i = 1218
+j = 1232
+i = 1232
+j = 1246
+i = 1246
+j = 1260
+i = 1260
+j = 1274
+i = 1274
+j = 1288
+i = 1288
+j = 1302
+i = 1302
+j = 1316
+i = 1316
+j = 1330
+i = 1330
+j = 1344
+i = 1344
+j = 1358
+i = 1358
+j = 1372
+i = 1372
+j = 1386
+i = 1386
+j = 1400
+i = 1400
+j = 1414
+i = 1414
+j = 1428
+i = 1428
+j = 1442
+i = 1442
+j = 1456
+i = 1456
+j = 1470
+i = 1470
+j = 1484
+i = 1484
+j = 1498
+i = 1498
+j = 1512
+i = 1512
+j = 1526
+i = 1526
+j = 1540
+i = 1540
+j = 1554
+i = 1554
+j = 1568
+i = 1568
+j = 1582
+i = 1582
+j = 1596
+i = 1596
+j = 1610
+i = 1610
+j = 1624
+i = 1624
+j = 1638
+i = 1638
+j = 1652
+i = 1652
+j = 1666
+i = 1666
+j = 1680
+i = 1680
+j = 1694
+i = 1694
+j = 1708
+i = 1708
+j = 1722
+i = 1722
+j = 1736
+i = 1736
+j = 1750
+i = 1750
+j = 1764
+i = 1764
+j = 1778
+i = 1778
+j = 1792
+i = 1792
+j = 1806
+i = 1806
+j = 1820
+i = 1820
+j = 1834
+i = 1834
+j = 1848
+i = 1848
+j = 1862
+i = 1862
+j = 1876
+i = 1876
+j = 1890
+i = 1890
+j = 1904
+i = 1904
+j = 1918
+i = 1918
+j = 1932
+i = 1932
+j = 1946
+i = 1946
+j = 1960
+i = 1960
+j = 1974
+i = 1974
+j = 1988
+i = 1988
+j = 2002
+i = 2002
+j = 2016
+i = 2016
+j = 2030
+i = 2030
+j = 2044
+i = 2044
+j = 2058
+i = 2058
+j = 2072
+i = 2072
+j = 2086
+i = 2086
+j = 2100
+i = 2100
+j = 2114
+i = 2114
+j = 2128
+i = 2128
+j = 2142
+i = 2142
+j = 2156
+i = 2156
+j = 2170
+i = 2170
+j = 2184
+i = 2184
+j = 2198
+i = 2198
+j = 2212
+i = 2212
+j = 2226
+i = 2226
+j = 2240
+i = 2240
+j = 2254
+i = 2254
+j = 2268
+i = 2268
+j = 2282
+i = 2282
+j = 2296
+i = 2296
+j = 2310
+i = 2310
+j = 2324
+i = 2324
+j = 2338
+i = 2338
+j = 2352
+i = 2352
+j = 2366
+i = 2366
+j = 2380
+i = 2380
+j = 2394
+i = 2394
+j = 2408
+i = 2408
+j = 2422
+i = 2422
+j = 2436
+i = 2436
+j = 2450
+i = 2450
+j = 2464
+i = 2464
+j = 2478
+i = 2478
+j = 2492
+i = 2492
+j = 2506
+i = 2506
+j = 2520
+i = 2520
+j = 2534
+i = 2534
+j = 2548
+i = 2548
+j = 2562
+i = 2562
+j = 2576
+i = 2576
+j = 2590
+i = 2590
+j = 2604
+i = 2604
+j = 2618
+i = 2618
+j = 2632
+i = 2632
+j = 2646
+i = 2646
+j = 2660
+i = 2660
+j = 2674
+i = 2674
+j = 2688
+i = 2688
+j = 2702
+i = 2702
+j = 2716
+i = 2716
+j = 2730
+i = 2730
+j = 2744
+i = 2744
+j = 2758
+i = 2758
+j = 2772
+i = 2772
+j = 2786
+i = 2786
+j = 2800
+Starting thread: 0
+
+Thread: 0 Doing: [163, 128, 125, 94, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [163, 162, 127, 112, 0]
+Starting thread: 2
+
+Thread: 2 Doing: [163, 149, 60, 22, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [163, 157, 156, 136, 0]
+Starting thread: 4
+
+Thread: 4 Doing: [163, 153, 142, 140, 0]
+Starting thread: 5
+
+Thread: 5 Doing: [163, 162, 79, 8, 0]
+Starting thread: 6
+
+Thread: 6 Doing: [163, 155, 69, 41, 0]
+Starting thread: 7
+
+Thread: 7 Doing: [163, 161, 76, 44, 0]
+Starting thread: 8
+
+Thread: 8 Doing: [163, 162, 121, 8, 0]
+Starting thread: 9
+
+Thread: 9 Doing: [163, 150, 103, 86, 0]
+Starting thread: 10
+
+Thread: 10 Doing: [163, 160, 142, 1, 0]
+Starting thread: 11
+
+Thread: 11 Doing: [163, 150, 146, 61, 0]
+Starting thread: 12
+
+Thread: 12 Doing: [163, 162, 136, 33, 0]
+Starting thread: 13
+
+Thread: 13 Doing: [163, 151, 149, 23, 0]
+Starting thread: 14
+
+Thread: 14 Doing: [163, 158, 134, 127, 0]
+Starting thread: 15
+
+Thread: 15 Doing: [163, 158, 156, 115, 0]
+Starting thread: 16
+
+Thread: 16 Doing: [163, 155, 153, 65, 0]
+Starting thread: 17
+
+Thread: 17 Doing: [163, 154, 146, 69, 0]
+Starting thread: 18
+
+Thread: 18 Doing: [163, 126, 50, 19, 0]
+Starting thread: 19
+
+Thread: 19 Doing: [163, 161, 114, 95, 0]
+Starting thread: 20
+
+Thread: 20 Doing: [163, 162, 33, 21, 0]
+Starting thread: 21
+
+Thread: 21 Doing: [163, 157, 108, 105, 0]
+Starting thread: 22
+
+Thread: 22 Doing: [163, 155, 70, 36, 0]
+Starting thread: 23
+
+Thread: 23 Doing: [163, 153, 90, 37, 0]
+Starting thread: 24
+
+Thread: 24 Doing: [163, 156, 125, 8, 0]
+Starting thread: 25
+
+Thread: 25 Doing: [163, 141, 125, 67, 0]
+Starting thread: 26
+
+Thread: 26 Doing: [163, 149, 79, 12, 0]
+Starting thread: 27
+
+Thread: 27 Doing: [163, 162, 147, 133, 0]
+Starting thread: 28
+
+Thread: 28 Doing: [163, 155, 123, 34, 0]
+Starting thread: 29
+
+Thread: 29 Doing: [163, 157, 117, 113, 0]
+Starting thread: 30
+
+Thread: 30 Doing: [163, 153, 94, 14, 0]
+Starting thread: 31
+
+Thread: 31 Doing: [163, 154, 123, 45, 0]
+Starting thread: 32
+
+Thread: 32 Doing: [163, 157, 148, 145, 0]
+Starting thread: 33
+
+Thread: 33 Doing: [163, 160, 108, 105, 0]
+Starting thread: 34
+
+Thread: 34 Doing: [163, 146, 77, 31, 0]
+Starting thread: 35
+
+Thread: 35 Doing: [163, 112, 89, 8, 0]
+Starting thread: 36
+
+Thread: 36 Doing: [163, 149, 146, 45, 0]
+Starting thread: 37
+
+Thread: 37 Doing: [163, 159, 40, 1, 0]
+Starting thread: 38
+
+Thread: 38 Doing: [163, 154, 147, 63, 0]
+Starting thread: 39
+
+Thread: 39 Doing: [163, 157, 107, 21, 0]
+Starting thread: 40
+
+Starting thread: 41
+
+Thread: 40 Doing: [163, 146, 145, 63, 0]
+Thread: 41 Doing: [163, 162, 152, 95, 0]
+Starting thread: 42
+
+Thread: 42 Doing: [163, 153, 117, 88, 0]
+Starting thread: 43
+
+Thread: 43 Doing: [163, 150, 135, 40, 0]
+Starting thread: 44
+
+Thread: 44 Doing: [163, 159, 41, 16, 0]
+Starting thread: 45
+
+Thread: 45 Doing: [163, 153, 146, 28, 0]
+Starting thread: 46
+
+Thread: 46 Doing: [163, 162, 82, 26, 0]
+Starting thread: 47
+
+Thread: 47 Doing: [163, 153, 125, 113, 0]
+Starting thread: 48
+
+Thread: 48 Doing: [163, 134, 102, 85, 0]
+Starting thread: 49
+
+Thread: 49 Doing: [163, 158, 137, 99, 0]
+Starting thread: 50
+
+Thread: 50 Doing: [163, 161, 107, 51, 0]
+Starting thread: 51
+
+Thread: 51 Doing: [163, 154, 98, 21, 0]
+Starting thread: 52
+
+Thread: 52 Doing: [163, 153, 135, 108, 0]
+Starting thread: 53
+
+Thread: 53 Doing: [163, 150, 60, 57, 0]
+Starting thread: 54
+
+Thread: 54 Doing: [163, 151, 136, 69, 0]
+Starting thread: 55
+
+Thread: 55 Doing: [163, 116, 110, 1, 0]
+Starting thread: 56
+
+Thread: 56 Doing: [163, 154, 8, 5, 0]
+Starting thread: 57
+
+Thread: 57 Doing: [163, 162, 144, 99, 0]
+Starting thread: 58
+
+Starting thread: 59
+
+Thread: 58 Doing: [163, 148, 141, 95, 0]
+Thread: 59 Doing: [163, 150, 42, 15, 0]
+Starting thread: 60
+
+Thread: 60 Doing: [163, 161, 92, 28, 0]
+Starting thread: 61
+
+Thread: 61 Doing: [163, 153, 69, 67, 0]
+Starting thread: 62
+
+Starting thread: 63
+
+Thread: 62 Doing: [163, 153, 152, 121, 0]
+Starting thread: 64
+
+Starting thread: 65
+
+Thread: 63 Doing: [163, 157, 72, 53, 0]
+Starting thread: 66
+
+Thread: 64 Doing: [163, 154, 107, 8, 0]
+Starting thread: 67
+
+Starting thread: 68
+
+Thread: 65 Doing: [163, 161, 155, 100, 0]
+Thread: 66 Doing: [163, 154, 141, 54, 0]
+Thread: 67 Doing: [163, 150, 131, 113, 0]
+Thread: 68 Doing: [163, 145, 32, 15, 0]
+Starting thread: 69
+
+Thread: 69 Doing: [163, 145, 53, 47, 0]
+Size of Columns  37Starting thread: 70
+
+Thread: 70 Doing: [163, 147, 125, 79, 0]
+
+Finish Reducing...
+Starting thread: 71
+
+Thread: 71 Doing: [163, 154, 99, 54, 0]
+Starting thread: 72
+
+Starting thread: 73
+
+Thread: 72 Doing: [163, 162, 96, 25, 0]
+Thread: 73 Doing: [163, 156, 119, 26, 0]
+Starting thread: 74
+
+Thread: 74 Doing: [163, 147, 104, 65, 0]
+Starting thread: 75
+
+Thread: 75 Doing: [163, 162, 150, 13, 0]
+Starting thread: 76
+
+Thread: 76 Doing: [163, 156, 125, 103, 0]
+Starting thread: 77
+
+Thread: 77 Doing: [163, 146, 67, 47, 0]
+Starting thread: 78
+
+Thread: 78 Doing: [163, 153, 19, 16, 0]
+Starting thread: 79
+
+Thread: 79 Doing: [163, 161, 121, 30, 0]
+Starting thread: 80
+
+Thread: 80 Doing: [163, 132, 106, 87, 0]
+Starting thread: 81
+
+Thread: 81 Doing: [163, 141, 112, 31, 0]
+Starting thread: 82
+
+Thread: 82 Doing: [163, 161, 93, 47, 0]
+Starting thread: 83
+
+Thread: 83 Doing: [163, 127, 124, 22, 0]
+Starting thread: 84
+
+Thread: 84 Doing: [163, 153, 66, 60, 0]
+Starting thread: 85
+
+Thread: 85 Doing: [163, 162, 115, 11, 0]
+Starting thread: 86
+
+Thread: 86 Doing: [163, 153, 74, 17, 0]
+Starting thread: 87
+
+Thread: 87 Doing: [163, 160, 157, 156, 0]
+Starting thread: 88
+
+Thread: 88 Doing: [163, 153, 152, 76, 0]
+Starting thread: 89
+
+Thread: 89 Doing: [163, 158, 15, 11, 0]
+Starting thread: 90
+
+Thread: 90 Doing: [163, 162, 115, 5, 0]
+Starting thread: 91
+
+Starting thread: 92
+
+Thread: 91 Doing: [163, 158, 145, 92, 0]
+Starting thread: 93
+
+Thread: 92 Doing: [163, 161, 160, 93, 0]
+Thread: 93 Doing: [163, 147, 44, 34, 0]
+Starting thread: 94
+
+Thread: 94 Doing: [163, 148, 93, 6, 0]
+Starting thread: 95
+
+Thread: 95 Doing: [163, 160, 136, 18, 0]
+Starting thread: 96
+
+Thread: 96 Doing: [163, 159, 67, 50, 0]
+Size of Columns  37
+Finish Reducing...
+Starting thread: 97
+
+Starting thread: 98
+
+Thread: 97 Doing: [163, 156, 137, 22, 0]
+Starting thread: 99
+
+Thread: 98 Doing: [163, 146, 120, 59, 0]
+Thread: 99 Doing: [163, 155, 97, 3, 0]
+Starting thread: 100
+
+Thread: 100 Doing: [163, 157, 70, 4, 0]
+Starting thread: 101
+
+Thread: 101 Doing: [163, 160, 133, 117, 0]
+Starting thread: 102
+
+Thread: 102 Doing: [163, 158, 100, 14, 0]
+Starting thread: 103
+
+Thread: 103 Doing: [163, 152, 148, 41, 0]
+Starting thread: 104
+
+Thread: 104 Doing: [163, 157, 88, 10, 0]
+Starting thread: 105
+
+Thread: 105 Doing: [163, 158, 147, 139, 0]
+Starting thread: 106
+
+Thread: 106 Doing: [163, 142, 74, 9, 0]
+Starting thread: 107
+
+Thread: 107 Doing: [163, 162, 140, 115, 0]
+Starting thread: 108
+
+Thread: 108 Doing: [163, 144, 136, 61, 0]
+Starting thread: 109
+
+Thread: 109 Doing: [163, 158, 122, 57, 0]
+Starting thread: 110
+
+Starting thread: 111
+
+Thread: 110 Doing: [163, 162, 128, 79, 0]
+Thread: 111 Doing: [163, 162, 151, 3, 0]
+Starting thread: 112
+
+Thread: 112 Doing: [163, 162, 123, 12, 0]
+Starting thread: 113
+
+Thread: 113 Doing: [163, 161, 128, 24, 0]
+Starting thread: 114
+
+Thread: 114 Doing: [163, 158, 90, 5, 0]
+Starting thread: 115
+
+Thread: 115 Doing: [163, 153, 151, 145, 0]
+Starting thread: 116
+
+Thread: 116 Doing: [163, 158, 106, 41, 0]
+Starting thread: 117
+
+Thread: 117 Doing: [163, 153, 151, 55, 0]
+Starting thread: 118
+
+Thread: 118 Doing: [163, 156, 138, 37, 0]
+Starting thread: 119
+
+Thread: 119 Doing: [163, 156, 155, 13, 0]
+Starting thread: 120
+
+Thread: 120 Doing: [163, 145, 134, 39, 0]
+Starting thread: 121
+
+Thread: 121 Doing: [163, 158, 127, 26, 0]
+Starting thread: 122
+
+Thread: 122 Doing: [163, 143, 137, 51, 0]
+Starting thread: 123
+
+Thread: 123 Doing: [163, 154, 152, 117, 0]
+Starting thread: 124
+
+Thread: 124 Doing: [163, 157, 63, 29, 0]
+Starting thread: 125
+
+Thread: 125 Doing: [163, 149, 86, 15, 0]
+Starting thread: 126
+
+Thread: 126 Doing: [163, 153, 126, 72, 0]
+Starting thread: 127
+
+Thread: 127 Doing: [163, 162, 64, 25, 0]
+Starting thread: 128
+
+Starting thread: 129
+
+Thread: 128 Doing: [163, 112, 60, 21, 0]
+Starting thread: 130
+
+Thread: 129 Doing: [163, 158, 45, 34, 0]
+Starting thread: 131
+
+Thread: 130 Doing: [163, 157, 126, 60, 0]
+Thread: 131 Doing: [163, 157, 84, 78, 0]
+Starting thread: 132
+
+Thread: 132 Doing: [163, 161, 134, 49, 0]
+Starting thread: 133
+
+Thread: 133 Doing: [163, 145, 131, 9, 0]
+Starting thread: 134
+
+Thread: 134 Doing: [163, 161, 92, 22, 0]
+Starting thread: 135
+
+Thread: 135 Doing: [163, 157, 149, 87, 0]
+Starting thread: 136
+
+Thread: 136 Doing: [163, 155, 93, 79, 0]
+Starting thread: 137
+
+Thread: 137 Doing: [163, 161, 119, 49, 0]
+Starting thread: 138
+
+Thread: 138 Doing: [163, 159, 133, 51, 0]
+Starting thread: 139
+
+Thread: 139 Doing: [163, 158, 146, 63, 0]
+Starting thread: 140
+
+Starting thread: 141
+
+Thread: 140 Doing: [163, 155, 150, 31, 0]
+Thread: 141 Doing: [163, 152, 125, 9, 0]
+Starting thread: 142
+
+Thread: 142 Doing: [163, 150, 53, 7, 0]
+Starting thread: 143
+
+Thread: 143 Doing: [163, 162, 138, 3, 0]
+Starting thread: 144
+
+Thread: 144 Doing: [163, 162, 149, 92, 0]
+Size of Columns  121
+Finish Reducing...
+Starting thread: 145
+
+Thread: 145 Doing: [163, 160, 61, 52, 0]
+Starting thread: 146
+
+Thread: 146 Doing: [163, 154, 55, 25, 0]
+Starting thread: 147
+
+Thread: 147 Doing: [163, 162, 113, 88, 0]
+Starting thread: 148
+
+Thread: 148 Doing: [163, 159, 154, 22, 0]
+Starting thread: 149
+
+Thread: 149 Doing: [163, 161, 119, 81, 0]
+Starting thread: 150
+
+Thread: 150 Doing: [163, 161, 105, 67, 0]
+Starting thread: 151
+
+Thread: 151 Doing: [163, 159, 22, 7, 0]
+Starting thread: 152
+
+Thread: 152 Doing: [163, 161, 15, 14, 0]
+Starting thread: 153
+
+Thread: 153 Doing: [163, 154, 121, 31, 0]
+Starting thread: 154
+
+Thread: 154 Doing: [163, 155, 126, 2, 0]
+Starting thread: 155
+
+Thread: 155 Doing: [163, 159, 85, 55, 0]
+Starting thread: 156
+
+Thread: 156 Doing: [163, 137, 114, 112, 0]
+Size of Columns  53Starting thread: 157
+
+
+Finish Reducing...
+Thread: 157 Doing: [163, 154, 150, 99, 0]
+Starting thread: 158
+
+Thread: 158 Doing: [163, 160, 158, 35, 0]
+Starting thread: 159
+
+Thread: 159 Doing: [163, 150, 97, 7, 0]
+Starting thread: 160
+
+Thread: 160 Doing: [163, 158, 100, 18, 0]
+Starting thread: 161
+
+Thread: 161 Doing: [163, 134, 57, 22, 0]
+Starting thread: 162
+
+Thread: 162 Doing: [163, 140, 125, 123, 0]
+Starting thread: 163
+
+Thread: 163 Doing: [163, 126, 113, 71, 0]
+Starting thread: 164
+
+Size of Columns  61
+ Thread: 164 Doing: [163, 159, 61, 53, 0]
+Finish Reducing...
+Starting thread: 165
+
+Thread: 165 Doing: [163, 150, 125, 119, 0]
+Starting thread: 166
+
+Thread: 166 Doing: [163, 146, 94, 44, 0]
+Starting thread: 167
+
+Thread: 167 Doing: [163, 150, 133, 107, 0]
+Size of Columns  33
+Finish Reducing...Starting thread: 168
+
+Thread: 168 Doing: [163, 152, 124, 53, 0]
+
+Starting thread: 169
+
+Thread: 169 Doing: [163, 147, 118, 115, 0]
+Starting thread: 170
+
+Thread: 170 Doing: [163, 162, 153, 51, 0]
+Starting thread: 171
+
+Thread: 171 Doing: [163, 154, 119, 68, 0]
+Starting thread: 172
+
+Starting thread: 173
+
+Thread: 172 Doing: [163, 146, 145, 78, 0]
+Thread: 173 Doing: [163, 153, 131, 37, 0]
+Starting thread: 174
+
+Thread: 174 Doing: [163, 155, 89, 43, 0]
+Starting thread: 175
+
+Starting thread: 176
+
+Thread: 175 Doing: [163, 157, 74, 48, 0]
+Thread: 176 Doing: [163, 141, 138, 117, 0]
+Starting thread: 177
+
+Thread: 177 Doing: [163, 153, 111, 67, 0]
+Starting thread: 178
+
+Thread: 178 Doing: [163, 137, 72, 59, 0]
+Starting thread: 179
+
+Starting thread: 180
+
+Thread: 179 Doing: [163, 158, 119, 108, 0]
+Thread: 180 Doing: [163, 141, 115, 42, 0]
+Starting thread: 181
+
+Starting thread: 182
+
+Thread: 181 Doing: [163, 160, 106, 61, 0]
+Starting thread: 183
+
+Thread: 182 Doing: [163, 154, 142, 99, 0]
+Thread: 183 Doing: [163, 148, 139, 102, 0]
+Starting thread: 184
+
+Thread: 184 Doing: [163, 160, 144, 101, 0]
+Starting thread: 185
+
+Thread: 185 Doing: [163, 145, 120, 45, 0]
+Starting thread: 186
+
+Thread: 186 Doing: [163, 146, 110, 67, 0]
+Starting thread: 187
+
+Thread: 187 Doing: [163, 152, 102, 83, 0]
+Starting thread: 188
+
+Thread: 188 Doing: [163, 161, 151, 105, 0]
+Starting thread: 189
+
+Thread: 189 Doing: [163, 162, 151, 52, 0]
+Starting thread: 190
+
+Thread: 190 Doing: [163, 154, 144, 86, 0]
+Size of Columns  Starting thread: 191
+
+Thread: 191 Doing: [163, 160, 29, 11, 0]
+81Starting thread: 192
+
+
+Thread: 192 Doing: [163, 159, 65, 56, 0]
+Finish Reducing...Starting thread: 193
+
+Starting thread: 194
+
+
+Thread: 193 Doing: [163, 157, 135, 62, 0]
+Starting thread: 195
+
+Thread: 194 Doing: [163, 162, 137, 103, 0]
+Thread: 195 Doing: [163, 130, 27, 1, 0]
+Starting thread: 196
+
+Thread: 196 Doing: [163, 162, 57, 39, 0]
+Starting thread: 197
+
+Thread: 197 Doing: [163, 150, 119, 1, 0]
+Starting thread: 198
+
+Thread: 198 Doing: [163, 151, 125, 71, 0]
+Starting thread: 199
+
+Thread: 199 Doing: [163, 160, 125, 105, 0]
+Size of Columns  85
+Finish Reducing...
+Size of Columns  77
+Finish Reducing...
+Size of Columns  93
+Finish Reducing...
+Size of Columns  25
+Finish Reducing...
+Size of Columns  113
+Finish Reducing...
+Size of Columns  41
+Finish Reducing...
+Size of Columns  105
+Finish Reducing...
+Size of Columns  197
+Finish Reducing...
+Size of Columns  117
+Finish Reducing...
+Size of Columns  105Size of Columns  93
+
+Finish Reducing...
+Finish Reducing...
+Size of Columns  137
+Finish Reducing...
+Size of Columns  325
+Finish Reducing...
+Size of Columns  129
+Finish Reducing...
+Size of Columns  117
+Finish Reducing...
+Size of Columns  77
+Finish Reducing...
+Size of Columns  97
+Finish Reducing...
+Size of Columns  101
+Finish Reducing...
+Size of Columns  173
+Finish Reducing...
+Size of Columns  169Size of Columns  173
+Finish Reducing...
+
+Finish Reducing...
+Size of Columns  177
+Finish Reducing...
+Size of Columns  169
+Finish Reducing...
+Size of Columns  165
+Finish Reducing...
+Size of Columns  181
+Finish Reducing...
+Size of Columns  245
+Finish Reducing...Size of Columns  
+225
+Finish Reducing...
+Thread: 35 Doing: [163, 157, 124, 87, 0]
+Size of Columns  2081
+Finish Reducing...Size of Columns  629Size of Columns  
+Finish Reducing...1229Size of Columns  Size of Columns  173
+ Size of Columns  613
+
+Finish Reducing...
+Size of Columns  Size of Columns  425
+241
+Finish Reducing...
+
+341Finish Reducing...
+
+
+Finish Reducing...
+Finish Reducing...Finish Reducing...
+
+Thread: 18 Doing: [163, 136, 33, 32, 0]
+Size of Columns  305
+Finish Reducing...
+Size of Columns  325
+Finish Reducing...
+Thread: 128 Doing: [163, 158, 82, 80, 0]
+Size of Columns  293
+Finish Reducing...
+Size of Columns  265
+Finish Reducing...
+Thread: 195 Doing: [163, 162, 89, 82, 0]
+Size of Columns  49
+Finish Reducing...
+Size of Columns  317
+ Size of Columns Finish Reducing... 261
+
+Finish Reducing...
+Size of Columns  341
+Finish Reducing...
+Size of Columns  425
+Finish Reducing...
+Size of Columns  285
+Finish Reducing...
+Size of Columns  385
+Finish Reducing...
+Size of Columns  361
+Finish Reducing...
+Size of Columns  601
+Finish Reducing...
+Size of Columns  441
+ Size of Columns  425Finish Reducing...
+
+Finish Reducing...
+Size of Columns  425
+Finish Reducing...
+ Size of Columns  433
+Finish Reducing...
+Size of Columns  705
+Finish Reducing...
+Size of Columns  341
+Finish Reducing...
+Size of Columns  501
+Finish Reducing...
+Size of Columns  449
+Finish Reducing...
+Thread: 161 Doing: [163, 159, 118, 95, 0]
+Thread: 178 Doing: [163, 162, 58, 36, 0]
+Size of Columns  481
+Finish Reducing...
+Size of Columns  557
+ Size of Columns  577
+Finish Reducing...
+Finish Reducing...
+Thread: 55 Doing: [163, 146, 105, 82, 0]
+Size of Columns  477
+Finish Reducing...
+Size of Columns  805
+Finish Reducing...
+Size of Columns  541
+Finish Reducing...
+Size of Columns  549
+Finish Reducing...
+Size of Columns  665
+Finish Reducing...
+Size of Columns  617
+Finish Reducing...
+Size of Columns  617
+Finish Reducing...
+Size of Columns  881
+Finish Reducing...
+Size of Columns  897
+Finish Reducing...
+Thread: 18 Doing: [163, 155, 137, 79, 0]
+Size of Columns  785
+Finish Reducing...
+Size of Columns  285
+Finish Reducing...
+Size of Columns  1009
+Finish Reducing...
+Thread: 106 Doing: [163, 159, 158, 31, 0]
+ Size of Columns  Size of Columns  1141
+Finish Reducing...
+1589
+Finish Reducing...
+ Size of Columns  1477
+Finish Reducing...
+Size of Columns  825
+Finish Reducing...
+Thread: 163 Doing: [163, 157, 95, 86, 0]
+Size of Columns  1493
+Finish Reducing...
+Thread: 77 Doing: [163, 159, 148, 118, 0]
+Size of Columns  901
+Finish Reducing...
+Size of Columns  1109
+Finish Reducing...
+Thread: 26 Doing: [163, 159, 41, 4, 0]
+Thread: 48 Doing: [163, 156, 116, 73, 0]
+Thread: 80 Doing: [163, 139, 135, 122, 0]
+Size of Columns  1253
+Finish Reducing...
+Size of Columns  1141
+Finish Reducing...
+Size of Columns  1129
+Finish Reducing...
+Thread: 83 Doing: [163, 143, 77, 69, 0]
+Size of Columns  1289
+Finish Reducing...
+Size of Columns  1525
+Finish Reducing...
+Thread: 68 Doing: [163, 161, 113, 43, 0]
+Size of Columns  1053
+Finish Reducing...
+Size of Columns  117
+Finish Reducing...
+Size of Columns  1333
+Finish Reducing...
+Size of Columns  1493
+Finish Reducing...
+Thread: 34 Doing: [163, 160, 92, 89, 0]
+Size of Columns  1925
+Finish Reducing...
+Size of Columns  1669
+Finish Reducing...
+Thread: 0 Doing: [163, 130, 105, 73, 0]
+Size of Columns  389
+Finish Reducing...
+Size of Columns  109
+Finish Reducing...
+Thread: 69 Doing: [163, 161, 71, 12, 0]
+Size of Columns  1517
+Finish Reducing...
+Size of Columns  1765
+Finish Reducing...
+Thread: 81 Doing: [163, 111, 90, 28, 0]
+Size of Columns  37
+Finish Reducing...
+Thread: 180 Doing: [163, 155, 58, 8, 0]
+Size of Columns  2641
+Finish Reducing...
+Thread: 166 Doing: [163, 147, 145, 120, 0]
+Size of Columns  1725
+Finish Reducing...
+Size of Columns  2789
+Finish Reducing...
+Size of Columns  3037
+Finish Reducing...
+Size of Columns  233
+Finish Reducing...
+Size of Columns  3937
+Finish Reducing...
+Size of Columns  1341
+Finish Reducing...
+Size of Columns  3093
+Finish Reducing...
+Thread: 81 Doing: [163, 161, 154, 26, 0]
+Thread: 25 Doing: [163, 161, 115, 32, 0]
+Size of Columns  2341
+Finish Reducing...
+Size of Columns  2545
+Finish Reducing...
+Size of Columns  2073
+Finish Reducing...
+Size of Columns  2173
+Finish Reducing...
+Thread: 98 Doing: [163, 149, 44, 40, 0]
+Thread: 0 Doing: [163, 155, 52, 14, 0]
+Thread: 125 Doing: [163, 150, 131, 58, 0]
+Size of Columns  209
+Finish Reducing...
+Size of Columns  113
+Finish Reducing...
+Size of Columns  1369
+Finish Reducing...
+Size of Columns  3601
+Finish Reducing...
+Thread: 93 Doing: [163, 155, 57, 14, 0]
+Size of Columns  3469
+Finish Reducing...
+Thread: 2 Doing: [163, 159, 111, 78, 0]
+Thread: 83 Doing: [163, 150, 118, 107, 0]
+Size of Columns  5793
+Finish Reducing...
+Size of Columns  2813
+Finish Reducing...
+Size of Columns  4301
+Finish Reducing...
+Size of Columns  209
+Finish Reducing...
+Size of Columns  2429
+Finish Reducing...
+Size of Columns  2929
+Finish Reducing...
+Thread: 156 Doing: [163, 162, 25, 11, 0]
+Thread: 84 Doing: [163, 145, 97, 87, 0]
+Thread: 186 Doing: [163, 147, 142, 28, 0]
+Size of Columns  5949
+Finish Reducing...
+Thread: 74 Doing: [163, 150, 136, 131, 0]
+Thread: 142 Doing: [163, 138, 104, 10, 0]
+Size of Columns  109
+Finish Reducing...
+Thread: 59 Doing: [163, 156, 115, 5, 0]
+Thread: 185 Doing: [163, 157, 138, 137, 0]
+Thread: 55 Doing: [163, 158, 28, 18, 0]
+Size of Columns  233
+Finish Reducing...
+Thread: 71 Doing: [163, 157, 79, 40, 0]
+Thread: 94 Doing: [163, 126, 93, 70, 0]
+Size of Columns  3417
+Finish Reducing...
+Size of Columns  61
+Finish Reducing...
+Size of Columns  1437
+Finish Reducing...
+Size of Columns  257
+Finish Reducing...
+Thread: 53 Doing: [163, 149, 125, 112, 0]
+Size of Columns  4285
+Finish Reducing...
+Thread: 180 Doing: [163, 153, 88, 75, 0]
+Size of Columns  585
+Finish Reducing...
+Thread: 23 Doing: [163, 158, 116, 15, 0]
+Thread: 142 Doing: [163, 149, 143, 13, 0]
+Thread: 94 Doing: [163, 158, 149, 58, 0]
+Size of Columns  1129
+Finish Reducing...
+Size of Columns  7045
+Finish Reducing...
+Size of Columns  3605
+Finish Reducing...
+Size of Columns  6897
+Finish Reducing...
+Size of Columns  409
+Finish Reducing...
+Thread: 159 Doing: [163, 145, 132, 63, 0]
+Size of Columns  4605
+Finish Reducing...
+Thread: 9 Doing: [163, 153, 122, 85, 0]
+Size of Columns  6197
+Finish Reducing...
+Size of Columns  6113
+Finish Reducing...
+Size of Columns  6849
+Finish Reducing...
+Size of Columns  1685
+Finish Reducing...
+ Size of Columns  1653
+Finish Reducing...
+Size of Columns  2069
+Finish Reducing...
+Size of Columns  705
+Finish Reducing...
+Size of Columns  2553
+Finish Reducing...
+Thread: 98 Doing: [163, 150, 137, 94, 0]
+Size of Columns  4985
+Finish Reducing...
+Thread: 70 Doing: [163, 120, 113, 28, 0]
+Thread: 86 Doing: [163, 157, 82, 55, 0]
+Size of Columns  65
+Finish Reducing...
+Thread: 169 Doing: [163, 162, 95, 31, 0]
+Size of Columns  1529
+Finish Reducing...
+Size of Columns  10385
+Finish Reducing...
+Size of Columns  6361
+Finish Reducing...
+Thread: 146 Doing: [163, 158, 49, 27, 0]
+Size of Columns  709
+Finish Reducing...
+Size of Columns  6409
+Finish Reducing...
+Size of Columns  7357
+Finish Reducing...
+Size of Columns  437
+Finish Reducing...
+Thread: 70 Doing: [163, 144, 125, 76, 0]
+Thread: 133 Doing: [163, 157, 64, 60, 0]
+Size of Columns  10561
+Finish Reducing...
+Size of Columns  6041
+Finish Reducing...
+Size of Columns  425
+Finish Reducing...
+Thread: 78 Doing: [163, 150, 99, 3, 0]
+Thread: 162 Doing: [163, 140, 69, 17, 0]
+Thread: 187 Doing: [163, 145, 93, 28, 0]
+Size of Columns  61
+Finish Reducing...
+Thread: 84 Doing: [163, 151, 113, 78, 0]
+Size of Columns  3781
+Finish Reducing...
+Size of Columns  Size of Columns  241
+Finish Reducing...
+149
+Finish Reducing...
+Thread: 122 Doing: [163, 158, 155, 45, 0]
+Size of Columns  10697
+Finish Reducing...
+Size of Columns  593
+Finish Reducing...
+Size of Columns  10833
+Finish Reducing...
+Thread: 120 Doing: [163, 137, 119, 118, 0]
+Thread: 108 Doing: [163, 122, 113, 25, 0]
+Thread: 131 Doing: [163, 146, 123, 52, 0]
+Size of Columns  65
+ Size of Columns  Finish Reducing...
+9913
+Finish Reducing...
+Size of Columns  421Size of Columns  469Size of Columns  3561
+
+Finish Reducing...
+Finish Reducing...
+
+Finish Reducing...
+Thread: 70 Doing: [163, 144, 74, 61, 0]
+Size of Columns  9997
+Finish Reducing...
+Size of Columns  117
+Finish Reducing...
+Thread: 162 Doing: [163, 143, 125, 54, 0]
+Size of Columns  697
+Finish Reducing...
+Thread: 51 Doing: [163, 116, 109, 89, 0]
+Thread: 30 Doing: [163, 157, 102, 51, 0]
+Thread: 28 Doing: [163, 161, 125, 76, 0]
+Size of Columns  81
+Finish Reducing...
+Thread: 167 Doing: [163, 138, 17, 11, 0]
+Thread: 187 Doing: [163, 161, 37, 21, 0]
+Size of Columns  37
+Finish Reducing...
+Size of Columns  9781
+Finish Reducing...
+Thread: 114 Doing: [163, 154, 111, 23, 0]
+Size of Columns  4329
+Finish Reducing...
+Thread: 108 Doing: [163, 156, 150, 63, 0]
+Size of Columns  385
+Finish Reducing...
+Thread: 51 Doing: [163, 161, 128, 81, 0]
+Thread: 176 Doing: [163, 154, 138, 89, 0]
+Thread: 177 Doing: [163, 155, 106, 39, 0]
+Size of Columns  801
+Finish Reducing...
+Thread: 26 Doing: [163, 161, 122, 46, 0]
+Thread: 70 Doing: [163, 147, 132, 93, 0]
+Thread: 167 Doing: [163, 160, 159, 41, 0]
+Size of Columns  1237
+Finish Reducing...
+Size of Columns  789
+Finish Reducing...
+Thread: 175 Doing: [163, 155, 154, 75, 0]
+Thread: 198 Doing: [163, 149, 84, 71, 0]
+Thread: 168 Doing: [163, 149, 146, 136, 0]
+Thread: 56 Doing: [163, 153, 101, 2, 0]
+Size of Columns  197
+Finish Reducing...
+Size of Columns  11761
+Finish Reducing...
+Thread: 61 Doing: [163, 159, 119, 50, 0]
+Size of Columns  1229
+Finish Reducing...
+Thread: 197 Doing: [163, 160, 101, 57, 0]
+Size of Columns  373
+Finish Reducing...
+Thread: 31 Doing: [163, 145, 102, 76, 0]
+Thread: 44 Doing: [163, 156, 59, 38, 0]
+Size of Columns  8317
+Finish Reducing...
+Thread: 131 Doing: [163, 162, 33, 25, 0]
+Size of Columns  229
+Finish Reducing...
+Thread: 6 Doing: [163, 148, 35, 26, 0]
+Size of Columns  361
+Finish Reducing...
+Size of Columns  81
+Finish Reducing...
+Size of Columns  1249
+Finish Reducing...
+Thread: 80 Doing: [163, 156, 85, 50, 0]
+Thread: 159 Doing: [163, 145, 122, 2, 0]
+Size of Columns  353
+Finish Reducing...
+Thread: 136 Doing: [163, 152, 139, 102, 0]
+Thread: 162 Doing: [163, 157, 140, 53, 0]
+Size of Columns  525
+Finish Reducing...
+Thread: 198 Doing: [163, 162, 131, 47, 0]
+Thread: 120 Doing: [163, 157, 147, 67, 0]
+Thread: 63 Doing: [163, 161, 132, 32, 0]
+Thread: 125 Doing: [163, 129, 127, 53, 0]
+Size of Columns  14597
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Thread: 78 Doing: [163, 162, 105, 58, 0]
+Size of Columns  12613
+Finish Reducing...
+Thread: 22 Doing: [163, 143, 99, 97, 0]
+Thread: 0 Doing: [163, 154, 108, 86, 0]
+Size of Columns  15677
+Finish Reducing...
+Thread: 31 Doing: [163, 157, 99, 5, 0]
+Size of Columns  221
+Finish Reducing...
+Size of Columns  10765
+Finish Reducing...
+Thread: 125 Doing: [163, 159, 148, 54, 0]
+Thread: 180 Doing: [163, 151, 138, 99, 0]
+Thread: 89 Doing: [163, 143, 125, 112, 0]
+Thread: 99 Doing: [163, 160, 105, 81, 0]
+Thread: 126 Doing: [163, 149, 114, 65, 0]
+Thread: 54 Doing: [163, 141, 137, 67, 0]
+Thread: 128 Doing: [163, 154, 147, 70, 0]
+Thread: 6 Doing: [163, 150, 103, 4, 0]
+Size of Columns  949
+Finish Reducing...
+Thread: 83 Doing: [163, 147, 85, 56, 0]
+Thread: 174 Doing: [163, 160, 150, 33, 0]
+Thread: 98 Doing: [163, 154, 33, 8, 0]
+Size of Columns  281
+ Size of Columns  Finish Reducing...
+Thread: 192 Doing: [163, 141, 137, 38, 0]
+117
+Finish Reducing...
+Size of Columns  173
+Finish Reducing...
+Size of Columns  993
+Finish Reducing...
+Thread: 42 Doing: [163, 156, 129, 21, 0]
+Size of Columns  481
+Finish Reducing...
+Size of Columns  761
+Finish Reducing...
+Thread: 171 Doing: [163, 126, 118, 74, 0]
+Size of Columns  609
+Finish Reducing...
+Size of Columns  101
+Finish Reducing...
+Thread: 129 Doing: [163, 141, 105, 99, 0]
+Thread: 64 Doing: [163, 157, 138, 83, 0]
+Size of Columns  13085
+Finish Reducing...
+Size of Columns  561
+Finish Reducing...
+Size of Columns  3961
+Finish Reducing...
+ Thread: 141 Doing: [163, 155, 153, 89, 0]
+Size of Columns  241
+Finish Reducing...
+Thread: 84 Doing: [163, 145, 84, 56, 0]
+Thread: 93 Doing: [163, 147, 144, 10, 0]
+Size of Columns  141
+Finish Reducing...
+Thread: 171 Doing: [163, 162, 53, 47, 0]
+Thread: 153 Doing: [163, 151, 132, 117, 0]
+Size of Columns  5177
+Finish Reducing...
+Thread: 48 Doing: [163, 149, 88, 21, 0]
+Thread: 80 Doing: [163, 134, 127, 18, 0]
+Size of Columns  5337
+Finish Reducing...
+Size of Columns  177
+Finish Reducing...
+Size of Columns  193
+Finish Reducing...
+Thread: 126 Doing: [163, 151, 148, 69, 0]
+Thread: 56 Doing: [163, 161, 144, 125, 0]
+Thread: 83 Doing: [163, 157, 118, 1, 0]
+Thread: 159 Doing: [163, 155, 86, 9, 0]
+Thread: 71 Doing: [163, 154, 101, 83, 0]
+Size of Columns  5325
+Finish Reducing...
+Thread: 124 Doing: [163, 153, 98, 38, 0]
+Size of Columns  Thread: 22 Doing: [163, 155, 74, 51, 0]
+15233
+Finish Reducing...
+Size of Columns  417
+Finish Reducing...
+Size of Columns  409
+Finish Reducing...
+Thread: 84 Doing: [163, 159, 71, 61, 0]
+Thread: 133 Doing: [163, 161, 54, 40, 0]
+Size of Columns  17441
+Finish Reducing...
+Size of Columns  357
+Finish Reducing...
+Thread: 55 Doing: [163, 150, 148, 61, 0]
+Thread: 9 Doing: [163, 149, 133, 51, 0]
+Thread: 86 Doing: [163, 146, 110, 109, 0]
+Thread: 80 Doing: [163, 140, 130, 11, 0]
+Size of Columns  3581
+Finish Reducing...
+Thread: 129 Doing: [163, 158, 116, 105, 0]
+Size of Columns  613
+Finish Reducing...
+Size of Columns  9861
+Finish Reducing...
+Size of Columns  829
+Finish Reducing...
+Size of Columns  2685
+Finish Reducing...
+Thread: 114 Doing: [163, 161, 135, 14, 0]
+Size of Columns  345
+Finish Reducing...
+Thread: 54 Doing: [163, 158, 148, 83, 0]
+Thread: 70 Doing: [163, 156, 32, 10, 0]
+Size of Columns  169
+Finish Reducing...
+Size of Columns  1413
+Finish Reducing...
+Thread: 48 Doing: [163, 145, 125, 101, 0]
+Size of Columns  1329
+Finish Reducing...
+Thread: 53 Doing: [163, 161, 121, 59, 0]
+Size of Columns  19049
+Finish Reducing...
+Thread: 164 Doing: [163, 145, 87, 50, 0]
+Size of Columns  18625
+Finish Reducing...
+Size of Columns  9061
+Finish Reducing...
+Thread: 183 Doing: [163, 148, 130, 123, 0]
+Size of Columns  19261
+Finish Reducing...
+Size of Columns  125
+Finish Reducing...
+Thread: 100 Doing: [163, 153, 130, 3, 0]
+Size of Columns  7153
+Finish Reducing...
+Thread: 165 Doing: [163, 162, 152, 77, 0]
+Size of Columns  20977
+Finish Reducing...
+Thread: 47 Doing: [163, 151, 126, 123, 0]
+Size of Columns  2677
+Finish Reducing...
+Size of Columns  4517
+Finish Reducing...
+Size of Columns  697
+Finish Reducing...
+Thread: 73 Doing: [163, 145, 111, 18, 0]
+Thread: 58 Doing: [163, 145, 126, 72, 0]
+Thread: 160 Doing: [163, 161, 103, 50, 0]
+Thread: 192 Doing: [163, 149, 22, 15, 0]
+Thread: 6 Doing: [163, 153, 114, 31, 0]
+Size of Columns  65
+Finish Reducing...
+Thread: 44 Doing: [163, 147, 77, 65, 0]
+Thread: 67 Doing: [163, 162, 100, 29, 0]
+Size of Columns  237
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Size of Columns  425
+Finish Reducing...
+Thread: 73 Doing: [163, 129, 123, 51, 0]
+Thread: 145 Doing: [163, 150, 127, 74, 0]
+Thread: 89 Doing: [163, 160, 109, 91, 0]
+Thread: 164 Doing: [163, 152, 138, 131, 0]
+Thread: 43 Doing: [163, 148, 147, 22, 0]
+Size of Columns  8473
+Finish Reducing...
+Thread: 104 Doing: [163, 162, 125, 79, 0]
+Size of Columns  145
+Finish Reducing...
+Size of Columns  1089
+Finish Reducing...
+Size of Columns  761
+Finish Reducing...
+Thread: 177 Doing: [163, 157, 134, 83, 0]
+Thread: 124 Doing: [163, 150, 147, 4, 0]
+Thread: 71 Doing: [163, 158, 102, 61, 0]
+Size of Columns  2877
+Finish Reducing...
+Size of Columns  2241
+Finish Reducing...
+Thread: 0 Doing: [163, 153, 105, 87, 0]
+Thread: 80 Doing: [163, 117, 69, 52, 0]
+Size of Columns  41
+Finish Reducing...
+Thread: 73 Doing: [163, 153, 109, 48, 0]
+Size of Columns  21501
+Finish Reducing...
+Thread: 58 Doing: [163, 147, 40, 26, 0]
+Size of Columns  737
+Finish Reducing...
+Thread: 80 Doing: [163, 158, 112, 111, 0]
+Size of Columns  81
+Finish Reducing...
+Thread: 186 Doing: [163, 158, 130, 33, 0]
+Thread: 98 Doing: [163, 162, 50, 32, 0]
+Thread: 44 Doing: [163, 133, 132, 27, 0]
+Size of Columns  617
+Finish Reducing...
+Thread: 192 Doing: [163, 126, 124, 51, 0]
+Size of Columns  257
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Thread: 172 Doing: [163, 148, 103, 70, 0]
+Thread: 48 Doing: [163, 161, 96, 16, 0]
+Thread: 86 Doing: [163, 162, 133, 51, 0]
+Size of Columns  1849
+Finish Reducing...
+Size of Columns  3705
+Finish Reducing...
+Size of Columns  265
+Finish Reducing...
+Thread: 40 Doing: [163, 160, 94, 7, 0]
+Thread: 37 Doing: [163, 157, 132, 53, 0]
+Thread: 192 Doing: [163, 149, 60, 53, 0]
+Size of Columns  149
+Finish Reducing...
+Size of Columns  8533
+Finish Reducing...
+Thread: 172 Doing: [163, 129, 110, 2, 0]
+Thread: 44 Doing: [163, 154, 79, 46, 0]
+Size of Columns  85
+Finish Reducing...
+Thread: 58 Doing: [163, 161, 100, 81, 0]
+Size of Columns  313
+Finish Reducing...
+Thread: 172 Doing: [163, 159, 158, 103, 0]
+Thread: 155 Doing: [163, 157, 150, 134, 0]
+Size of Columns  2693
+Finish Reducing...
+Thread: 173 Doing: [163, 141, 124, 83, 0]
+Size of Columns  8209
+Finish Reducing...
+Thread: 159 Doing: [163, 143, 130, 75, 0]
+Size of Columns  349
+Finish Reducing...
+Size of Columns  10485
+Finish Reducing...
+Thread: 30 Doing: [163, 160, 42, 16, 0]
+Thread: 69 Doing: [163, 146, 117, 1, 0]
+Thread: 23 Doing: [163, 159, 14, 2, 0]
+Size of Columns  585
+Finish Reducing...
+Thread: 9 Doing: [163, 158, 155, 39, 0]
+Size of Columns  209
+Finish Reducing...
+Size of Columns  313
+Finish Reducing...
+Size of Columns  697
+Finish Reducing...
+Size of Columns  32509
+Finish Reducing...
+Thread: 39 Doing: [163, 162, 73, 39, 0]
+Thread: 154 Doing: [163, 154, 51, 50, 0]
+Size of Columns  241
+Finish Reducing...
+Thread: 145 Doing: [163, 161, 122, 121, 0]
+Thread: 192 Doing: [163, 153, 91, 83, 0]
+Thread: 0 Doing: [163, 159, 55, 14, 0]
+Size of Columns  30669
+Finish Reducing...
+Thread: 22 Doing: [163, 155, 84, 73, 0]
+Thread: 173 Doing: [163, 150, 34, 32, 0]
+Size of Columns  457
+Finish Reducing...
+Size of Columns  101
+Finish Reducing...
+Thread: 6 Doing: [163, 130, 108, 21, 0]
+Size of Columns  81
+Finish Reducing...
+Size of Columns  625
+Finish Reducing...
+Thread: 6 Doing: [163, 155, 105, 8, 0]
+Size of Columns  533
+Finish Reducing...
+Size of Columns  31957
+Finish Reducing...
+Size of Columns  677
+Finish Reducing...
+Thread: 73 Doing: [163, 162, 11, 8, 0]
+Thread: 59 Doing: [163, 159, 145, 40, 0]
+Size of Columns  34149
+Finish Reducing...
+Size of Columns  28105
+Finish Reducing...
+Size of Columns  981
+Finish Reducing...
+Thread: 69 Doing: [163, 161, 155, 103, 0]
+Thread: 159 Doing: [163, 157, 138, 121, 0]
+Size of Columns  8233
+Finish Reducing...
+Thread: 163 Doing: [163, 162, 154, 79, 0]
+Thread: 146 Doing: [163, 149, 134, 9, 0]
+Thread: 102 Doing: [163, 162, 114, 97, 0]
+Thread: 152 Doing: [163, 145, 93, 80, 0]
+Size of Columns  7533
+Finish Reducing...
+Size of Columns  205
+Finish Reducing...
+Size of Columns  7413
+Finish Reducing...
+Size of Columns  1509
+Finish Reducing...
+Thread: 21 Doing: [163, 161, 85, 42, 0]
+Size of Columns  14189
+Finish Reducing...
+Thread: 181 Doing: [163, 162, 119, 77, 0]
+Thread: 70 Doing: [163, 146, 45, 7, 0]
+Size of Columns  17145
+Finish Reducing...
+Size of Columns  69
+Finish Reducing...
+Thread: 44 Doing: [163, 156, 31, 5, 0]
+Thread: 173 Doing: [163, 144, 123, 102, 0]
+Size of Columns  14013
+Finish Reducing...
+Size of Columns  161
+Finish Reducing...
+Size of Columns  12437
+Finish Reducing...
+Thread: 52 Doing: [163, 116, 66, 55, 0]
+Size of Columns  41
+Finish Reducing...
+Size of Columns  697
+Finish Reducing...
+Thread: 70 Doing: [163, 155, 87, 10, 0]
+Thread: 29 Doing: [163, 146, 121, 57, 0]
+Thread: 52 Doing: [163, 161, 108, 88, 0]
+Thread: 152 Doing: [163, 148, 93, 65, 0]
+Size of Columns  233
+Finish Reducing...
+Size of Columns  377
+Finish Reducing...
+Size of Columns  433
+Finish Reducing...
+Thread: 6 Doing: [163, 161, 93, 5, 0]
+Size of Columns  14585
+Finish Reducing...
+Thread: 192 Doing: [163, 141, 53, 34, 0]
+Size of Columns  69
+Finish Reducing...
+Thread: 100 Doing: [163, 159, 148, 102, 0]
+Thread: 192 Doing: [163, 151, 93, 77, 0]
+Thread: 24 Doing: [163, 159, 40, 22, 0]
+Size of Columns  35641
+Finish Reducing...
+Size of Columns  337
+Finish Reducing...
+Size of Columns  36329
+Finish Reducing...
+Thread: 71 Doing: [163, 153, 87, 81, 0]
+Thread: 42 Doing: [163, 159, 64, 17, 0]
+Size of Columns  469
+Finish Reducing...
+Thread: 76 Doing: [163, 157, 153, 145, 0]
+Size of Columns  29961
+Finish Reducing...
+Thread: 180 Doing: [163, 147, 142, 6, 0]
+Thread: 173 Doing: [163, 155, 100, 42, 0]
+Size of Columns  4901
+Finish Reducing...
+Size of Columns  405
+Finish Reducing...
+Thread: 154 Doing: [163, 142, 130, 87, 0]
+Size of Columns  749
+Finish Reducing...
+Thread: 130 Doing: [163, 156, 119, 86, 0]
+Size of Columns  673
+Finish Reducing...
+Size of Columns  525
+Finish Reducing...
+Thread: 166 Doing: [163, 139, 123, 117, 0]
+Thread: 36 Doing: [163, 148, 129, 110, 0]
+Size of Columns  1489
+Finish Reducing...
+Thread: 152 Doing: [163, 151, 138, 83, 0]
+Thread: 29 Doing: [163, 161, 80, 52, 0]
+Thread: 34 Doing: [163, 152, 55, 21, 0]
+Size of Columns  601
+Finish Reducing...
+Thread: 11 Doing: [163, 157, 149, 48, 0]
+Size of Columns  133
+Finish Reducing...
+Thread: 93 Doing: [163, 154, 153, 80, 0]
+Size of Columns  12673
+Finish Reducing...
+Size of Columns  2537
+Finish Reducing...
+Thread: 191 Doing: [163, 155, 103, 57, 0]
+Thread: 35 Doing: [163, 162, 145, 138, 0]
+Size of Columns  16097
+Finish Reducing...
+Size of Columns  2961
+Finish Reducing...
+Size of Columns  5805
+Finish Reducing...
+Size of Columns  785
+Finish Reducing...
+Thread: 154 Doing: [163, 157, 153, 64, 0]
+Thread: 192 Doing: [163, 144, 85, 81, 0]
+Thread: 142 Doing: [163, 142, 111, 108, 0]
+Size of Columns  23633
+Finish Reducing...
+Size of Columns  169
+Finish Reducing...
+Size of Columns  377
+Finish Reducing...
+Thread: 31 Doing: [163, 161, 149, 106, 0]
+Size of Columns  14125
+Finish Reducing...
+Thread: 34 Doing: [163, 162, 87, 40, 0]
+Thread: 96 Doing: [163, 151, 129, 114, 0]
+Thread: 166 Doing: [163, 149, 120, 53, 0]
+Size of Columns  561
+Finish Reducing...
+Thread: 71 Doing: [163, 154, 79, 58, 0]
+Thread: 183 Doing: [163, 156, 131, 118, 0]
+Thread: 192 Doing: [163, 146, 98, 4, 0]
+Size of Columns  365
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Thread: 121 Doing: [163, 145, 119, 36, 0]
+Size of Columns  18497
+Finish Reducing...
+Size of Columns  5009
+Finish Reducing...
+Size of Columns  33473
+Finish Reducing...
+Size of Columns  321
+Finish Reducing...
+Thread: 116 Doing: [163, 159, 105, 91, 0]
+Size of Columns  4509
+Finish Reducing...
+Thread: 70 Doing: [163, 153, 118, 7, 0]
+Thread: 153 Doing: [163, 143, 115, 114, 0]
+Size of Columns  2917
+Finish Reducing...
+Thread: 22 Doing: [163, 146, 122, 57, 0]
+Size of Columns  557
+Finish Reducing...
+Size of Columns  433
+Finish Reducing...
+Size of Columns  22149
+Finish Reducing...
+Thread: 18 Doing: [163, 145, 143, 66, 0]
+Thread: 83 Doing: [163, 161, 103, 6, 0]
+Size of Columns  925
+Finish Reducing...
+Thread: 192 Doing: [163, 162, 45, 12, 0]
+Thread: 121 Doing: [163, 135, 101, 98, 0]
+Size of Columns  169
+Finish Reducing...
+Size of Columns  44885
+Finish Reducing...
+Thread: 36 Doing: [163, 147, 130, 56, 0]
+Thread: 84 Doing: [163, 150, 143, 28, 0]
+Thread: 109 Doing: [163, 153, 147, 45, 0]
+Thread: 142 Doing: [163, 161, 124, 68, 0]
+Size of Columns  685
+Finish Reducing...
+Thread: 146 Doing: [163, 158, 106, 8, 0]
+Thread: 2 Doing: [163, 162, 22, 9, 0]
+Thread: 121 Doing: [163, 158, 63, 4, 0]
+Thread: 166 Doing: [163, 139, 118, 7, 0]
+Thread: 173 Doing: [163, 151, 113, 92, 0]
+Size of Columns  153
+Finish Reducing...
+Thread: 44 Doing: [163, 161, 157, 36, 0]
+Size of Columns  825
+Finish Reducing...
+Size of Columns  2241
+Finish Reducing...
+Thread: 7 Doing: [163, 154, 71, 29, 0]
+Thread: 151 Doing: [163, 157, 33, 10, 0]
+Size of Columns  501
+Finish Reducing...
+Size of Columns  257
+Finish Reducing...
+Size of Columns  205
+Finish Reducing...
+Thread: 71 Doing: [163, 158, 35, 3, 0]
+Size of Columns  249
+Finish Reducing...
+Size of Columns  1717
+Finish Reducing...
+Thread: 22 Doing: [163, 159, 117, 112, 0]
+Size of Columns  1949
+Finish Reducing...
+Thread: 153 Doing: [163, 145, 56, 12, 0]
+Thread: 166 Doing: [163, 147, 91, 81, 0]
+ Size of Columns  81
+Finish Reducing...
+Thread: 197 Doing: [163, 156, 129, 103, 0]
+Size of Columns  4873
+Finish Reducing...
+Thread: 47 Doing: [163, 150, 146, 107, 0]
+Thread: 136 Doing: [163, 162, 63, 15, 0]
+Size of Columns  5229
+Finish Reducing...
+Size of Columns  213
+Finish Reducing...
+Thread: 191 Doing: [163, 133, 56, 18, 0]
+Size of Columns  41
+Finish Reducing...
+Thread: 191 Doing: [163, 162, 104, 103, 0]
+Size of Columns  5757
+Finish Reducing...
+Thread: 153 Doing: [163, 158, 97, 36, 0]
+Thread: 23 Doing: [163, 162, 143, 97, 0]
+Size of Columns  1309
+Finish Reducing...
+Thread: 166 Doing: [163, 123, 82, 69, 0]
+Size of Columns  57
+Finish Reducing...
+Thread: 166 Doing: [163, 145, 140, 135, 0]
+Thread: 179 Doing: [163, 158, 117, 68, 0]
+Thread: 36 Doing: [163, 157, 154, 13, 0]
+Thread: 60 Doing: [163, 155, 58, 35, 0]
+Size of Columns  38305
+Finish Reducing...
+Thread: 70 Doing: [163, 158, 133, 114, 0]
+Size of Columns  289
+Finish Reducing...
+Thread: 40 Doing: [163, 149, 139, 29, 0]
+Thread: 66 Doing: [163, 160, 138, 85, 0]
+Thread: 176 Doing: [163, 161, 110, 69, 0]
+Thread: 61 Doing: [163, 157, 105, 51, 0]
+Thread: 82 Doing: [163, 157, 88, 12, 0]
+Thread: 99 Doing: [163, 136, 126, 29, 0]
+Size of Columns  201
+Finish Reducing...
+Size of Columns  Size of Columns  61752221
+Finish Reducing...
+
+Finish Reducing...
+Thread: 7 Doing: [163, 160, 125, 26, 0]
+Size of Columns  8665
+Finish Reducing...
+Size of Columns  2437
+Finish Reducing...
+Thread: 99 Doing: [163, 161, 26, 15, 0]
+Size of Columns  1453
+Finish Reducing...
+Size of Columns  56925
+Finish Reducing...
+Thread: 180 Doing: [163, 141, 133, 91, 0]
+Size of Columns  48265
+Finish Reducing...
+Thread: 173 Doing: [163, 161, 142, 105, 0]
+Size of Columns  629
+Finish Reducing...
+Thread: 130 Doing: [163, 156, 149, 110, 0]
+Size of Columns  801
+Finish Reducing...
+Size of Columns  4553
+Finish Reducing...
+Size of Columns  8881
+Finish Reducing...
+Thread: 18 Doing: [163, 141, 135, 130, 0]
+Thread: 74 Doing: [163, 138, 109, 101, 0]
+Size of Columns  217
+Finish Reducing...
+Thread: 82 Doing: [163, 158, 105, 70, 0]
+Size of Columns  12737
+Finish Reducing...
+Thread: 0 Doing: [163, 162, 45, 42, 0]
+Size of Columns  63597
+Finish Reducing...
+Thread: 74 Doing: [163, 159, 114, 94, 0]
+Size of Columns  17953
+Finish Reducing...
+Size of Columns  2637
+Finish Reducing...
+Thread: 180 Doing: [163, 139, 120, 110, 0]
+Thread: 129 Doing: [163, 145, 126, 105, 0]
+Thread: 42 Doing: [163, 147, 130, 30, 0]
+Size of Columns  709
+Finish Reducing...
+Size of Columns  2437
+Finish Reducing...
+Thread: 43 Doing: [163, 150, 43, 21, 0]
+Size of Columns  397
+Finish Reducing...
+Size of Columns  19613
+Finish Reducing...
+Size of Columns  105
+Finish Reducing...
+Thread: 153 Doing: [163, 160, 151, 106, 0]
+Size of Columns  625
+Finish Reducing...
+Thread: 60 Doing: [163, 145, 71, 69, 0]
+Size of Columns  117
+Finish Reducing...
+Size of Columns  10133
+Finish Reducing...
+Thread: 133 Doing: [163, 160, 142, 42, 0]
+Size of Columns  57433
+Finish Reducing...
+Thread: 180 Doing: [163, 145, 137, 38, 0]
+Thread: 30 Doing: [163, 162, 68, 41, 0]
+Thread: 60 Doing: [163, 150, 125, 65, 0]
+Thread: 71 Doing: [163, 155, 132, 37, 0]
+Thread: 134 Doing: [163, 140, 78, 10, 0]
+Size of Columns  77
+Finish Reducing...
+Size of Columns  1085
+Finish Reducing...
+Thread: 134 Doing: [163, 158, 106, 81, 0]
+Thread: 43 Doing: [163, 129, 109, 104, 0]
+Size of Columns  165
+Finish Reducing...
+Size of Columns  845
+Finish Reducing...
+Size of Columns  15829
+Finish Reducing...
+Size of Columns  66585
+Finish Reducing...
+Size of Columns  30081
+Finish Reducing...
+Thread: 96 Doing: [163, 162, 109, 73, 0]
+Size of Columns  57257
+Finish Reducing...
+Thread: 121 Doing: [163, 158, 97, 56, 0]
+Thread: 43 Doing: [163, 116, 109, 9, 0]
+Size of Columns  61
+Finish Reducing...
+Thread: 152 Doing: [163, 154, 153, 135, 0]
+Size of Columns  2761
+Finish Reducing...
+Thread: 129 Doing: [163, 162, 133, 37, 0]
+Thread: 43 Doing: [163, 161, 63, 58, 0]
+Thread: 42 Doing: [163, 153, 146, 53, 0]
+Thread: 24 Doing: [163, 148, 66, 62, 0]
+Size of Columns  165
+Finish Reducing...
+Thread: 21 Doing: [163, 153, 108, 106, 0]
+Size of Columns  8053
+Finish Reducing...
+Size of Columns  1461
+Finish Reducing...
+Size of Columns  9021
+Finish Reducing...
+Size of Columns  1241
+Finish Reducing...
+Thread: 18 Doing: [163, 150, 141, 54, 0]
+Thread: 151 Doing: [163, 152, 138, 7, 0]
+Size of Columns  20385
+Finish Reducing...
+Thread: 24 Doing: [163, 158, 57, 11, 0]
+Size of Columns  4049
+Finish Reducing...
+Thread: 60 Doing: [163, 132, 126, 97, 0]
+Thread: 180 Doing: [163, 149, 143, 42, 0]
+Size of Columns  5073
+Finish Reducing...
+Size of Columns  457
+Finish Reducing...
+Size of Columns  237
+Finish Reducing...
+Thread: 97 Doing: [163, 162, 33, 19, 0]
+Thread: 80 Doing: [163, 146, 125, 22, 0]
+Thread: 193 Doing: [163, 155, 105, 23, 0]
+Thread: 60 Doing: [163, 122, 107, 24, 0]
+Size of Columns  485
+Finish Reducing...
+Size of Columns  61
+Finish Reducing...
+Size of Columns  68601
+Finish Reducing...
+Size of Columns  697
+Finish Reducing...
+Thread: 60 Doing: [163, 141, 122, 76, 0]
+Size of Columns  68273
+Finish Reducing...
+Size of Columns  3445
+Finish Reducing...
+Size of Columns  289
+Finish Reducing...
+Size of Columns  4269
+Finish Reducing...
+Thread: 89 Doing: [163, 156, 137, 95, 0]
+Size of Columns  13041
+Finish Reducing...
+Size of Columns  4161
+Finish Reducing...
+Size of Columns  74705
+Finish Reducing...
+Thread: 161 Doing: [163, 157, 114, 48, 0]
+Size of Columns  4393
+Finish Reducing...
+Thread: 60 Doing: [163, 135, 130, 42, 0]
+Size of Columns  269
+Finish Reducing...
+Thread: 127 Doing: [163, 153, 36, 30, 0]
+Size of Columns  55817
+Finish Reducing...
+Thread: 80 Doing: [163, 138, 112, 7, 0]
+Size of Columns  133
+Finish Reducing...
+Thread: 84 Doing: [163, 149, 140, 87, 0]
+Size of Columns  137
+Finish Reducing...
+Thread: 55 Doing: [163, 159, 98, 23, 0]
+Size of Columns  2217
+Finish Reducing...
+Thread: 60 Doing: [163, 159, 127, 98, 0]
+Size of Columns  2029
+Finish Reducing...
+Thread: 127 Doing: [163, 149, 147, 49, 0]
+Thread: 146 Doing: [163, 161, 160, 48, 0]
+Thread: 80 Doing: [163, 133, 126, 119, 0]
+Size of Columns  449
+Finish Reducing...
+Thread: 118 Doing: [163, 145, 63, 37, 0]
+Size of Columns  89
+Finish Reducing...
+Size of Columns  3317
+Finish Reducing...
+Thread: 150 Doing: [163, 139, 106, 10, 0]
+Thread: 40 Doing: [163, 156, 62, 13, 0]
+Thread: 82 Doing: [163, 159, 59, 46, 0]
+Size of Columns  109
+Finish Reducing...
+Thread: 37 Doing: [163, 160, 118, 67, 0]
+Thread: 118 Doing: [163, 162, 149, 34, 0]
+Size of Columns  289
+Finish Reducing...
+Thread: 80 Doing: [163, 152, 107, 34, 0]
+Thread: 116 Doing: [163, 162, 129, 42, 0]
+Size of Columns  445
+Finish Reducing...
+Thread: 150 Doing: [163, 135, 134, 104, 0]
+Size of Columns  477Size of Columns  
+Finish Reducing...
+957
+Finish Reducing...
+Thread: 160 Doing: [163, 157, 126, 72, 0]
+Size of Columns  26085
+Finish Reducing...
+Size of Columns  64309
+Finish Reducing...
+Thread: 21 Doing: [163, 161, 63, 49, 0]
+Thread: 61 Doing: [163, 155, 138, 41, 0]
+Size of Columns  37821
+Finish Reducing...
+Thread: 121 Doing: [163, 161, 85, 65, 0]
+Thread: 182 Doing: [163, 142, 136, 67, 0]
+Thread: 150 Doing: [163, 149, 146, 138, 0]
+Thread: 48 Doing: [163, 153, 132, 106, 0]
+Size of Columns  705
+Finish Reducing...
+Thread: 80 Doing: [163, 137, 112, 108, 0]
+Size of Columns  313
+Finish Reducing...
+Thread: 186 Doing: [163, 160, 122, 77, 0]
+Size of Columns  3509
+Finish Reducing...
+Thread: 180 Doing: [163, 161, 144, 91, 0]
+Thread: 193 Doing: [163, 161, 138, 41, 0]
+Size of Columns  9297
+Finish Reducing...
+Thread: 187 Doing: [163, 160, 97, 7, 0]
+Thread: 166 Doing: [163, 161, 148, 84, 0]
+Thread: 5 Doing: [163, 158, 95, 37, 0]
+Size of Columns  1261
+Finish Reducing...
+Size -i
+-o
+-t
+Input file is " irred_pent_163.txt
+Output file is " saida_irred_pent_163.txt
+number of threds 200
+2407
+si + 13
+starting....
+i = 0
+j = 13
+i = 13
+j = 26
+i = 26
+j = 39
+i = 39
+j = 52
+i = 52
+j = 65
+i = 65
+j = 78
+i = 78
+j = 91
+i = 91
+j = 104
+i = 104
+j = 117
+i = 117
+j = 130
+i = 130
+j = 143
+i = 143
+j = 156
+i = 156
+j = 169
+i = 169
+j = 182
+i = 182
+j = 195
+i = 195
+j = 208
+i = 208
+j = 221
+i = 221
+j = 234
+i = 234
+j = 247
+i = 247
+j = 260
+i = 260
+j = 273
+i = 273
+j = 286
+i = 286
+j = 299
+i = 299
+j = 312
+i = 312
+j = 325
+i = 325
+j = 338
+i = 338
+j = 351
+i = 351
+j = 364
+i = 364
+j = 377
+i = 377
+j = 390
+i = 390
+j = 403
+i = 403
+j = 416
+i = 416
+j = 429
+i = 429
+j = 442
+i = 442
+j = 455
+i = 455
+j = 468
+i = 468
+j = 481
+i = 481
+j = 494
+i = 494
+j = 507
+i = 507
+j = 520
+i = 520
+j = 533
+i = 533
+j = 546
+i = 546
+j = 559
+i = 559
+j = 572
+i = 572
+j = 585
+i = 585
+j = 598
+i = 598
+j = 611
+i = 611
+j = 624
+i = 624
+j = 637
+i = 637
+j = 650
+i = 650
+j = 663
+i = 663
+j = 676
+i = 676
+j = 689
+i = 689
+j = 702
+i = 702
+j = 715
+i = 715
+j = 728
+i = 728
+j = 741
+i = 741
+j = 754
+i = 754
+j = 767
+i = 767
+j = 780
+i = 780
+j = 793
+i = 793
+j = 806
+i = 806
+j = 819
+i = 819
+j = 832
+i = 832
+j = 845
+i = 845
+j = 858
+i = 858
+j = 871
+i = 871
+j = 884
+i = 884
+j = 897
+i = 897
+j = 910
+i = 910
+j = 923
+i = 923
+j = 936
+i = 936
+j = 949
+i = 949
+j = 962
+i = 962
+j = 975
+i = 975
+j = 988
+i = 988
+j = 1001
+i = 1001
+j = 1014
+i = 1014
+j = 1027
+i = 1027
+j = 1040
+i = 1040
+j = 1053
+i = 1053
+j = 1066
+i = 1066
+j = 1079
+i = 1079
+j = 1092
+i = 1092
+j = 1105
+i = 1105
+j = 1118
+i = 1118
+j = 1131
+i = 1131
+j = 1144
+i = 1144
+j = 1157
+i = 1157
+j = 1170
+i = 1170
+j = 1183
+i = 1183
+j = 1196
+i = 1196
+j = 1209
+i = 1209
+j = 1222
+i = 1222
+j = 1235
+i = 1235
+j = 1248
+i = 1248
+j = 1261
+i = 1261
+j = 1274
+i = 1274
+j = 1287
+i = 1287
+j = 1300
+i = 1300
+j = 1313
+i = 1313
+j = 1326
+i = 1326
+j = 1339
+i = 1339
+j = 1352
+i = 1352
+j = 1365
+i = 1365
+j = 1378
+i = 1378
+j = 1391
+i = 1391
+j = 1404
+i = 1404
+j = 1417
+i = 1417
+j = 1430
+i = 1430
+j = 1443
+i = 1443
+j = 1456
+i = 1456
+j = 1469
+i = 1469
+j = 1482
+i = 1482
+j = 1495
+i = 1495
+j = 1508
+i = 1508
+j = 1521
+i = 1521
+j = 1534
+i = 1534
+j = 1547
+i = 1547
+j = 1560
+i = 1560
+j = 1573
+i = 1573
+j = 1586
+i = 1586
+j = 1599
+i = 1599
+j = 1612
+i = 1612
+j = 1625
+i = 1625
+j = 1638
+i = 1638
+j = 1651
+i = 1651
+j = 1664
+i = 1664
+j = 1677
+i = 1677
+j = 1690
+i = 1690
+j = 1703
+i = 1703
+j = 1716
+i = 1716
+j = 1729
+i = 1729
+j = 1742
+i = 1742
+j = 1755
+i = 1755
+j = 1768
+i = 1768
+j = 1781
+i = 1781
+j = 1794
+i = 1794
+j = 1807
+i = 1807
+j = 1820
+i = 1820
+j = 1833
+i = 1833
+j = 1846
+i = 1846
+j = 1859
+i = 1859
+j = 1872
+i = 1872
+j = 1885
+i = 1885
+j = 1898
+i = 1898
+j = 1911
+i = 1911
+j = 1924
+i = 1924
+j = 1937
+i = 1937
+j = 1950
+i = 1950
+j = 1963
+i = 1963
+j = 1976
+i = 1976
+j = 1989
+i = 1989
+j = 2002
+i = 2002
+j = 2015
+i = 2015
+j = 2028
+i = 2028
+j = 2041
+i = 2041
+j = 2054
+i = 2054
+j = 2067
+i = 2067
+j = 2080
+i = 2080
+j = 2093
+i = 2093
+j = 2106
+i = 2106
+j = 2119
+i = 2119
+j = 2132
+i = 2132
+j = 2145
+i = 2145
+j = 2158
+i = 2158
+j = 2171
+i = 2171
+j = 2184
+i = 2184
+j = 2197
+i = 2197
+j = 2210
+i = 2210
+j = 2223
+i = 2223
+j = 2236
+i = 2236
+j = 2249
+i = 2249
+j = 2262
+i = 2262
+j = 2275
+i = 2275
+j = 2288
+i = 2288
+j = 2301
+i = 2301
+j = 2314
+i = 2314
+j = 2327
+i = 2327
+j = 2340
+i = 2340
+j = 2353
+i = 2353
+j = 2366
+i = 2366
+j = 2379
+i = 2379
+j = 2392
+i = 2392
+j = 2405
+i = 2405
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+i = 2407
+j = 2407
+Starting thread: 0
+
+Thread: 0 Doing: [163, 158, 37, 24, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [163, 147, 112, 77, 0]
+Starting thread: 2
+
+Thread: 2 Doing: [163, 147, 102, 76, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [163, 134, 23, 21, 0]
+Starting thread: 4
+
+Thread: 4 Doing: [163, 156, 137, 130, 0]
+Starting thread: 5
+
+Thread: 5 Doing: [163, 147, 122, 11, 0]
+Starting thread: 6
+
+Thread: 6 Doing: [163, 161, 127, 51, 0]
+Starting thread: 7
+
+Thread: 7 Doing: [163, 161, 119, 46, 0]
+Starting thread: 8
+
+Thread: 8 Doing: [163, 162, 115, 26, 0]Starting thread: 9
+
+
+Thread: 9 Doing: [163, 159, 79, 6, 0]
+Starting thread: 10
+
+Thread: 10 Doing: [163, 153, 151, 47, 0]
+Starting thread: 11
+
+Thread: 11 Doing: [163, 145, 143, 50, 0]
+Size of Columns  33
+Finish Reducing...
+Starting thread: 12
+
+Thread: 12 Doing: [163, 162, 148, 9, 0]
+Starting thread: 13
+
+Thread: 13 Doing: [163, 158, 154, 14, 0]
+Starting thread: 14
+
+Thread: 14 Doing: [163, 151, 149, 23, 0]
+Starting thread: 15
+
+Thread: 15 Doing: [163, 153, 138, 115, 0]
+Starting thread: 16
+
+Starting thread: 17
+
+Thread: 16 Doing: [163, 150, 138, 111, 0]
+Thread: 17 Doing: [163, 146, 141, 97, 0]
+Starting thread: 18
+
+Thread: 18 Doing: [163, 157, 135, 83, 0]
+Starting thread: 19
+
+Thread: 19 Doing: [163, 159, 121, 108, 0]
+Starting thread: 20
+
+Thread: 20 Doing: [163, 153, 127, 83, 0]
+Starting thread: 21
+
+Thread: 21 Doing: [163, 153, 125, 116, 0]
+Starting thread: 22
+
+Starting thread: 23
+
+Thread: 22 Doing: [163, 149, 57, 55, 0]
+Thread: 23 Doing: [163, 141, 133, 16, 0]
+Starting thread: 24
+
+Thread: 24 Doing: [163, 151, 118, 1, 0]
+Starting thread: 25
+
+Thread: 25 Doing: [163, 157, 99, 45, 0]
+Starting thread: 26
+
+Thread: 26 Doing: [163, 142, 19, 9, 0]
+Starting thread: 27
+
+Thread: 27 Doing: [163, 161, 73, 24, 0]
+Starting thread: 28
+
+Thread: 28 Doing: [163, 153, 123, 27, 0]
+Starting thread: 29
+
+Thread: 29 Doing: [163, 158, 105, 11, 0]
+Starting thread: 30
+
+Thread: 30 Doing: [163, 146, 117, 32, 0]
+Starting thread: 31
+
+Thread: 31 Doing: [163, 145, 131, 47, 0]
+Starting thread: 32
+
+Thread: 32 Doing: [163, 161, 92, 72, 0]
+Starting thread: 33
+
+Thread: 33 Doing: [163, 153, 58, 33, 0]
+Starting thread: 34
+
+Thread: 34 Doing: [163, 162, 45, 6, 0]
+Starting thread: 35
+
+Thread: 35 Doing: [163, 153, 124, 37, 0]
+Starting thread: 36
+
+Thread: 36 Doing: [163, 139, 46, 6, 0]
+Starting thread: 37
+
+Thread: 37 Doing: [163, 162, 158, 23, 0]
+Starting thread: 38
+
+Thread: 38 Doing: [163, 148, 131, 69, 0]
+Starting thread: 39
+
+Thread: 39 Doing: [163, 162, 153, 12, 0]
+Starting thread: 40
+
+Thread: 40 Doing: [163, 160, 94, 91, 0]
+Starting thread: 41
+
+Thread: 41 Doing: [163, 154, 129, 39, 0]
+Starting thread: 42
+
+Thread: 42 Doing: [163, 162, 152, 95, 0]
+Starting thread: 43
+
+Thread: 43 Doing: [163, 147, 84, 70, 0]
+Starting thread: 44
+
+Thread: 44 Doing: [163, 161, 131, 27, 0]
+Starting thread: 45
+
+Thread: 45 Doing: [163, 132, 13, 8, 0]
+Starting thread: 46
+
+Thread: 46 Doing: [163, 159, 150, 106, 0]
+Starting thread: 47
+
+Thread: 47 Doing: [163, 143, 141, 67, 0]
+Starting thread: 48
+
+Thread: 48 Doing: [163, 154, 150, 99, 0]
+Starting thread: 49
+
+Thread: 49 Doing: [163, 147, 146, 136, 0]
+Starting thread: 50
+
+Thread: 50 Doing: [163, 157, 107, 42, 0]
+Starting thread: 51
+
+Starting thread: 52
+
+Thread: 51 Doing: [163, 154, 135, 35, 0]
+Thread: 52 Doing: [163, 153, 144, 73, 0]
+Starting thread: 53
+
+Thread: 53 Doing: [163, 151, 142, 81, 0]
+Starting thread: 54
+
+Thread: 54 Doing: [163, 157, 119, 9, 0]
+Starting thread: 55
+
+Thread: 55 Doing: [163, 158, 148, 83, 0]
+Starting thread: 56
+
+Thread: 56 Doing: [163, 150, 86, 73, 0]
+Starting thread: 57
+
+Thread: 57 Doing: [163, 159, 155, 62, 0]
+Starting thread: 58
+
+Starting thread: 59
+
+Thread: 58 Doing: [163, 159, 134, 59, 0]
+Starting thread: 60
+
+Thread: 59 Doing: [163, 151, 131, 74, 0]
+Thread: 60 Doing: [163, 162, 126, 121, 0]
+Starting thread: 61
+
+Thread: 61 Doing: [163, 150, 141, 52, 0]
+Starting thread: 62
+
+Thread: 62 Doing: [163, 144, 121, 119, 0]
+Starting thread: 63
+
+Thread: 63 Doing: [163, 158, 35, 28, 0]
+Starting thread: 64
+
+Thread: 64 Doing: [163, 161, 160, 107, 0]
+Starting thread: 65
+
+Thread: 65 Doing: [163, 161, 155, 100, 0]
+Starting thread: 66
+
+Thread: 66 Doing: [163, 162, 146, 17, 0]
+Starting thread: 67
+
+Thread: 67 Doing: [163, 161, 158, 91, 0]
+Starting thread: 68
+
+Thread: 68 Doing: [163, 157, 122, 89, 0]
+Starting thread: 69
+
+Thread: 69 Doing: [163, 156, 112, 10, 0]
+Starting thread: 70
+
+Thread: 70 Doing: [163, 162, 53, 47, 0]
+Starting thread: 71
+
+Thread: 71 Doing: [163, 158, 145, 68, 0]
+Starting thread: 72
+
+Thread: 72 Doing: [163, 157, 76, 60, 0]
+Starting thread: 73
+
+Thread: 73 Doing: [163, 158, 45, 19, 0]
+Starting thread: 74
+
+Thread: 74 Doing: [163, 161, 158, 118, 0]
+Starting thread: 75
+
+Thread: 75 Doing: [163, 148, 147, 145, 0]
+Starting thread: 76
+
+Thread: 76 Doing: [163, 155, 141, 61, 0]
+Starting thread: 77
+
+Thread: 77 Doing: [163, 157, 15, 11, 0]
+Starting thread: 78
+
+Thread: 78 Doing: [163, 154, 111, 25, 0]
+Starting thread: 79
+
+Thread: 79 Doing: [163, 161, 147, 68, 0]
+Starting thread: 80
+
+Thread: 80 Doing: [163, 146, 140, 81, 0]
+Starting thread: 81
+
+Thread: 81 Doing: [163, 158, 152, 15, 0]
+Starting thread: 82
+
+Thread: 82 Doing: [163, 146, 89, 45, 0]
+Starting thread: 83
+
+Thread: 83 Doing: [163, 146, 138, 115, 0]
+Starting thread: 84
+
+Thread: 84 Doing: [163, 121, 93, 68, 0]
+Starting thread: 85
+
+Thread: 85 Doing: [163, 161, 142, 57, 0]
+Starting thread: 86
+
+Thread: 86 Doing: [163, 140, 133, 84, 0]
+Starting thread: 87
+
+Thread: 87 Doing: [163, 156, 105, 99, 0]
+Starting thread: 88
+
+Thread: 88 Doing: [163, 160, 81, 35, 0]
+Starting thread: 89
+
+Thread: 89 Doing: [163, 157, 120, 46, 0]
+Starting thread: 90
+
+Thread: 90 Doing: [163, 141, 111, 54, 0]
+Size of Columns  41Starting thread: 91
+
+Thread: 91 Doing: [163, 153, 101, 64, 0]
+Starting thread: 92
+
+
+Finish Reducing...
+ Thread: 92 Doing: [163, 157, 150, 49, 0]
+ Starting thread: 93
+
+Thread: 93 Doing: [163, 157, 148, 87, 0]
+Starting thread: 94
+
+Thread: 94 Doing: [163, 162, 145, 28, 0]
+Starting thread: 95
+
+Thread: 95 Doing: [163, 158, 147, 76, 0]
+Starting thread: 96
+
+Thread: 96 Doing: [163, 159, 69, 49, 0]
+Starting thread: 97
+
+Thread: 97 Doing: [163, 153, 87, 61, 0]
+Starting thread: 98
+
+Thread: 98 Doing: [163, 151, 143, 114, 0]
+Starting thread: 99
+
+Thread: 99 Doing: [163, 145, 126, 30, 0]
+Starting thread: 100
+
+Thread: 100 Doing: [163, 162, 145, 69, 0]
+Starting thread: 101
+
+Thread: 101 Doing: [163, 155, 60, 58, 0]
+Starting thread: 102
+
+Thread: 102 Doing: [163, 158, 107, 36, 0]
+Starting thread: 103
+
+Thread: 103 Doing: [163, 139, 116, 33, 0]
+Starting thread: 104
+
+Thread: 104 Doing: [163, 161, 128, 4, 0]
+Size of Columns  33
+Finish Reducing...
+Starting thread: 105
+
+Starting thread: 106
+
+Thread: 105 Doing: [163, 153, 147, 45, 0]
+Thread: 106 Doing: [163, 158, 85, 53, 0]
+Starting thread: 107
+
+Thread: 107 Doing: [163, 157, 84, 4, 0]
+Starting thread: 108
+
+Thread: 108 Doing: [163, 149, 42, 10, 0]
+Size of Columns  45Starting thread: 109
+
+Thread: 109 Doing: [163, 147, 145, 43, 0]
+Starting thread: 110
+
+Thread: 110 Doing: [163, 145, 134, 56, 0]
+
+Finish Reducing...Starting thread: 111
+
+Thread: 111 Doing: [163, 136, 114, 83, 0]
+
+Starting thread: 112
+
+Thread: 112 Doing: [163, 157, 152, 41, 0]
+Starting thread: 113
+
+Thread: 113 Doing: [163, 158, 146, 63, 0]
+Starting thread: 114
+
+Thread: 114 Doing: [163, 156, 155, 13, 0]
+Starting thread: 115
+
+Starting thread: 116
+
+Thread: 115 Doing: [163, 162, 53, 31, 0]
+Thread: 116 Doing: [163, 143, 127, 54, 0]
+Starting thread: 117
+
+Thread: 117 Doing: [163, 158, 157, 75, 0]
+Starting thread: 118
+
+Thread: 118 Doing: [163, 155, 47, 34, 0]
+Starting thread: 119
+
+Thread: 119 Doing: [163, 161, 151, 14, 0]
+Starting thread: 120
+
+Thread: 120 Doing: [163, 154, 103, 79, 0]
+Starting thread: 121
+
+Thread: 121 Doing: [163, 162, 75, 73, 0]
+Starting thread: 122
+
+Thread: 122 Doing: [163, 161, 132, 38, 0]
+Starting thread: 123
+
+Thread: 123 Doing: [163, 154, 148, 37, 0]
+Starting thread: 124
+
+Thread: 124 Doing: [163, 162, 89, 82, 0]
+Starting thread: 125
+
+Starting thread: 126
+
+Thread: 125 Doing: [163, 161, 132, 131, 0]
+Thread: 126 Doing: [163, 153, 77, 53, 0]
+Starting thread: 127
+
+Thread: 127 Doing: [163, 159, 133, 30, 0]
+Starting thread: 128
+
+Thread: 128 Doing: [163, 157, 117, 24, 0]
+Starting thread: 129
+
+Thread: 129 Doing: [163, 162, 110, 49, 0]
+Starting thread: 130
+
+Thread: 130 Doing: [163, 155, 151, 2, 0]
+Starting thread: 131
+
+Thread: 131 Doing: [163, 160, 131, 125, 0]
+Starting thread: 132
+
+Thread: 132 Doing: [163, 150, 148, 77, 0]
+Starting thread: 133
+
+Thread: 133 Doing: [163, 161, 88, 81, 0]
+Starting thread: 134
+
+Starting thread: 135
+
+Thread: 134 Doing: [163, 153, 133, 118, 0]
+Thread: 135 Doing: [163, 160, 122, 93, 0]
+Starting thread: 136
+
+Starting thread: 137
+
+Thread: 136 Doing: [163, 153, 130, 6, 0]
+Thread: 137 Doing: [163, 162, 111, 100, 0]Starting thread: 138
+
+Starting thread: 139
+
+
+Thread: 138 Doing: [163, 154, 105, 15, 0]
+Starting thread: 140
+
+Thread: 139 Doing: [163, 158, 113, 33, 0]
+Thread: 140 Doing: [163, 146, 130, 6, 0]
+Starting thread: 141
+
+Thread: 141 Doing: [163, 159, 126, 55, 0]
+Starting thread: 142
+
+Thread: 142 Doing: [163, 158, 134, 85, 0]
+Starting thread: 143
+
+Thread: 143 Doing: [163, 145, 130, 124, 0]
+Starting thread: 144
+
+Thread: 144 Doing: [163, 149, 86, 63, 0]
+Starting thread: 145
+
+Thread: 145 Doing: [163, 149, 87, 77, 0]
+Starting thread: 146
+
+Thread: 146 Doing: [163, 154, 150, 9, 0]
+Starting thread: 147
+
+Thread: 147 Doing: [163, 159, 153, 36, 0]
+Starting thread: 148
+
+Thread: 148 Doing: [163, 129, 110, 97, 0]
+Starting thread: 149
+
+Thread: 149 Doing: [163, 161, 33, 14, 0]
+Starting thread: 150
+
+Thread: 150 Doing: [163, 139, 111, 110, 0]
+Starting thread: 151
+
+Starting thread: 152
+
+Starting thread: 153
+
+Thread: 151 Doing: [163, 162, 73, 39, 0]
+Thread: 152 Doing: [163, 142, 137, 119, 0]
+Thread: 153 Doing: [163, 138, 131, 127, 0]
+Starting thread: 154
+
+Thread: 154 Doing: [163, 157, 142, 103, 0]
+Starting thread: 155
+
+Thread: 155 Doing: [163, 154, 60, 37, 0]
+Starting thread: 156
+
+Thread: 156 Doing: [163, 149, 133, 53, 0]
+Starting thread: 157
+
+Thread: 157 Doing: [163, 123, 118, 112, 0]
+Starting thread: 158
+
+Thread: 158 Doing: [163, 145, 125, 104, 0]
+Starting thread: 159
+
+Starting thread: 160
+
+Starting thread: 161
+
+Thread: 159 Doing: [163, 162, 155, 121, 0]
+Thread: 160 Doing: [163, 157, 102, 17, 0]
+Thread: 161 Doing: [163, 157, 141, 87, 0]
+Starting thread: 162
+
+Thread: 162 Doing: [163, 141, 140, 68, 0]
+Starting thread: 163
+
+Starting thread: 164
+
+Starting thread: 165
+
+Thread: 163 Doing: [163, 144, 134, 121, 0]
+Thread: 164 Doing: [163, 150, 139, 82, 0]
+Thread: 165 Doing: [163, 158, 155, 58, 0]
+Starting thread: 166
+
+Thread: 166 Doing: [163, 142, 109, 105, 0]
+Starting thread: 167
+
+Thread: 167 Doing: [163, 151, 44, 9, 0]
+Starting thread: 168
+
+Starting thread: 169
+
+Thread: 168 Doing: [163, 162, 44, 13, 0]
+Thread: 169 Doing: [163, 161, 145, 96, 0]
+Starting thread: 170
+
+Starting thread: 171
+
+Starting thread: 172
+
+Thread: 170 Doing: [163, 157, 105, 59, 0]
+Thread: 171 Doing: [163, 109, 92, 75, 0]
+Thread: 172 Doing: [163, 149, 82, 12, 0]
+Starting thread: 173
+
+Thread: 173 Doing: [163, 153, 79, 17, 0]
+Starting thread: 174
+
+Starting thread: 175
+
+Thread: 174 Doing: [163, 157, 149, 87, 0]
+Starting thread: 176
+
+Thread: 175 Doing: [163, 153, 112, 4, 0]
+Starting thread: 177
+
+Thread: 176 Doing: [163, 153, 151, 14, 0]
+Thread: 177 Doing: [163, 151, 141, 118, 0]
+Size of Columns  57
+Finish Reducing...
+Starting thread: 178
+
+Thread: 178 Doing: [163, 145, 94, 72, 0]
+Starting thread: 179
+
+Starting thread: 180
+
+Thread: 179 Doing: [163, 158, 44, 43, 0]
+Starting thread: 181
+
+Thread: 180 Doing: [163, 162, 97, 11, 0]
+Starting thread: 182
+
+Thread: 181 Doing: [163, 152, 117, 4, 0]
+Thread: 182 Doing: [163, 147, 142, 15, 0]
+Starting thread: 183
+
+Thread: 183 Doing: [163, 153, 143, 109, 0]
+Starting thread: 184
+
+Thread: 184 Doing: [163, 157, 126, 23, 0]
+Starting thread: 185
+
+Starting thread: 186
+
+Thread: 185 Doing: [163, 158, 46, 33, 0]
+Starting thread: 187
+
+Starting thread: 188
+
+Starting thread: 189
+
+Starting thread: 190
+
+Starting thread: 191
+
+Starting thread: 192
+
+Starting thread: 193
+
+Starting thread: 194
+
+Starting thread: 195
+
+Starting thread: 196
+
+Starting thread: 197
+
+Starting thread: 198
+
+Starting thread: 199
+
+Size of Columns  129
+Finish Reducing...
+Size of Columns  77
+Finish Reducing...
+Size of Columns  49
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Size of Columns  145
+Finish Reducing...
+Size of Columns  193
+Finish Reducing...
+Size of Columns  101
+Finish Reducing...
+Size of Columns  153
+Finish Reducing...
+Size of Columns  265
+Finish Reducing...Size of Columns  137
+
+Finish Reducing...
+Size of Columns  169
+Finish Reducing...
+Size of Columns  193
+Finish Reducing...
+Size of Columns  141
+Finish Reducing...
+Size of Columns  225
+Finish Reducing...
+Size of Columns  165
+Finish Reducing...
+Size of Columns  205
+Finish Reducing...
+Size of Columns  337
+Finish 
