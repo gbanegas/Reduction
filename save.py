@@ -1,9 +1,9 @@
-from reduction import Reduction
 from polynomial import Polynomial
-import xlsxwriter
 import os
 from collections import defaultdict
 import sys, getopt
+import xlsxwriter
+
 
 def main(argv):
     inputfile = ''
@@ -32,20 +32,33 @@ def main(argv):
     for i in fi:
         p = Polynomial(i)
         l.append(p)
-    result = defaultdict(list)
 
-    for pol in l:
+    name = outputfile
+    name = name + ".xlsx"
+    name = "" + name
+    workbook = xlsxwriter.Workbook(name)
+    worksheet = workbook.add_worksheet("irredutiveis")
+    worksheet.write(0,0, "Polynomials")
+    worksheet.write(0,1, "m")
+    worksheet.write(0,2, "a")
+    worksheet.write(0,3, "b")
+    worksheet.write(0,4, "c")
+    worksheet.write(0,5, "d")
+    row = 1
+    colum = 0
+   
+    for p in l:
+    	colum = 0
+    	worksheet.write(row,colum, str(p.coefs()))
+    	colum = 1
+    	j = sorted(p.coefs(), reverse=True)
+    	for num in j:
+    		worksheet.write(row,colum, num)
+    		colum = colum+1
+    	row = row + 1
 
-        if len(pol.coefs()) > 1:
-            red = Reduction()
-            count = red.reduction(pol.coefs())
-            result =  str(pol.coefs()) + ":" + str(count)
-            print result
-            fl.write(result + "\n")
-            
+    workbook.close()
 
 
 if __name__ == '__main__':
     main(sys.argv[1:])
-   
-   
