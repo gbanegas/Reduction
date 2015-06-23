@@ -112986,4 +112986,181 @@ Size of Columns  5877
 Finish Reducing...
 Size of Columns  6089
 Finish Reducing...
-Size 
+Size -i
+-o
+-t
+Input file is " irred_pent_163.txt
+Output file is " saida_irred_pent_163.txt
+number of threds 10
+2065
+si + 207
+starting....
+i = 0
+j = 207
+i = 207
+j = 414
+i = 414
+j = 621
+i = 621
+j = 828
+i = 828
+j = 1035
+i = 1035
+j = 1242
+i = 1242
+j = 1449
+i = 1449
+j = 1656
+i = 1656
+j = 1863
+i = 1863
+j = 2065
+Starting thread: 0
+
+Thread: 0 Doing: [163, 158, 118, 75, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [163, 161, 151, 90, 0]
+Starting thread: 2
+
+Thread: 2 Doing: [163, 153, 104, 26, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [163, 162, 113, 16, 0]
+Starting thread: 4
+
+Starting thread: 5
+
+Starting thread: 6
+
+Thread: 4 Doing: [163, 145, 88, 48, 0]
+Size of Columns  125
+ Thread: 5 Doing: [163, 160, 148, 93, 0]
+Finish Reducing...Thread: 6 Doing: [163, 162, 125, 103, 0]
+
+ Starting thread: 7
+
+Thread: 7 Doing: [163, 151, 146, 15, 0]
+Starting thread: 8
+
+Thread: 8 Doing: [163, 161, 98, 72, 0]
+Starting thread: 9
+
+Thread: 9 Doing: [163, 134, 111, 101, 0]
+Size of Columns  173
+Finish Reducing...
+Size of Columns  497
+Finish Reducing...
+Thread: 4 Doing: [163, 161, 134, 54, 0]
+Thread: 9 Doing: [163, 147, 133, 23, 0]
+Size of Columns  941
+Finish Reducing...
+Size of Columns  5485
+Finish Reducing...
+Thread: 2 Doing: [163, 150, 103, 69, 0]
+Size of Columns  369
+Finish Reducing...
+Thread: 9 Doing: [163, 160, 138, 85, 0]
+Thread: 2 Doing: [163, 161, 85, 35, 0]
+Thread: 0 Doing: [163, 155, 102, 95, 0]
+Size of Columns  1261
+Finish Reducing...
+Size of Columns  13505
+Finish Reducing...
+Size of Columns  4589
+Finish Reducing...
+Size of Columns  11233
+Finish Reducing...
+Thread: 0 Doing: [163, 154, 60, 7, 0]
+Size of Columns  189
+Finish Reducing...
+Thread: 0 Doing: [163, 161, 101, 100, 0]
+Thread: 7 Doing: [163, 157, 127, 28, 0]
+Thread: 2 Doing: [163, 141, 109, 100, 0]
+Size of Columns  289
+Finish Reducing...
+Thread: 2 Doing: [163, 158, 98, 42, 0]
+Size of Columns  5877
+Finish Reducing...
+Size of Columns  1489
+Finish Reducing...
+Thread: 8 Doing: [163, 145, 129, 122, 0]
+Size of Columns  1657
+Finish Reducing...
+Thread: 7 Doing: [163, 152, 151, 18, 0]
+Thread: 2 Doing: [163, 157, 105, 55, 0]
+Size of Columns  1453
+Finish Reducing...
+Thread: 8 Doing: [163, 162, 37, 28, 0]
+Thread: 2 Doing: [163, 137, 116, 40, 0]
+Size of Columns  145
+Finish Reducing...
+Thread: 2 Doing: [163, 132, 121, 41, 0]
+Size of Columns  137
+Finish Reducing...
+Size of Columns  31045
+Finish Reducing...
+Thread: 2 Doing: [163, 153, 128, 97, 0]
+Size of Columns  4825
+Finish Reducing...
+Size of Columns  3013
+Finish Reducing...
+Thread: 2 Doing: [163, 157, 150, 19, 0]
+Thread: 8 Doing: [163, 160, 138, 57, 0]
+Thread: 0 Doing: [163, 157, 42, 16, 0]
+Size of Columns  245
+Finish Reducing...
+Thread: 0 Doing: [163, 154, 105, 85, 0]
+Size of Columns  913
+Finish Reducing...
+Thread: 0 Doing: [163, 162, 45, 42, 0]
+Size of Columns  8053
+Finish Reducing...
+Thread: 0 Doing: [163, 145, 51, 6, 0]
+Size of Columns  65
+Finish Reducing...
+Thread: 0 Doing: [163, 162, 95, 86, 0]
+Size of Columns  105185
+Finish Reducing...
+Size of Columns  54465
+Finish Reducing...
+Size of Columns  198557
+Finish Reducing...
+Thread: 0 Doing: [163, 159, 123, 78, 0]
+Size of Columns  15841
+Finish Reducing...
+Thread: 7 Doing: [163, 162, 152, 101, 0]
+Thread: 0 Doing: [163, 162, 58, 49, 0]
+Size of Columns  11965
+Finish Reducing...
+Thread: 0 Doing: [163, 148, 50, 14, 0]
+Size of Columns  89
+Finish Reducing...
+Thread: 0 Doing: [163, 145, 116, 74, 0]
+Size of Columns  341
+Finish Reducing...
+Thread: 0 Doing: [163, 160, 157, 156, 0]
+Thread: 3 Doing: [163, 135, 126, 118, 0]
+Size of Columns  509
+Finish Reducing...
+Thread: 3 Doing: [163, 149, 128, 43, 0]
+Size of Columns  941
+Finish Reducing...
+Thread: 3 Doing: [163, 149, 140, 100, 0]
+Size of Columns  4065
+Finish Reducing...
+Size of Columns  505833
+Finish Reducing...
+Thread: 3 Doing: [163, 158, 139, 105, 0]
+Size of Columns  478265
+Finish Reducing...
+Size of Columns  114745
+Finish Reducing...
+Thread: 3 Doing: [163, 161, 153, 79, 0]
+Size of Columns  853089
+Finish Reducing...
+Thread: 8 Doing: [163, 162, 151, 123, 0]
+Thread: 9 Doing: [163, 150, 78, 34, 0]
+Size of Columns  161
+Finish Reducing...
+Thread: 9 Doing: [163, 155, 61, 26, 0
