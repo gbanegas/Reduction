@@ -1,6 +1,6 @@
 from reduction import Reduction
 from polynomial import Polynomial
-import xlsxwriter
+#import xlsxwriter
 import os
 from collections import defaultdict
 import sys, getopt
