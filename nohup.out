@@ -113163,4 +113163,221 @@ Thread: 8 Doing: [163, 162, 151, 123, 0]
 Thread: 9 Doing: [163, 150, 78, 34, 0]
 Size of Columns  161
 Finish Reducing...
-Thread: 9 Doing: [163, 155, 61, 26, 0
+Thread: 9 Doing: [163, 155, 61, 26, 0Traceback (most recent call last):
+  File "main.py", line 6, in <module>
+    from reduction import Reduction
+  File "/home/gustavo/Reduction/reduction.py", line 8, in <module>
+    from xlsx import Xslxsaver
+  File "/home/gustavo/Reduction/xlsx.py", line 7, in <module>
+    import xlsxwriter
+ImportError: No module named xlsxwriter
+Traceback (most recent call last):
+  File "main.py", line 6, in <module>
+    from reduction import Reduction
+  File "/home/gustavo/Reduction/reduction.py", line 10, in <module>
+    from ot import Ot
+  File "/home/gustavo/Reduction/ot.py", line 9, in <module>
+    from xlsx import Xslxsaver
+  File "/home/gustavo/Reduction/xlsx.py", line 7, in <module>
+    import xlsxwriter
+ImportError: No module named xlsxwriter
+-i
+-o
+-t
+Input file is " irred_pent_163.txt
+Output file is " saida_irred_pent_163.txt
+number of threds 30
+2022
+si + 68
+starting....
+i = 0
+j = 68
+i = 68
+j = 136
+i = 136
+j = 204
+i = 204
+j = 272
+i = 272
+j = 340
+i = 340
+j = 408
+i = 408
+j = 476
+i = 476
+j = 544
+i = 544
+j = 612
+i = 612
+j = 680
+i = 680
+j = 748
+i = 748
+j = 816
+i = 816
+j = 884
+i = 884
+j = 952
+i = 952
+j = 1020
+i = 1020
+j = 1088
+i = 1088
+j = 1156
+i = 1156
+j = 1224
+i = 1224
+j = 1292
+i = 1292
+j = 1360
+i = 1360
+j = 1428
+i = 1428
+j = 1496
+i = 1496
+j = 1564
+i = 1564
+j = 1632
+i = 1632
+j = 1700
+i = 1700
+j = 1768
+i = 1768
+j = 1836
+i = 1836
+j = 1904
+i = 1904
+j = 1972
+i = 1972
+j = 2022
+Starting thread: 0
+
+Thread: 0 Doing: [163, 157, 60, 2, 0]
+Starting thread: 1
+
+Thread: 1 Doing: [163, 160, 110, 41, 0]Starting thread: 2
+
+
+Thread: 2 Doing: [163, 160, 153, 18, 0]
+Starting thread: 3
+
+Thread: 3 Doing: [163, 161, 139, 69, 0]
+Starting thread: 4
+
+Thread: 4 Doing: [163, 160, 122, 77, 0]
+Starting thread: 5
+
+Thread: 5 Doing: [163, 161, 146, 109, 0]
+Starting thread: 6
+
+Thread: 6 Doing: [163, 157, 64, 54, 0]
+Starting thread: 7
+
+Thread: 7 Doing: [163, 158, 137, 39, 0]
+Starting thread: 8
+
+Thread: 8 Doing: [163, 153, 128, 13, 0]
+Starting thread: 9
+
+Thread: 9 Doing: [163, 147, 138, 76, 0]
+Starting thread: 10
+
+Thread: 10 Doing: [163, 161, 133, 60, 0]
+Starting thread: 11
+
+Thread: 11 Doing: [163, 158, 54, 53, 0]
+Starting thread: 12
+
+Thread: 12 Doing: [163, 162, 79, 20, 0]
+Starting thread: 13
+
+Thread: 13 Doing: [163, 158, 152, 15, 0]
+Starting thread: 14
+
+Thread: 14 Doing: [163, 156, 141, 4, 0]
+Starting thread: 15
+
+Thread: 15 Doing: [163, 157, 84, 2, 0]
+Starting thread: 16
+
+Thread: 16 Doing: [163, 159, 118, 10, 0]
+Starting thread: 17
+
+Thread: 17 Doing: [163, 162, 124, 3, 0]
+Starting thread: 18
+
+Thread: 18 Doing: [163, 160, 158, 113, 0]
+Starting thread: 19
+
+Thread: 19 Doing: [163, 162, 159, 12, 0]
+Starting thread: 20
+
+Thread: 20 Doing: [163, 159, 127, 98, 0]
+Starting thread: 21
+
+Thread: 21 Doing: [163, 153, 89, 76, 0]
+Starting thread: 22
+
+Thread: 22 Doing: [163, 157, 147, 60, 0]
+Starting thread: 23
+
+Thread: 23 Doing: [163, 161, 160, 132, 0]
+Starting thread: 24
+
+Thread: 24 Doing: [163, 158, 133, 114, 0]
+Starting thread: 25
+
+Thread: 25 Doing: [163, 162, 109, 97, 0]
+Starting thread: 26
+
+Thread: 26 Doing: [163, 155, 93, 44, 0]
+Starting thread: 27
+
+Thread: 27 Doing: [163, 125, 117, 10, 0]
+Starting thread: 28
+
+Starting thread: 29
+
+Thread: 28 Doing: [163, 138, 135, 49, 0]
+Thread: 29 Doing: [163, 162, 153, 54, 0]
+Thread: 27 Doing: [163, 162, 108, 75, 0]
+Thread: 28 Doing: [163, 162, 110, 97, 0]
+Thread: 21 Doing: [163, 158, 136, 47, 0]
+Thread: 6 Doing: [163, 154, 72, 2, 0]
+Thread: 8 Doing: [163, 161, 142, 57, 0]
+Thread: 26 Doing: [163, 161, 135, 103, 0]
+Thread: 9 Doing: [163, 152, 131, 30, 0]
+Thread: 0 Doing: [163, 161, 122, 121, 0]
+Thread: 6 Doing: [163, 161, 107, 82, 0]
+Thread: 15 Doing: [163, 159, 50, 11, 0]
+Thread: 11 Doing: [163, 144, 130, 1, 0]
+Thread: 11 Doing: [163, 161, 90, 74, 0]
+Thread: 9 Doing: [163, 145, 128, 105, 0]
+Thread: 9 Doing: [163, 161, 94, 80, 0]
+Thread: 16 Doing: [163, 155, 146, 79, 0]
+Thread: 15 Doing: [163, 157, 145, 64, 0]
+Thread: 1 Doing: [163, 156, 99, 25, 0]
+Thread: 11 Doing: [163, 137, 119, 108, 0]
+Thread: 11 Doing: [163, 147, 121, 6, 0]
+Thread: 12 Doing: [163, 161, 134, 54, 0]
+Thread: 11 Doing: [163, 162, 89, 82, 0]
+Thread: 1 Doing: [163, 155, 89, 39, 0]
+Thread: 1 Doing: [163, 158, 95, 37, 0]
+Thread: 1 Doing: [163, 158, 114, 7, 0]
+Thread: 9 Doing: [163, 156, 137, 106, 0]
+Thread: 4 Doing: [163, 161, 144, 125, 0]
+Thread: 20 Doing: [163, 158, 156, 91, 0]
+Thread: 1 Doing: [163, 158, 43, 26, 0]
+Thread: 14 Doing: [163, 150, 91, 51, 0]
+Thread: 6 Doing: [163, 145, 115, 9, 0]
+Thread: 6 Doing: [163, 158, 119, 93, 0]
+Thread: 14 Doing: [163, 153, 92, 47, 0]
+Thread: 14 Doing: [163, 144, 99, 33, 0]
+Thread: 14 Doing: [163, 154, 119, 11, 0]
+Thread: 1 Doing: [163, 162, 112, 59, 0]
+Thread: 14 Doing: [163, 162, 75, 73, 0]
+Thread: 6 Doing: [163, 147, 93, 25, 0]
+Thread: 6 Doing: [163, 162, 109, 25, 0]
+Thread: 21 Doing: [163, 152, 144, 137, 0]
+Thread: 7 Doing: [163, 162, 153, 12, 0]
+Thread: 9 Doing:
