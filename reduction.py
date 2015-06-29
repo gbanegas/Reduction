@@ -33,10 +33,10 @@ class Reduction(object):
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
-        print "Matrix size: ", len(self.matrix)
+        #print "Matrix size: ", len(self.matrix)
         for i in range(1,nr):
             self._reduce_others(self.matrix,exp_sorted)
-            print "Matrix size: ", len(self.matrix)
+            #print "Matrix size: ", len(self.matrix)
 
         #print "Sem remocoes"
         #print_matrix(self.matrix)
