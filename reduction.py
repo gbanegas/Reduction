@@ -62,7 +62,7 @@ class Reduction(object):
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
         #xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree, xls)
+        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
         self._remove_one(self.matrix)
         #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
