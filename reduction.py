@@ -33,8 +33,10 @@ class Reduction(object):
         exp_sorted.remove(self.mdegree)
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
+        print "Matrix size: ", len(self.matrix)
         for i in range(1,nr):
             self._reduce_others(self.matrix,exp_sorted)
+            print "Matrix size: ", len(self.matrix)
 
         #print "Sem remocoes"
         #print_matrix(self.matrix)
@@ -46,7 +48,7 @@ class Reduction(object):
         #self.matrix_copy = copy.deepcopy(self.matrix)
         #xls.save(self.matrix, 'Not Optimized_1')
         #print_matrix(self.matrix)
-        t = self.reduce_matrix(self.mdegree, self.matrix)
+        #t = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(t)
         self._remove_repeat(self.matrix)
         self.clean(self.matrix)
@@ -138,6 +140,8 @@ class Reduction(object):
                 reduceRow = self.reduce(matrix[index],e)
                 matrix.append(reduceRow)
             self._clean_reduced(matrix,index)
+        self._remove_repeat(self.matrix)
+        matrix = self.clean(matrix)
 
     def _remove_one(self, matrix):
         for j in range(1, len(matrix)):
@@ -214,6 +218,7 @@ class Reduction(object):
     def _calc_NR(self, exp_sorted):
         nr = 2
         nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))
+        print "NR = ", nr
         #temp = (exp_sorted[0]+1)/2
         #deg = math.floor(temp)
         #if exp_sorted[1] > deg:
