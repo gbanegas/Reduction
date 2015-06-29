@@ -35,11 +35,12 @@ class Reduction(object):
             self._reduce_first(self.matrix, exp_sorted[i])
         for i in range(1,nr):
             self._reduce_others(self.matrix,exp_sorted)
+
         #print "Sem remocoes"
         #print_matrix(self.matrix)
        # print "Size of Columns ", len(self.matrix)
-       # print "Finish Reducing..."
-        
+        print "Finish Reducing..."
+
         #xls = Xslxsaver()
         #xls.create_worksheet(exp)
         #self.matrix_copy = copy.deepcopy(self.matrix)
@@ -72,7 +73,7 @@ class Reduction(object):
 
     def reduce_matrix(self, degree, matrix):
         #print "printing..."
-        matrix_copy = [[-1 for x in range(degree)] for x in range(len(matrix))] 
+        matrix_copy = [[-1 for x in range(degree)] for x in range(len(matrix))]
         for i in xrange(0, len(matrix)):
             h = 0
             #print i
@@ -88,7 +89,7 @@ class Reduction(object):
         for i in matches:
             count = count + (len(matches[i])-1)
         return count
-        
+
     def _count_xor(self, matrix, p):
         rowToWrite = [-1 for x in xrange(self.mdegree)]
         row = matrix[0]
@@ -109,12 +110,12 @@ class Reduction(object):
             tx = rowToCalc[i]
             count = count + tx
         count = count + len(p)
-        #print 
+        #print
         return count
 
 
     def delete(self):
-        del self.matrix 
+        del self.matrix
 
     def clean(self, matrix):
         toRemove = []
@@ -196,7 +197,7 @@ class Reduction(object):
             row = matrix[i]
             if row[index] <> NULL:
                 indexOfRows.append(i)
-        
+
         return indexOfRows
 
 
@@ -208,19 +209,20 @@ class Reduction(object):
             row[index - exp] = element
             index = index -1
 
-        matrix.append(row) 
+        matrix.append(row)
 
     def _calc_NR(self, exp_sorted):
         nr = 2
-        temp = (exp_sorted[0]+1)/2
-        deg = math.floor(temp)
-        if exp_sorted[1] > deg:
-            nr = 2* (exp_sorted[0] + 1) - exp_sorted[0]
+        nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))
+        #temp = (exp_sorted[0]+1)/2
+        #deg = math.floor(temp)
+        #if exp_sorted[1] > deg:
+        #    nr = 2* (exp_sorted[0] + 1) - exp_sorted[0]
         return nr
 
     def _generate_matrix(self):
         row = sorted(list(range(0, self.max_collum)), reverse=True)
-        matrix = [row] 
+        matrix = [row]
         return matrix
 
 def print_matrix(matrix):
@@ -228,4 +230,3 @@ def print_matrix(matrix):
         for r in matrix:
             print ''.join(str(r))
         print '----------------------FIM---------------------'
-
