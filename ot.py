@@ -13,27 +13,28 @@ from collections import defaultdict, Counter, OrderedDict
 NULL = -1
 class Ot(object):
 
-    def optimize(self, matrix, degree):
+    def optimize(self, matrix, degree, xls=None):
         self.matrix = matrix
         self.m = defaultdict()
         self.variable = 2*degree -1
         is_break = False
        # xls = Xslxsaver()
        # xls.create_work([degree])
+        #self.xls = xls
         i = 0
 
         while (not is_break):
         #for i in xrange(0,1):
 
             pair, is_break = self._generate_all_pairs(self.matrix)
-            #xls.save(self.matrix, str(i))
+            #self.xls.save(self.matrix, str(i))
             i += 1
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)
             if is_break:
                 #print "pair to break, ", pair
                 break
-            
+
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
             #xls.save(self.matrix, str(i))
@@ -76,11 +77,11 @@ class Ot(object):
                     allPairs[pair] = 1
 
         keys_ordered = sorted(allPairs.values(), reverse=True)
-        
+
         to_return = (NULL,NULL)
         od = OrderedDict(sorted(allPairs.items()))
 
-        
+
         index = 0
         for pair, key in od.iteritems():
             if key == keys_ordered[0]:
@@ -95,7 +96,7 @@ class Ot(object):
         else:
             return to_return, False
 
-            
+
         #return allPairs
 
     def _remove_repets(self, pairs):
@@ -106,7 +107,7 @@ class Ot(object):
                 if self._pair_equal(pairs[i], pairs[j]):
                     if pairs[j] not in repeated:
                         repeated.append(pairs[j])
-        
+
         #print repeated
         for j in repeated:
             pairs.remove(j)
@@ -133,7 +134,7 @@ class Ot(object):
 
         to_return = (NULL,NULL)
         index = 1
-        
+
 
         for pair in dict_of_matches:
             if dict_of_matches[pair] > index:
@@ -196,7 +197,7 @@ class Ot(object):
 
     #def _save_pair(self, pair, name):
         #print "Name : " + str(name) + " pair: " + str(pair)
-        
+
 
     def _generate_pairs(self, collumn):
         result = []
@@ -215,10 +216,9 @@ class Ot(object):
         return result
 
     def _column(self, matrix, i):
-        return [row[i] for row in matrix]  
+        return [row[i] for row in matrix]
 
 def print_matrix(matrix):
     #for r in matrix:
     #   print ''.join(str(r))
     print '-------------------------------------------'
-

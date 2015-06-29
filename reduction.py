@@ -23,6 +23,8 @@ class Reduction(object):
 
 
     def reduction(self,exp):
+        #xls = Xslxsaver()
+        #xls.create_worksheet(exp)
         self.otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
@@ -31,11 +33,14 @@ class Reduction(object):
         self.matrix = self._generate_matrix()
 
         exp_sorted.remove(self.mdegree)
+
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
         #print "Matrix size: ", len(self.matrix)
-        for i in range(1,nr):
+        #xls.save(self.matrix, 'firstRed')
+        for i in range(0,nr):
             self._reduce_others(self.matrix,exp_sorted)
+            #xls.save(self.matrix, 'red_'+str(i))
             #print "Matrix size: ", len(self.matrix)
 
         #print "Sem remocoes"
@@ -43,8 +48,7 @@ class Reduction(object):
        # print "Size of Columns ", len(self.matrix)
         print "Finish Reducing..."
 
-        #xls = Xslxsaver()
-        #xls.create_worksheet(exp)
+
         #self.matrix_copy = copy.deepcopy(self.matrix)
         #xls.save(self.matrix, 'Not Optimized_1')
         #print_matrix(self.matrix)
@@ -58,7 +62,7 @@ class Reduction(object):
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
         #xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
+        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree, xls)
         self._remove_one(self.matrix)
         #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
