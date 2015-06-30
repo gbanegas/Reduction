@@ -114083,4 +114083,1429 @@ Thread: 63 Doing: [684, 551, 418, 133, 0]
 Thread: 59 Doing: [879, 610, 341, 269, 0]
 Thread: 11 Doing: [1132, 941, 750, 191, 0]
 Thread: 70 Doing: [1977, 1897, 1817, 80, 0]
-Thread
+Thread-i
+-o
+-t
+Input file is " ent
+Output file is " saida_custodio
+number of threds 244
+244
+si + 1
+starting....
+i = 0
+j = 1
+i = 1
+j = 2
+i = 2
+j = 3
+i = 3
+j = 4
+i = 4
+j = 5
+i = 5
+j = 6
+i = 6
+j = 7
+i = 7
+j = 8
+i = 8
+j = 9
+i = 9
+j = 10
+i = 10
+j = 11
+i = 11
+j = 12
+i = 12
+j = 13
+i = 13
+j = 14
+i = 14
+j = 15
+i = 15
+j = 16
+i = 16
+j = 17
+i = 17
+j = 18
+i = 18
+j = 19
+i = 19
+j = 20
+i = 20
+j = 21
+i = 21
+j = 22
+i = 22
+j = 23
+i = 23
+j = 24
+i = 24
+j = 25
+i = 25
+j = 26
+i = 26
+j = 27
+i = 27
+j = 28
+i = 28
+j = 29
+i = 29
+j = 30
+i = 30
+j = 31
+i = 31
+j = 32
+i = 32
+j = 33
+i = 33
+j = 34
+i = 34
+j = 35
+i = 35
+j = 36
+i = 36
+j = 37
+i = 37
+j = 38
+i = 38
+j = 39
+i = 39
+j = 40
+i = 40
+j = 41
+i = 41
+j = 42
+i = 42
+j = 43
+i = 43
+j = 44
+i = 44
+j = 45
+i = 45
+j = 46
+i = 46
+j = 47
+i = 47
+j = 48
+i = 48
+j = 49
+i = 49
+j = 50
+i = 50
+j = 51
+i = 51
+j = 52
+i = 52
+j = 53
+i = 53
+j = 54
+i = 54
+j = 55
+i = 55
+j = 56
+i = 56
+j = 57
+i = 57
+j = 58
+i = 58
+j = 59
+i = 59
+j = 60
+i = 60
+j = 61
+i = 61
+j = 62
+i = 62
+j = 63
+i = 63
+j = 64
+i = 64
+j = 65
+i = 65
+j = 66
+i = 66
+j = 67
+i = 67
+j = 68
+i = 68
+j = 69
+i = 69
+j = 70
+i = 70
+j = 71
+i = 71
+j = 72
+i = 72
+j = 73
+i = 73
+j = 74
+i = 74
+j = 75
+i = 75
+j = 76
+i = 76
+j = 77
+i = 77
+j = 78
+i = 78
+j = 79
+i = 79
+j = 80
+i = 80
+j = 81
+i = 81
+j = 82
+i = 82
+j = 83
+i = 83
+j = 84
+i = 84
+j = 85
+i = 85
+j = 86
+i = 86
+j = 87
+i = 87
+j = 88
+i = 88
+j = 89
+i = 89
+j = 90
+i = 90
+j = 91
+i = 91
+j = 92
+i = 92
+j = 93
+i = 93
+j = 94
+i = 94
+j = 95
+i = 95
+j = 96
+i = 96
+j = 97
+i = 97
+j = 98
+i = 98
+j = 99
+i = 99
+j = 100
+i = 100
+j = 101
+i = 101
+j = 102
+i = 102
+j = 103
+i = 103
+j = 104
+i = 104
+j = 105
+i = 105
+j = 106
+i = 106
+j = 107
+i = 107
+j = 108
+i = 108
+j = 109
+i = 109
+j = 110
+i = 110
+j = 111
+i = 111
+j = 112
+i = 112
+j = 113
+i = 113
+j = 114
+i = 114
+j = 115
+i = 115
+j = 116
+i = 116
+j = 117
+i = 117
+j = 118
+i = 118
+j = 119
+i = 119
+j = 120
+i = 120
+j = 121
+i = 121
+j = 122
+i = 122
+j = 123
+i = 123
+j = 124
+i = 124
+j = 125
+i = 125
+j = 126
+i = 126
+j = 127
+i = 127
+j = 128
+i = 128
+j = 129
+i = 129
+j = 130
+i = 130
+j = 131
+i = 131
+j = 132
+i = 132
+j = 133
+i = 133
+j = 134
+i = 134
+j = 135
+i = 135
+j = 136
+i = 136
+j = 137
+i = 137
+j = 138
+i = 138
+j = 139
+i = 139
+j = 140
+i = 140
+j = 141
+i = 141
+j = 142
+i = 142
+j = 143
+i = 143
+j = 144
+i = 144
+j = 145
+i = 145
+j = 146
+i = 146
+j = 147
+i = 147
+j = 148
+i = 148
+j = 149
+i = 149
+j = 150
+i = 150
+j = 151
+i = 151
+j = 152
+i = 152
+j = 153
+i = 153
+j = 154
+i = 154
+j = 155
+i = 155
+j = 156
+i = 156
+j = 157
+i = 157
+j = 158
+i = 158
+j = 159
+i = 159
+j = 160
+i = 160
+j = 161
+i = 161
+j = 162
+i = 162
+j = 163
+i = 163
+j = 164
+i = 164
+j = 165
+i = 165
+j = 166
+i = 166
+j = 167
+i = 167
+j = 168
+i = 168
+j = 169
+i = 169
+j = 170
+i = 170
+j = 171
+i = 171
+j = 172
+i = 172
+j = 173
+i = 173
+j = 174
+i = 174
+j = 175
+i = 175
+j = 176
+i = 176
+j = 177
+i = 177
+j = 178
+i = 178
+j = 179
+i = 179
+j = 180
+i = 180
+j = 181
+i = 181
+j = 182
+i = 182
+j = 183
+i = 183
+j = 184
+i = 184
+j = 185
+i = 185
+j = 186
+i = 186
+j = 187
+i = 187
+j = 188
+i = 188
+j = 189
+i = 189
+j = 190
+i = 190
+j = 191
+i = 191
+j = 192
+i = 192
+j = 193
+i = 193
+j = 194
+i = 194
+j = 195
+i = 195
+j = 196
+i = 196
+j = 197
+i = 197
+j = 198
+i = 198
+j = 199
+i = 199
+j = 200
+i = 200
+j = 201
+i = 201
+j = 202
+i = 202
+j = 203
+i = 203
+j = 204
+i = 204
+j = 205
+i = 205
+j = 206
+i = 206
+j = 207
+i = 207
+j = 208
+i = 208
+j = 209
+i = 209
+j = 210
+i = 210
+j = 211
+i = 211
+j = 212
+i = 212
+j = 213
+i = 213
+j = 214
+i = 214
+j = 215
+i = 215
+j = 216
+i = 216
+j = 217
+i = 217
+j = 218
+i = 218
+j = 219
+i = 219
+j = 220
+i = 220
+j = 221
+i = 221
+j = 222
+i = 222
+j = 223
+i = 223
+j = 224
+i = 224
+j = 225
+i = 225
+j = 226
+i = 226
+j = 227
+i = 227
+j = 228
+i = 228
+j = 229
+i = 229
+j = 230
+i = 230
+j = 231
+i = 231
+j = 232
+i = 232
+j = 233
+i = 233
+j = 234
+i = 234
+j = 235
+i = 235
+j = 236
+i = 236
+j = 237
+i = 237
+j = 238
+i = 238
+j = 239
+i = 239
+j = 240
+i = 240
+j = 241
+i = 241
+j = 242
+i = 242
+j = 243
+i = 243
+j = 244
+Starting thread: 0
+
+Thread: 0 Doing: [572, 545, 518, 27, 0]
+NR =  21Starting thread: 1
+
+Thread: 1 Doing: [571, 549, 527, 22, 0]
+NR =  25
+
+Starting thread: 2
+
+Thread: 2 Doing: [859, 825, 791, 34, 0]
+NR =  25Starting thread: 3
+
+
+Thread: 3 Doing: [611, 589, 567, 22, 0]
+NR =  27
+Starting thread: 4
+
+Thread: 4 Doing: [620, 589, 558, 31, 0]Starting thread: 5
+
+
+NR =  19
+Thread: 5 Doing: [708, 663, 618, 45, 0]
+NR =  15Starting thread: 6
+
+Thread: 6 Doing: [523, 508, 493, 15, 0]
+NR =  34
+
+Starting thread: 7
+
+Thread: 7 Doing: [543, 539, 535, 4, 0]
+NR =  135
+Starting thread: 8
+
+Thread: 8 Doing: [617, 593, 569, 24, 0]
+NR =  25
+ Starting thread: 9
+
+Thread: 9 Doing: [387, 365, 343, 22, 0]
+NR =  17
+Starting thread: 10
+
+Thread: 10 Doing: [541, 535, 529, 6, 0]
+NR =  89
+Starting thread: 11
+
+Thread: 11 Doing: [30, 29, 28, 1, 0]
+NR =  28
+Starting thread: 12
+
+Thread: 12 Doing: [615, 587, 559, 28, 0]
+NR =  21
+Starting thread: 13
+
+Thread: 13 Doing: [540, 509, 478, 31, 0]
+NR =  17
+Starting thread: 14
+
+Thread: 14 Doing: [933, 904, 875, 29, 0]
+NR =  32
+Starting thread: 15
+
+Thread: 15 Doing: [628, 593, 558, 35, 0]
+NR =  17
+Starting thread: 16
+
+Thread: 16 Doing: [521, 493, 465, 28, 0]
+NR =  18
+Starting thread: 17
+
+Thread: 17 Doing: [573, 563, 553, 10, 0]
+NR =  57
+Starting thread: 18
+
+Thread: 18 Doing: [515, 493, 471, 22, 0]
+NR =  23
+Starting thread: 19
+
+Thread: 19 Doing: [60, 57, 54, 3, 0]
+NR =  19
+Starting thread: 20
+
+Thread: 20 Doing: [613, 599, 585, 14, 0]
+NR =  43
+Starting thread: 21
+
+Thread: 21 Doing: [53, 52, 51, 1, 0]
+NR =  51
+Starting thread: 22
+
+Thread: 22 Doing: [565, 563, 561, 2, 0]
+NR =  281
+Starting thread: 23
+
+Thread: 23 Doing: [61, 59, 57, 2, 0]
+NR =  29
+Starting thread: 24
+
+Thread: 24 Doing: [62, 61, 60, 1, 0]
+NR =  60
+Starting thread: 25
+
+Thread: 25 Doing: [183, 182, 181, 1, 0]
+NR =  181
+Starting thread: 26
+
+Thread: 26 Doing: [76, 73, 70, 3, 0]
+NR =  24
+Starting thread: 27
+
+Thread: 27 Doing: [580, 579, 578, 1, 0]
+NR =  578
+Starting thread: 28
+
+Thread: 28 Doing: [692, 661, 630, 31, 0]
+NR =  22
+Starting thread: 29
+
+Thread: 29 Doing: [780, 759, 738, 21, 0]
+NR =  37
+Starting thread: 30
+
+Thread: 30 Doing: [795, 764, 733, 31, 0]
+NR =  25
+Starting thread: 31
+
+Thread: 31 Doing: [604, 595, 586, 9, 0]
+NR =  66
+Starting thread: 32
+
+Thread: 32 Doing: [630, 609, 588, 21, 0]
+NR =  29
+ Starting thread: 33
+
+Thread: 33 Doing: [684, 657, 630, 27, 0]
+NR = Starting thread: 34
+
+Thread: 34 Doing: [685, 656, 627, 29, 0]
+NR =  23
+Starting thread: 35
+
+ 25
+Thread: 35 Doing: [607, 570, 533, 37, 0]
+NR =  16
+Starting thread: 36
+
+Starting thread: 37
+
+Thread: 36 Doing: [593, 558, 523, 35, 0]
+NR =  16Thread: 37 Doing: [90, 87, 84, 3, 0]
+NR =  29
+
+Starting thread: 38
+
+Thread: 38 Doing: [355, 333, 311, 22, 0]
+NR =  16Starting thread: 39
+
+Thread: 39 Doing: [676, 643, 610, 33, 0]
+NR =  20
+
+Starting thread: 40
+
+Thread: 40 Doing: [101, 99, 97, 2, 0]
+NR =  49
+Starting thread: 41
+
+Thread: 41 Doing: [670, 641, 612, 29, 0]
+NR =  23
+Starting thread: 42
+
+Thread: 42 Doing: [117, 112, 107, 5, 0]
+NR =  23
+Starting thread: 43
+
+Thread: 43 Doing: [684, 651, 618, 33, 0]
+NR =  20
+Starting thread: 44
+
+Thread: 44 Doing: [611, 604, 597, 7, 0]
+NR =  87
+ Starting thread: 45
+
+Starting thread: 46
+
+Thread: 46 Doing: [636, 633, 630, 3, 0]
+NR =  211
+Starting thread: 47
+
+Thread: 47 Doing: [695, 654, 613, 41, 0]
+NR =  16Starting thread: 48
+
+Thread: 48 Doing: [578, 547, 516, 31, 0]
+NR =  18Thread: 45 Doing: [397, 371, 345, 26, 0]
+NR =  15
+ Starting thread: 49
+
+
+Thread: 49 Doing: [691, 669, 647, 22, 0]
+NR =  31
+
+Starting thread: 50
+
+Thread: 50 Doing: [703, 670, 637, 33, 0]
+NR =  21
+Starting thread: 51
+
+Thread: 51 Doing: [582, 561, 540, 21, 0]
+NR =  27
+Starting thread: 52
+
+Thread: 52 Doing: [697, 662, 627, 35, 0]
+NR =  19
+Starting thread: 53
+
+Starting thread: 54
+
+Thread: 53 Doing: [220, 209, 198, 11, 0]
+NR =  19Thread: 54 Doing: [653, 632, 611, 21, 0]
+NR =  31
+Starting thread: 55
+
+Thread: 55 Doing: [836, 795, 754, 41, 0]
+NR =  20
+
+Starting thread: 56
+
+Thread: 56 Doing: [155, 148, 141, 7, 0]
+NR =  21Starting thread: 57
+
+
+Thread: 57 Doing: [646, 613, 580, 33, 0]
+NR =  19Starting thread: 58
+
+Thread: 58 Doing: [667, 661, 655, 6, 0]
+NR =  110
+
+ Starting thread: 59
+
+Thread: 59 Doing: [650, 647, 644, 3, 0]
+NR =  216
+Starting thread: 60
+
+Thread: 60 Doing: [617, 578, 539, 39, 0]
+NR =  15
+Starting thread: 61
+
+Starting thread: 62
+
+Thread: 61 Doing: [668, 627, 586, 41, 0]
+NR =  16Thread: 62 Doing: [131, 124, 117, 7, 0]
+NR =  
+ Starting thread: 63
+
+18
+Thread: 63 Doing: [565, 532, 499, 33, 0]
+NR =  17Starting thread: 64
+
+Thread: 64 Doing: [717, 680, 643, 37, 0]
+NR =  19
+
+Starting thread: 65
+
+Starting thread: 66
+
+Thread: 65 Doing: [660, 627, 594, 33, 0]
+NR =  19Thread: 66 Doing: [171, 164, 157, 7, 0]
+NR =  24
+
+Starting thread: 67
+
+Thread: 67 Doing: [145, 142, 139, 3, 0]
+NR =  47
+Starting thread: 68
+
+Thread: 68 Doing: [397, 375, 353, 22, 0]
+NR =  17
+Starting thread: 69
+
+Thread: 69 Doing: [452, 443, 434, 9, 0]
+NR =  50
+Starting thread: 70
+
+Thread: 70 Doing: [668, 635, 602, 33, 0]
+NR =  20
+Starting thread: 71
+
+Thread: 71 Doing: [167, 162, 157, 5, 0]
+NR =  33
+Starting thread: 72
+
+Thread: 72 Doing: [870, 817, 764, 53, 0]
+NR =  16
+ Starting thread: 73
+
+Thread: 73 Doing: [767, 723, 679, 44, 0]
+NR =  17Starting thread: 74
+
+Thread: 74 Doing: [164, 157, 150, 7, 0]
+NR =  23
+
+Starting thread: 75
+
+Thread: 75 Doing: [851, 800, 749, 51, 0]
+NR =  16
+Starting thread: 76
+
+Thread: 76 Doing: [244, 229, 214, 15, 0]
+NR =  16
+Starting thread: 77
+
+Thread: 77 Doing: [642, 615, 588, 27, 0]
+NR =  23
+Starting thread: 78
+
+Thread: 78 Doing: [180, 171, 162, 9, 0]
+NR =  19
+ Starting thread: 79
+
+Starting thread: 80
+
+Thread: 80 Doing: [841, 786, 731, 55, 0]
+NR =  15Starting thread: 81
+
+Thread: 79 Doing: [191, 186, 181, 5, 0]
+NR =  37Thread: 81 Doing: [180, 173, 166, 7, 0]
+NR =  25
+
+
+ Starting thread: 82
+
+Starting thread: 83
+
+Thread: 83 Doing: [645, 616, 587, 29, 0]
+NR =  22
+Starting thread: 84
+
+Starting thread: 85
+
+Thread: 82 Doing: [185, 181, 177, 4, 0]
+NR =  45Thread: 84 Doing: [194, 187, 180, 7, 0]
+NR =  27
+
+Starting thread: 86
+
+Thread: 85 Doing: [185, 182, 179, 3, 0]
+NR =  61Thread: 86 Doing: [764, 741, 718, 23, 0]
+NR =  33Starting thread: 87
+
+
+
+Thread: 87 Doing: [733, 720, 707, 13, 0]
+NR =  56
+ Starting thread: 88
+
+Thread: 88 Doing: [228, 219, 210, 9, 0]
+NR =  25
+Starting thread: 89
+
+Thread: 89 Doing: [801, 785, 769, 16, 0]
+NR =  49
+ Starting thread: 90
+
+Thread: 90 Doing: [820, 789, 758, 31, 0]
+NR =  26
+Starting thread: 91
+
+Thread: 91 Doing: [810, 783, 756, 27, 0]
+NR =  29
+Starting thread: 92
+
+Thread: 92 Doing: [764, 739, 714, 25, 0]
+NR =  30
+Starting thread: 93
+
+Thread: 93 Doing: [755, 744, 733, 11, 0]
+NR =  68
+Starting thread: 94
+
+Starting thread: 95
+
+Thread: 94 Doing: [767, 742, 717, 25, 0]
+NR =  30Thread: 95 Doing: [559, 542, 525, 17, 0]
+NR =  32
+
+Starting thread: 96
+
+Thread: 96 Doing: [212, 211, 210, 1, 0]
+NR =  210
+Starting thread: 97
+
+Thread: 97 Doing: [214, 205, 196, 9, 0]
+NR =  23
+Starting thread: 98
+
+Thread: 98 Doing: [804, 785, 766, 19, 0]
+NR =  42
+Starting thread: 99
+
+Thread: 99 Doing: [730, 703, 676, 27, 0]
+NR =  26
+Starting thread: 100
+
+Starting thread: 101
+
+Thread: 100 Doing: [229, 224, 219, 5, 0]
+NR =  45Thread: 101 Doing: [801, 770, 739, 31, 0]
+NR =  25
+
+Starting thread: 102
+
+Thread: 102 Doing: [228, 227, 226, 1, 0]
+NR =  226
+ Starting thread: 103
+
+Thread: 103 Doing: [251, 244, 237, 7, 0]
+NR =  35
+Starting thread: 104
+
+Thread: 104 Doing: [202, 195, 188, 7, 0]
+NR =  28
+ Starting thread: 105
+
+Thread: 105 Doing: [820, 785, 750, 35, 0]
+NR =  23
+Starting thread: 106
+
+Thread: 106 Doing: [249, 241, 233, 8, 0]
+NR =  30
+Starting thread: 107
+
+Thread: 107 Doing: [295, 279, 263, 16, 0]
+NR =  18
+Starting thread: 108
+
+Thread: 108 Doing: [829, 787, 745, 42, 0]
+NR =  19Starting thread: 109
+
+Thread: 109 Doing: [268, 257, 246, 11, 0]
+NR =  24
+
+Starting thread: 110
+
+Thread: 110 Doing: [596, 585, 574, 11, 0]
+NR =  54
+Starting thread: 111
+
+Thread: 111 Doing: [746, 699, 652, 47, 0]
+NR =  15
+Starting thread: 112
+
+Thread: 112 Doing: [820, 779, 738, 41, 0]
+NR =  19
+Starting thread: 113
+
+Thread: 113 Doing: [569, 561, 553, 8, 0]
+NR =  70
+Starting thread: 114
+
+Thread: 114 Doing: [228, 217, 206, 11, 0]
+NR =  20
+ Starting thread: 115
+
+Thread: 115 Doing: [818, 779, 740, 39, 0]
+NR =  20
+Starting thread: 116
+
+Thread: 116 Doing: [263, 258, 253, 5, 0]
+NR =  52
+Starting thread: 117
+
+Thread: 117 Doing: [270, 261, 252, 9, 0]
+NR =  29
+Starting thread: 118
+
+Starting thread: 119
+
+Starting thread: 120
+
+Thread: 118 Doing: [263, 259, 255, 4, 0]
+NR =  65
+Starting thread: 121
+
+Thread: 119 Doing: [356, 335, 314, 21, 0]
+NR =  16Starting thread: 122
+
+Thread: 120 Doing: [774, 757, 740, 17, 0]
+NR =  45
+
+Starting thread: 123
+
+Thread: 121 Doing: [961, 926, 891, 35, 0]
+NR =  27Thread: 122 Doing: [260, 253, 246, 7, 0]
+NR =  36
+ Thread: 123 Doing: [780, 743, 706, 37, 0]
+
+NR =  21Starting thread: 124
+
+
+Thread: 124 Doing: [783, 782, 781, 1, 0]
+NR =  781
+Starting thread: 125
+
+Thread: 125 Doing: [353, 330, 307, 23, 0]
+NR =  15
+Starting thread: 126
+
+Thread: 126 Doing: [1002, 947, 892, 55, 0]
+NR =  18Starting thread: 127
+
+Thread: 127 Doing: [789, 751, 713, 38, 0]
+NR =  20
+
+ Starting thread: 128
+
+Starting thread: 129
+
+Thread: 129 Doing: [809, 801, 793, 8, 0]
+NR =  100
+Starting thread: 130
+
+Starting thread: 131
+
+Thread: 128 Doing: [985, 949, 913, 36, 0]
+NR =  27Thread: 130 Doing: [787, 757, 727, 30, 0]
+NR =  26Thread: 131 Doing: [948, 887, 826, 61, 0]
+ Starting thread: 132
+
+
+Starting thread: 133
+
+
+NR =  15
+ Thread: 132 Doing: [895, 846, 797, 49, 0]
+NR =  18Starting thread: 134
+
+Thread: 133 Doing: [961, 914, 867, 47, 0]
+NR =  20
+
+ Thread: 134 Doing: [913, 893, 873, 20, 0]
+NR =  45
+Starting thread: 135
+
+Thread: 135 Doing: [716, 673, 630, 43, 0]
+NR =  16
+Starting thread: 136
+
+Thread: 136 Doing: [290, 287, 284, 3, 0]
+NR =  96Starting thread: 137
+
+Thread: 137 Doing: [811, 808, 805, 3, 0]
+
+ Starting thread: 138
+
+NR =  269Thread: 138 Doing: [295, 287, 279, 8, 0]
+NR =  36
+
+Starting thread: 139
+
+Thread: 139 Doing: [298, 287, 276, 11, 0]
+NR =  26
+Starting thread: 140
+
+Thread: 140 Doing: [339, 320, 301, 19, 0]
+NR =  17
+Starting thread: 141
+
+Thread: 141 Doing: [814, 765, 716, 49, 0]
+NR =  16
+Starting thread: 142
+
+Thread: 142 Doing: [785, 754, 723, 31, 0]
+NR =  25
+Starting thread: 143
+
+Thread: 143 Doing: [348, 329, 310, 19, 0]
+NR =  18Starting thread: 144
+
+Thread: 144 Doing: [810, 763, 716, 47, 0]
+NR =  17
+
+Starting thread: 145
+
+Starting thread: 146
+
+Thread: 145 Doing: [829, 824, 819, 5, 0]
+NR =  165Thread: 146 Doing: [821, 763, 705, 58, 0]
+NR =  14Starting thread: 147
+
+Thread: 147 Doing: [331, 325, 319, 6, 0]
+NR =  54
+
+
+ Starting thread: 148
+
+Thread: 148 Doing: [964, 929, 894, 35, 0]
+NR =  27Starting thread: 149
+
+Thread: 149 Doing: [317, 311, 305, 6, 0]
+
+ Starting thread: 150
+
+NR =  52Thread: 150 Doing: [894, 861, 828, 33, 0]
+NR =  27
+
+Starting thread: 151
+
+Thread: 151 Doing: [565, 543, 521, 22, 0]
+NR =  25Starting thread: 152
+
+Thread: 152 Doing: [380, 365, 350, 15, 0]
+NR =  25
+
+ Starting thread: 153
+
+Thread: 153 Doing: [653, 652, 651, 1, 0]
+NR =  651
+Starting thread: 154
+
+Thread: 154 Doing: [422, 397, 372, 25, 0]
+NR =  16
+Starting thread: 155
+
+Thread: 155 Doing: [463, 450, 437, 13, 0]
+NR =  35
+Starting thread: 156
+
+Thread: 156 Doing: [863, 854, 845, 9, 0]
+NR =  95
+Starting thread: 157
+
+Thread: 157 Doing: [663, 658, 653, 5, 0]
+NR =  132
+Starting thread: 158
+
+Thread: 158 Doing: [340, 331, 322, 9, 0]
+NR =  37
+ Starting thread: 159
+
+Thread: 159 Doing: [341, 335, 329, 6, 0]
+NR =  56
+Starting thread: 160
+
+Thread: 160 Doing: [367, 355, 343, 12, 0]
+NR =  30
+Starting thread: 161
+
+Thread: 161 Doing: [804, 771, 738, 33, 0]
+NR =  24
+ Starting thread: 162
+
+Starting thread: 163
+
+Thread: 163 Doing: [365, 356, 347, 9, 0]
+NR =  40
+ Thread: 162 Doing: [930, 899, 868, 31, 0]
+NR =  29Starting thread: 164
+
+
+Thread: 164 Doing: [323, 312, 301, 11, 0]
+NR =  29Starting thread: 165
+
+Starting thread: 166
+
+
+ Thread: 165 Doing: [933, 883, 833, 50, 0]
+NR =  18Thread: 166 Doing: [229, 227, 225, 2, 0]
+NR =  113Starting thread: 167
+
+
+
+Thread: 167 Doing: [877, 856, 835, 21, 0]
+NR =  41Starting thread: 168
+
+Thread: 168 Doing: [823, 818, 813, 5, 0]
+NR =  164
+
+Starting thread: 169
+
+Thread: 169 Doing: [955, 913, 871, 42, 0]
+NR =  22
+Starting thread: 170
+
+Thread: 170 Doing: [850, 819, 788, 31, 0]
+NR =  27Starting thread: 171
+
+
+Thread: 171 Doing: [745, 697, 649, 48, 0]
+NR =  15Starting thread: 172
+
+
+Starting thread: 174
+
+Starting thread: 173
+
+Starting thread: 175
+
+Thread: 172 Doing: [851, 821, 791, 30, 0]
+NR =  28
+Starting thread: 176
+
+Thread: 174 Doing: [373, 364, 355, 9, 0]
+NR =  41Thread: 173 Doing: [819, 784, 749, 35, 0]
+NR =  23
+
+ Thread: 175 Doing: [372, 371, 370, 1, 0]Starting thread: 177
+
+
+NR =  370Thread: 176 Doing: [334, 325, 316, 9, 0]
+NR =  36
+Thread: 177 Doing: [894, 889, 884, 5, 0]
+NR =  178
+Starting thread: 178
+
+Thread: 178 Doing: [273, 259, 245, 14, 0]
+NR =  19
+
+Starting thread: 179
+
+Thread: 179 Doing: [692, 675, 658, 17, 0]
+NR =  40
+Starting thread: 180
+
+Thread: 180 Doing: [380, 379, 378, 1, 0]
+NR =  378
+Starting thread: 181
+
+Thread: 181 Doing: [897, 895, 893, 2, 0]
+NR =  447
+Starting thread: 182
+
+Thread: 182 Doing: [410, 403, 396, 7, 0]
+NR =  58
+Starting thread: 183
+
+Thread: 183 Doing: [948, 935, 922, 13, 0]
+NR =  72
+Starting thread: 184
+
+Thread: 184 Doing: [415, 402, 389, 13, 0]
+NR =  31
+Starting thread: 185
+
+Thread: 185 Doing: [958, 929, 900, 29, 0]
+ Starting thread: 186
+
+NR =  32Starting thread: 187
+
+
+Thread: 186 Doing: [395, 377, 359, 18, 0]
+NR =  21Starting thread: 188
+
+Thread: 187 Doing: [500, 469, 438, 31, 0]
+NR =  16
+Thread: 188 Doing: [489, 461, 433, 28, 0]
+NR =  17
+Starting thread: 189
+
+Thread: 189 Doing: [1002, 975, 948, 27, 0]
+NR =  37
+Starting thread: 190
+
+Thread: 190 Doing: [397, 383, 369, 14, 0]
+NR =  28
+
+Starting thread: 191
+
+Thread: 191 Doing: [407, 403, 399, 4, 0]
+NR =  101
+Starting thread: 192
+
+Thread: 192 Doing: [339, 325, 311, 14, 0]
+NR =  24
+Starting thread: 193
+
+Thread: 193 Doing: [210, 203, 196, 7, 0]
+NR =  29Starting thread: 194
+
+Thread: 194 Doing: [68, 67, 66, 1, 0]
+NR =  66
+
+Starting thread: 195
+
+Thread: 195 Doing: [935, 906, 877, 29, 0]
+NR =  32Starting thread: 196
+
+Thread: 196 Doing: [447, 430, 413, 17, 0]
+NR =  26
+
+Starting thread: 197
+
+Starting thread: 198
+
+Thread: 197 Doing: [401, 394, 387, 7, 0]
+NR =  57
+Starting thread: 199
+
+Thread: 199 Doing: [429, 424, 419, 5, 0]
+NR =  85Thread: 198 Doing: [929, 881, 833, 48, 0]
+NR =  19
+ Starting thread: 200
+
+
+Starting thread: 201
+
+Thread: 200 Doing: [421, 403, 385, 18, 0]
+NR =  23Thread: 201 Doing: [395, 376, 357, 19, 0]
+NR =  20
+
+Starting thread: 202
+
+Thread: 202 Doing: [821, 819, 817, 2, 0]
+NR =  409Starting thread: 203
+
+Thread: 203 Doing: [471, 451, 431, 20, 0]
+NR =  23
+
+ Starting thread: 204
+
+Thread: 204 Doing: [396, 373, 350, 23, 0]
+NR =  17
+Starting thread: 205
+
+Thread: 205 Doing: [433, 413, 393, 20, 0]
+NR =  21
+Starting thread: 206
+
+Starting thread: 207
+
+Thread: 206 Doing: [906, 883, 860, 23, 0]
+NR =  39Thread: 207 Doing: [949, 924, 899, 25, 0]
+NR =  37
+
+Starting thread: 208
+
+Thread: 208 Doing: [436, 415, 394, 21, 0]
+NR =  20
+Starting thread: 209
+
+Thread: 209 Doing: [971, 964, 957, 7, 0]
+NR =  138
+Starting thread: 210
+
+Thread: 210 Doing: [396, 371, 346, 25, 0]
+NR =  15
+Starting thread: 211
+
+Thread: 211 Doing: [461, 451, 441, 10, 0]
+NR =  45
+Starting thread: 212
+
+Thread: 212 Doing: [561, 533, 505, 28, 0]
+NR =  19
+Starting thread: 213
+
+Thread: 213 Doing: [562, 535, 508, 27, 0]
+NR =  20
+Starting thread: 214
+
+Thread: 214 Doing: [461, 440, 419, 21, 0]
+NR =  21
+ Starting thread: 215
+
+Thread: 215 Doing: [564, 535, 506, 29, 0]
+NR =  19
+ Starting thread: 216
+
+Thread: 216 Doing: [897, 862, 827, 35, 0]
+NR =  25
+Starting thread: 217
+
+Thread: 217 Doing: [975, 974, 973, 1, 0]
+NR =  973
+Starting thread: 218
+
+Thread: 218 Doing: [990, 949, 908, 41, 0]
+NR =  24
+ Starting thread: 219
+
+Thread: 219 Doing: [911, 863, 815, 48, 0]
+NR =  18
+ Starting thread: 220
+
+Thread: 220 Doing: [311, 291, 271, 20, 0]
+NR =  15
+Starting thread: 221
+
+Thread: 221 Doing: [977, 937, 897, 40, 0]
+NR =  24
+Starting thread: 222
+
+Thread: 222 Doing: [389, 364, 339, 25, 0]
+NR =  15
+Starting thread: 223
+
+Thread: 223 Doing: [451, 433, 415, 18, 0]
+NR =  24
+Starting thread: 224
+
+Starting thread: 225
+
+Thread: 225 Doing: [478, 473, 468, 5, 0]
+NR =  95Thread: 224 Doing: [555, 532, 509, 23, 0]
+NR =  24
+
+Starting thread: 226
+
+Thread: 226 Doing: [985, 957, 929, 28, 0]
+NR =  35
+ Starting thread: 227
+
+Thread: 227 Doing: [487, 483, 479, 4, 0]
+NR =  121
+Starting thread: 228
+
+Thread: 228 Doing: [540, 513, 486, 27, 0]
+NR =  19
+Starting thread: 229
+
+Thread: 229 Doing: [421, 404, 387, 17, 0]
+NR =  24
+ Starting thread: 230
+
+Thread: 230 Doing: [509, 496, 483, 13, 0]
+NR =  39
+Starting thread: 231
+
+Thread: 231 Doing: [549, 515, 481, 34, 0]
+NR =  16
+Starting th
