@@ -1,4 +1,4 @@
-from reduction import Reduction
+from redthread import ReductionT
 from polynomial import Polynomial
 #import xlsxwriter
 import os
@@ -21,7 +21,7 @@ def main(argv):
             inputfile = arg
         elif opt in ("-o", "--ofile"):
             outputfile = arg
-    
+
     try:
         fi = open(inputfile,"r")
         fl = open(outputfile,"a")
@@ -37,15 +37,13 @@ def main(argv):
     for pol in l:
 
         if len(pol.coefs()) > 1:
-            red = Reduction()
+            red = ReductionT()
             count = red.reduction(pol.coefs())
             result =  str(pol.coefs()) + ":" + str(count)
             print result
             fl.write(result + "\n")
-            
+
 
 
 if __name__ == '__main__':
     main(sys.argv[1:])
-   
-   

@@ -4,10 +4,10 @@ Created on 10 Sep 2014
 @author: gustavo
 '''
 import threading
-from reduction import Reduction
+from redthread import ReductionT
 
 class ThreadCount(threading.Thread):
-    
+
 
     def __init__(self, threadID,  locker, lockscreen, polynomials, save):
         threading.Thread.__init__(self)
@@ -16,11 +16,11 @@ class ThreadCount(threading.Thread):
         self.polynomials = polynomials
         self.save = save
         self.lockscreen = lockscreen
-    
+
     def run(self):
         print "Starting thread: " + str(self.threadID) + '\n'
         for i in self.polynomials:
-            reduc = Reduction()
+            reduc = ReductionT()
             self.lockscreen.acquire()
             print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())
             self.lockscreen.release()
@@ -35,5 +35,3 @@ class ThreadCount(threading.Thread):
             #print r
             self.lockscreen.release()
             del reduc
-            
-

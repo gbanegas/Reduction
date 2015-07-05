@@ -5,9 +5,9 @@ Created on 10 Sep 2014
 '''
 
 import math
-#from xlsx import Xslxsaver
 import re
 from ot import Ot
+from threadred import ThreadRed
 
 import copy
 
@@ -16,40 +16,27 @@ max_collum = 0
 mdegree = 0;
 
 
-class Reduction(object):
+class ReductionT(object):
 
 
 
     def reduction(self,exp):
-        #xls = Xslxsaver()
-        #xls.create_worksheet(exp)
         self.otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
-        nr = self._calc_NR(exp_sorted)
+        self.nr = self._calc_NR(exp_sorted)
         self.matrix = self._generate_matrix()
-
         exp_sorted.remove(self.mdegree)
-
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
-        for i in range(0,nr):
-            self._reduce_others(self.matrix,exp_sorted)
 
-        #print "Sem remocoes"
-        #print_matrix(self.matrix)
-       # print "Size of Columns ", len(self.matrix)
+        #for i in range(0,nr):
+        self._reduce_others(self.matrix,exp_sorted)
         print "Finish Reducing..."
-
-
-        #self.matrix_copy = copy.deepcopy(self.matrix)
-        #xls.save(self.matrix, 'Not Optimized_1')
-        #print_matrix(self.matrix)
-        #t = self.reduce_matrix(self.mdegree, self.matrix)
-        #print_matrix(t)
         self._remove_repeat(self.matrix)
         self.clean(self.matrix)
+
         #xls.save_complete(self.matrix)
         self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
@@ -132,15 +119,25 @@ class Reduction(object):
         return True
 
     def _reduce_others(self, matrix, exp):
-        to_reduce = self._need_to_reduce(matrix)
-        for index in to_reduce:
-            for e in exp:
-                reduceRow = self.reduce(matrix[index],e)
-                matrix.append(reduceRow)
-            self._clean_reduced(matrix,index)
-        self._remove_repeat(self.matrix)
-        matrix = self.clean(matrix)
+        threads = []
+        #for i_row in xrange(1, len(matrix)-1):
+        #    t =  ThreadRed(matrix[i], exp, self.max_collum)
+        #print_matrix(matrix)
+        for i_row in xrange(1, len(matrix)-1):
+            t =  ThreadRed(matrix[i_row],self.mdegree, exp, self.max_collum,self.nr)
+            threads.append(t)
+            t.start()
 
+        for t in threads:
+            while(t.join()):
+                pass
+
+        for t in threads:
+            for i in t.getMatrix():
+                matrix.append(i)
+
+        self._remove_repeat(matrix)
+        
     def _remove_one(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]

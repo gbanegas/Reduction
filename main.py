@@ -3,7 +3,7 @@ Created on 10 Sep 2014
 
 @author: gustavo
 '''
-from reduction import Reduction
+from redthread import ReductionT
 from polynomial import Polynomial
 from threadc import ThreadCount
 import os
@@ -19,7 +19,7 @@ def recoverfile(saved, readed):
         pols = []
         pols_done = []
         for line in readed:
-            pol = Polynomial(line) 
+            pol = Polynomial(line)
             pols.append(pol)
         for line in f:
             line = line.replace("[","")
@@ -27,13 +27,13 @@ def recoverfile(saved, readed):
             spl = line.split(',')
             p = ""
             for i in xrange(0,len(spl)-1):
-                p = p + " + x^" + str(spl[i].replace(" ","")) 
+                p = p + " + x^" + str(spl[i].replace(" ",""))
             p = p + " + 1"
             p = p.replace("+","",1)
             #print p
-            pol_ = Polynomial(p) 
+            pol_ = Polynomial(p)
             pols_done.append(pol_)
-        
+
         pols_set = set(pols)
         pols_set_done = set(pols_done)
         result = pols_set - pols_set_done
@@ -87,14 +87,14 @@ def main(argv):
             except Exception as e:
               print line
               sys.exit(2)
-        
+
     print len(pols)
     threads = []
     si = int(math.ceil(float(len(pols))/float(n_threads)))
     print "si + " + str(si)
     if si == 0:
       si = 1
-    
+
     i = 0
     j = si
     print "starting...."
@@ -117,11 +117,3 @@ def main(argv):
 
 if __name__ == '__main__':
     main(sys.argv[1:])
-
-    
-
-
-
-
-
-
