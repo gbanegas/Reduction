@@ -26,37 +26,38 @@ class ReductionT(object):
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
         self.nr = self._calc_NR(exp_sorted)
-        self.matrix = self._generate_matrix()
-        exp_sorted.remove(self.mdegree)
-        for i in range(0,len(exp_sorted)):
-            self._reduce_first(self.matrix, exp_sorted[i])
+        if nr > 15:
+            self.matrix = self._generate_matrix()
+            exp_sorted.remove(self.mdegree)
+            for i in range(0,len(exp_sorted)):
+                self._reduce_first(self.matrix, exp_sorted[i])
 
         #for i in range(0,nr):
-        self._reduce_others(self.matrix,exp_sorted)
-        print "Finish Reducing..."
-        self._remove_repeat(self.matrix)
-        self.clean(self.matrix)
+            self._reduce_others(self.matrix,exp_sorted)
+            print "Finish Reducing..."
+            self._remove_repeat(self.matrix)
+            self.clean(self.matrix)
 
         #xls.save_complete(self.matrix)
-        self.matrix = self.otimizator.sort(self.matrix)
-        self.clean(self.matrix)
-        self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
+            self.matrix = self.otimizator.sort(self.matrix)
+            self.clean(self.matrix)
+            self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
         #xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
-        self._remove_one(self.matrix)
-        #print_matrix(self.matrix)
-        row = [-1 for x in xrange(self.mdegree)]
-        self.matrix.append(row)
-        count = self._count_xor(self.matrix,self.p)
+            self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
+            self._remove_one(self.matrix)
+            #print_matrix(self.matrix)
+            row = [-1 for x in xrange(self.mdegree)]
+            self.matrix.append(row)
+            count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        #xls.save(self.matrix, 'Optimized')
-        #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        #xls.save_matches(self.p)
-        #print_matrix(self.matrix)
-        #print self.p
-        del self.matrix
-        return count
+            #xls.save(self.matrix, 'Optimized')
+            #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
+            #xls.save_matches(self.p)
+            #print_matrix(self.matrix)
+            #print self.p
+            del self.matrix
+            return count
 
     def reduce_matrix(self, degree, matrix):
         #print "printing..."
@@ -137,7 +138,7 @@ class ReductionT(object):
                 matrix.append(i)
 
         self._remove_repeat(matrix)
-        
+
     def _remove_one(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]
