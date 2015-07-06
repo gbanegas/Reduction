@@ -26,7 +26,7 @@ class ReductionT(object):
         self.mdegree = exp_sorted[0]
         self.max_collum = (2*exp_sorted[0])-1
         self.nr = self._calc_NR(exp_sorted)
-        if nr > 15:
+        if self.nr > 15:
             self.matrix = self._generate_matrix()
             exp_sorted.remove(self.mdegree)
             for i in range(0,len(exp_sorted)):
