@@ -18,15 +18,23 @@ mdegree = 0;
 
 class ReductionT(object):
 
+    def __init__(self, exp):
+        exp_sorted = sorted(exp, reverse=True)
+        self.nr = self._calc_NR(exp_sorted)
+
+
 
 
     def reduction(self,exp):
-        self.otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
-        self.mdegree = exp_sorted[0]
-        self.max_collum = (2*exp_sorted[0])-1
         self.nr = self._calc_NR(exp_sorted)
         if self.nr > 15:
+            self.otimizator = Ot()
+
+            self.mdegree = exp_sorted[0]
+            self.max_collum = (2*exp_sorted[0])-1
+            self.nr = self._calc_NR(exp_sorted)
+
             self.matrix = self._generate_matrix()
             exp_sorted.remove(self.mdegree)
             for i in range(0,len(exp_sorted)):
@@ -58,6 +66,9 @@ class ReductionT(object):
             #print self.p
             del self.matrix
             return count
+
+    def returnNR(self):
+        return self.nr
 
     def reduce_matrix(self, degree, matrix):
         #print "printing..."
@@ -213,8 +224,8 @@ class ReductionT(object):
 
     def _calc_NR(self, exp_sorted):
         nr = 2
-        nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))
-        print "NR = ", nr
+        nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))+1
+        
         #temp = (exp_sorted[0]+1)/2
         #deg = math.floor(temp)
         #if exp_sorted[1] > deg:
