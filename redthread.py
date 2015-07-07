@@ -37,6 +37,7 @@ class ReductionT(object):
 
         self.matrix = self._generate_matrix()
         exp_sorted.remove(self.mdegree)
+        print "Start Reducing..."
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
 
@@ -44,6 +45,7 @@ class ReductionT(object):
         self._reduce_others(self.matrix,exp_sorted)
         print "Finish Reducing..."
         self._remove_repeat(self.matrix)
+        print "Finish Remove..."
         self.clean(self.matrix)
 
         #xls.save_complete(self.matrix)
@@ -180,7 +182,7 @@ class ReductionT(object):
 
         for t in threads:
             t.start()
-        
+
         for t in threads:
             t.join()
 
@@ -188,6 +190,7 @@ class ReductionT(object):
             index, column = t.getData()
             self.putColumn(index, column, matrix)
 
+        print "Finished Remove"
 
         # for j in range(1, len(matrix)):
         #     row = matrix[j]
@@ -247,7 +250,7 @@ class ReductionT(object):
     def _calc_NR(self, exp_sorted):
         nr = 2
         nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))+1
-
+        print "NR = ", nr
         #temp = (exp_sorted[0]+1)/2
         #deg = math.floor(temp)
         #if exp_sorted[1] > deg:

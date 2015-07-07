@@ -35,7 +35,6 @@ def main(argv):
     result = defaultdict(list)
 
     for pol in l:
-
         if len(pol.coefs()) > 1:
             red = ReductionT(pol.coefs())
             count = red.reduction(pol.coefs())
