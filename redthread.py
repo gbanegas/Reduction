@@ -28,6 +28,7 @@ class ReductionT(object):
 
     def reduction(self,exp):
         exp_sorted = sorted(exp, reverse=True)
+        print "Starting... ", exp_sorted
         self.nr = self._calc_NR(exp_sorted)
         self.otimizator = Ot()
 
