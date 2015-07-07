@@ -8,6 +8,7 @@ import math
 import re
 from ot import Ot
 from threadred import ThreadRed
+from threadremove import ThreadRemove
 
 import copy
 
@@ -28,44 +29,43 @@ class ReductionT(object):
     def reduction(self,exp):
         exp_sorted = sorted(exp, reverse=True)
         self.nr = self._calc_NR(exp_sorted)
-        if self.nr > 15:
-            self.otimizator = Ot()
+        self.otimizator = Ot()
 
-            self.mdegree = exp_sorted[0]
-            self.max_collum = (2*exp_sorted[0])-1
-            self.nr = self._calc_NR(exp_sorted)
+        self.mdegree = exp_sorted[0]
+        self.max_collum = (2*exp_sorted[0])-1
+        self.nr = self._calc_NR(exp_sorted)
 
-            self.matrix = self._generate_matrix()
-            exp_sorted.remove(self.mdegree)
-            for i in range(0,len(exp_sorted)):
-                self._reduce_first(self.matrix, exp_sorted[i])
+        self.matrix = self._generate_matrix()
+        exp_sorted.remove(self.mdegree)
+        for i in range(0,len(exp_sorted)):
+            self._reduce_first(self.matrix, exp_sorted[i])
 
         #for i in range(0,nr):
-            self._reduce_others(self.matrix,exp_sorted)
-            print "Finish Reducing..."
-            self._remove_repeat(self.matrix)
-            self.clean(self.matrix)
+        self._reduce_others(self.matrix,exp_sorted)
+        print "Finish Reducing..."
+        self._remove_repeat(self.matrix)
+        self.clean(self.matrix)
 
         #xls.save_complete(self.matrix)
-            self.matrix = self.otimizator.sort(self.matrix)
-            self.clean(self.matrix)
-            self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
+        self.matrix = self.otimizator.sort(self.matrix)
+        self.clean(self.matrix)
+        self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
         #xls.save(self.matrix, 'Not Optimized')
-            self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
-            self._remove_one(self.matrix)
+        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
+        self._remove_one(self.matrix)
             #print_matrix(self.matrix)
-            row = [-1 for x in xrange(self.mdegree)]
-            self.matrix.append(row)
-            count = self._count_xor(self.matrix,self.p)
+        row = [-1 for x in xrange(self.mdegree)]
+        self.matrix.append(row)
+        count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
             #xls.save(self.matrix, 'Optimized')
             #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
             #xls.save_matches(self.p)
             #print_matrix(self.matrix)
             #print self.p
-            del self.matrix
-            return count
+        del self.matrix
+        return count
 
     def returnNR(self):
         return self.nr
@@ -165,26 +165,48 @@ class ReductionT(object):
                         matrix[m] = rowToCompare
             matrix[j] = row
 
+    def putColumn(self, j, column, matrix):
+        for i in xrange(0,len(matrix)):
+            matrix[i][j] = column[i]
+
+    def _column(self, matrix, i):
+        return [row[i] for row in matrix]
 
     def _remove_repeat(self, matrix):
-        for j in range(1, len(matrix)):
-            row = matrix[j]
-            for i in range(self.mdegree-1, len(row)):
-                found = False
-                valueToCompare = row[i]
-                if valueToCompare <> NULL:
-                    for m in range(j+1, len(matrix)):
-                        rowToCompare = matrix[m]
-                        toCompare = rowToCompare[i]
-                        if toCompare <> NULL:
-                            if valueToCompare == toCompare:
-                                rowToCompare[i] = NULL;
-                                row[i] = NULL;
-                                found = True;
-                        matrix[m] = rowToCompare
-                        if found:
-                            break
-            matrix[j] = row
+        threads = []
+        for i in xrange(self.mdegree-1, len(matrix[0])):
+            thread = ThreadRemove(self._column(matrix, i), i)
+            threads.append(thread)
+
+        for t in threads:
+            t.start()
+        
+        for t in threads:
+            t.join()
+
+        for t in threads:
+            index, column = t.getData()
+            self.putColumn(index, column, matrix)
+
+
+        # for j in range(1, len(matrix)):
+        #     row = matrix[j]
+        #     for i in range(self.mdegree-1, len(row)):
+        #         found = False
+        #         valueToCompare = row[i]
+        #         if valueToCompare <> NULL:
+        #             for m in range(j+1, len(matrix)):
+        #                 rowToCompare = matrix[m]
+        #                 toCompare = rowToCompare[i]
+        #                 if toCompare <> NULL:
+        #                     if valueToCompare == toCompare:
+        #                         rowToCompare[i] = NULL;
+        #                         row[i] = NULL;
+        #                         found = True;
+        #                 matrix[m] = rowToCompare
+        #                 if found:
+        #                     break
+        #     matrix[j] = row
 
     def _clean_reduced(self, matrix, index):
         row = matrix[index]
@@ -225,7 +247,7 @@ class ReductionT(object):
     def _calc_NR(self, exp_sorted):
         nr = 2
         nr = int(math.floor((exp_sorted[0]-2)/(exp_sorted[0]-exp_sorted[1])))+1
-        
+
         #temp = (exp_sorted[0]+1)/2
         #deg = math.floor(temp)
         #if exp_sorted[1] > deg:

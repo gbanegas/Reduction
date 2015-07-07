@@ -37,7 +37,7 @@ def main(argv):
     for pol in l:
 
         if len(pol.coefs()) > 1:
-            red = ReductionT()
+            red = ReductionT(pol.coefs())
             count = red.reduction(pol.coefs())
             result =  str(pol.coefs()) + ":" + str(count)
             print result
