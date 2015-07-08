@@ -1,4 +1,5 @@
 from redthread import ReductionT
+from reduction import Reduction
 from polynomial import Polynomial
 #import xlsxwriter
 import os

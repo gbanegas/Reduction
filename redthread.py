@@ -144,8 +144,7 @@ class ReductionT(object):
             t.start()
 
         for t in threads:
-            while(t.join()):
-                pass
+            t.join()
 
         for t in threads:
             for i in t.getMatrix():

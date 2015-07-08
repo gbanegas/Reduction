@@ -10,6 +10,7 @@ class ThreadRed(threading.Thread):
         self.matrix.append(matrix)
         self.exp_sorted = exp
         self.mdegree = mdegree
+        print "Starting thread with : ", self.matrix
         #print self.exp_sorted
         #self.exp_sorted.append(0)
         #print self.exp_sorted[0]
@@ -30,6 +31,7 @@ class ThreadRed(threading.Thread):
 
 
     def run(self):
+
         for i in xrange(0,self.nr):
             to_reduce = self._need_to_reduce(self.matrix)
             for index in to_reduce:
@@ -39,7 +41,8 @@ class ThreadRed(threading.Thread):
                 self._clean_reduced(self.matrix,index)
 
         self._remove_repeat(self.matrix)
-        self.matrix = self.clean(self.matrix)
+        print "Finishing thread :)"
+        #self.matrix = self.clean(self.matrix)
         #print_matrix(self.matrix)
 
     def _remove_repeat(self, matrix):

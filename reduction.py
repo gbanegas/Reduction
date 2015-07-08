@@ -44,7 +44,7 @@ class Reduction(object):
 
 
         #self.matrix_copy = copy.deepcopy(self.matrix)
-        xls.save(self.matrix, 'Not Optimized_1')
+        #xls.save(self.matrix, 'Not Optimized_1')
         #print_matrix(self.matrix)
         #t = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(t)
