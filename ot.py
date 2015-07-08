@@ -20,7 +20,7 @@ class Ot(object):
         is_break = False
        # xls = Xslxsaver()
        # xls.create_work([degree])
-        #self.xls = xls
+        self.xls = xls
         i = 0
 
         while (not is_break):
@@ -37,7 +37,7 @@ class Ot(object):
 
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
-            #xls.save(self.matrix, str(i))
+            xls.save(self.matrix, str(i))
             #print_matrix(self.matrix)
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)

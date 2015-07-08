@@ -1,5 +1,5 @@
-from redthread import ReductionT
-#from reduction import Reduction
+#from redthread import ReductionT
+from reduction import Reduction
 from polynomial import Polynomial
 #import xlsxwriter
 import os
@@ -37,7 +37,7 @@ def main(argv):
 
     for pol in l:
         if len(pol.coefs()) > 1:
-            red = ReductionT(pol.coefs())
+            red = Reduction()
             count = red.reduction(pol.coefs())
             result =  str(pol.coefs()) + ":" + str(count)
             print result

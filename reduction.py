@@ -31,11 +31,16 @@ class Reduction(object):
         self.matrix = self._generate_matrix()
 
         exp_sorted.remove(self.mdegree)
-
+        j = 0
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
+
+        xls.save(self.matrix, 'step_reduction_'+str(j))
+        j = j+1
         for i in range(0,nr):
             self._reduce_others(self.matrix,exp_sorted)
+            j = j+1
+            xls.save(self.matrix, 'step_reduction_'+str(j))
 
         #print "Sem remocoes"
         #print_matrix(self.matrix)
@@ -56,7 +61,7 @@ class Reduction(object):
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
         #print_matrix(self.matrix)
         xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
+        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree, xls)
         self._remove_one(self.matrix)
         #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
