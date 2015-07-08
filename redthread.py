@@ -138,9 +138,13 @@ class ReductionT(object):
         #for i_row in xrange(1, len(matrix)-1):
         #    t =  ThreadRed(matrix[i], exp, self.max_collum)
         #print_matrix(matrix)
+        i = 0
         for i_row in xrange(1, len(matrix)-1):
-            t =  ThreadRed(matrix[i_row],self.mdegree, exp, self.max_collum,self.nr)
+            t =  ThreadRed(i, matrix[i_row],self.mdegree, exp, self.max_collum,self.nr)
             threads.append(t)
+            i = i + 1
+
+        for t in threads:
             t.start()
 
         for t in threads:

@@ -4,13 +4,14 @@ NULL = -1
 class ThreadRed(threading.Thread):
 
 
-    def __init__(self, matrix, mdegree, exp, max_col, nr):
+    def __init__(self,id, matrix, mdegree, exp, max_col, nr):
         threading.Thread.__init__(self)
+        self.id = id
         self.matrix = []
         self.matrix.append(matrix)
         self.exp_sorted = exp
         self.mdegree = mdegree
-        print "Starting thread with : ", self.matrix
+        print "Starting thread id : ", self.id
         #print self.exp_sorted
         #self.exp_sorted.append(0)
         #print self.exp_sorted[0]
@@ -39,9 +40,10 @@ class ThreadRed(threading.Thread):
                     reduceRow = self.reduce(self.matrix[index],e)
                     self.matrix.append(reduceRow)
                 self._clean_reduced(self.matrix,index)
+            print "Thread is alive : ", self.id
 
         self._remove_repeat(self.matrix)
-        print "Finishing thread :)"
+        print "Finishing thread : ", self.id
         #self.matrix = self.clean(self.matrix)
         #print_matrix(self.matrix)
 
