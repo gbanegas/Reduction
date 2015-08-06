@@ -21,18 +21,17 @@ class ThreadCount(threading.Thread):
         print "Starting thread: " + str(self.threadID) + '\n'
         for i in self.polynomials:
             reduc = Reduction()
-            if reduc.returnNR() > 15:
-                self.lockscreen.acquire()
-                print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())
-                self.lockscreen.release()
-                count = reduc.reduction(i.coefs())
-                self.locker.acquire()
-                r = str(i.coefs()) + ":" + str(count)
-                f = open(self.save, "a")
-                f.write(r + '\n')
-                f.close()
-                self.locker.release()
-                self.lockscreen.acquire()
-                #print r
-                self.lockscreen.release()
-                del reduc
+            self.lockscreen.acquire()
+            print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())
+            self.lockscreen.release()
+            count = reduc.reduction(i.coefs())
+            self.locker.acquire()
+            r = str(i.coefs()) + ":" + str(count)
+            f = open(self.save, "a")
+            f.write(r + '\n')
+            f.close()
+            self.locker.release()
+            self.lockscreen.acquire()
+            #print r
+            self.lockscreen.release()
+            del reduc
