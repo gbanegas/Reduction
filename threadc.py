@@ -4,7 +4,7 @@ Created on 10 Sep 2014
 @author: gustavo
 '''
 import threading
-from redthread import ReductionT
+from reduction import Reduction
 
 class ThreadCount(threading.Thread):
 
@@ -20,7 +20,7 @@ class ThreadCount(threading.Thread):
     def run(self):
         print "Starting thread: " + str(self.threadID) + '\n'
         for i in self.polynomials:
-            reduc = ReductionT(i.coefs())
+            reduc = Reduction()
             if reduc.returnNR() > 15:
                 self.lockscreen.acquire()
                 print 'Thread: '+ str(self.threadID) + ' Doing: ' + str(i.coefs())

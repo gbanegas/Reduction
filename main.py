@@ -3,7 +3,7 @@ Created on 10 Sep 2014
 
 @author: gustavo
 '''
-from redthread import ReductionT
+from reduction import Reduction
 from polynomial import Polynomial
 from threadc import ThreadCount
 import os
