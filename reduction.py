@@ -55,7 +55,7 @@ class Reduction(object):
         #print_matrix(t)
         self._remove_repeat(self.matrix)
         self.clean(self.matrix)
-        #xls.save_complete(self.matrix)
+        xls.save_complete(self.matrix)
         self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
@@ -165,7 +165,7 @@ class Reduction(object):
     def _remove_repeat(self, matrix):
         for j in range(1, len(matrix)):
             row = matrix[j]
-            for i in range(self.mdegree-1, len(row)):
+            for i in range(0, len(row)):
                 found = False
                 valueToCompare = row[i]
                 if valueToCompare <> NULL:
