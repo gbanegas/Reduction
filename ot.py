@@ -6,7 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict, Counter, OrderedDict
-from xlsx import Xslxsaver
+#from xlsx import Xslxsaver
 #from collections import defaultdict
 
 
@@ -37,7 +37,7 @@ class Ot(object):
 
             #print_matrix(self.matrix)
             name, self.matrix = self._change_pair(pair, self.matrix)
-            xls.save(self.matrix, str(i))
+            #xls.save(self.matrix, str(i))
             #print_matrix(self.matrix)
             #self._save_pair(pair, name)
             #print_matrix(self.matrix)
