@@ -75,7 +75,7 @@ def main(argv):
                     sys.exit(2)
     result = defaultdict(list)
     print len(pols)
-    for pol in l:
+    for pol in pols:
         if len(pol.coefs()) > 1:
             red = Reduction()
             count = red.reduction(pol.coefs())
