@@ -191,4 +191,55 @@ NR =  31
 Thread: 3 Doing: [971, 964, 957, 7, 0]
 NR =  138
 Finish Reducing...
-Thread: 1 Doing: [69
+Thread: 1 Doing: [69-i
+-o
+-t
+Input file is " pol_n.txt
+Output file is " sai_pol_n.txt
+number of threds 6
+6
+si + 1
+starting....
+i = 0
+j = 1
+i = 1
+j = 2
+i = 2
+j = 3
+i = 3
+j = 4
+i = 4
+j = 5
+i = 5
+j = 6
+Starting thread: 0
+
+Thread: 0 Doing: [783, 782, 781, 1, 0]
+NR =  781
+Starting thread: 1
+
+Thread: 1 Doing: [975, 974, 973, 1, 0]
+NR =  973
+Starting thread: 2
+
+Thread: 2 Doing: [407, 403, 399, 4, 0]
+NR =  101Starting thread: 3
+
+Thread: 3 Doing: [212, 211, 210, 1, 0]
+NR =  210
+
+Starting thread: 4
+
+Thread: 4 Doing: [543, 539, 535, 4, 0]
+NR =  135
+Starting thread: 5
+
+Thread: 5 Doing: [380, 379, 378, 1, 0]
+NR =  378
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finished.
