@@ -6,7 +6,7 @@ Created on 06 Apr 2015
 
 import math
 from collections import defaultdict, Counter, OrderedDict
-#from xlsx import Xslxsaver
+from xlsx import Xslxsaver
 #from collections import defaultdict
 
 
@@ -27,7 +27,7 @@ class Ot(object):
         #for i in xrange(0,1):
 
             pair, is_break = self._generate_all_pairs(self.matrix)
-            #self.xls.save(self.matrix, str(i))
+            self.xls.save(self.matrix, str(i))
             i += 1
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)

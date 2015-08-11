@@ -60,12 +60,14 @@ def main(argv):
         print 'main.py -i <inputfile> -o <outputfile>'
         sys.exit(2)
     l = []
+    pols = []
     files = [inputfile]
     for fileName in files:
         save = outputfile
         f = open(fileName,'r')
-        read, pols = recoverfile(save, f)
-        if read:
+
+        #read, pols = recoverfile(save, f)
+        if True:
             for line in f:
                 try:
                     pol = Polynomial(line)
