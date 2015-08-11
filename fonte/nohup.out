@@ -1,0 +1,245 @@
+-i
+-o
+Input file is " pol_n.txt
+Output file is " sai_pol_n.txt
+number of threds 4
+92
+si + 23
+starting....
+i = 0
+j = 23
+i = 23
+j = 46
+i = 46
+j = 69
+i = 69
+j = 92
+Starting thread: 0
+
+Thread: 0 Doing: [555, 532, 509, 23, 0]
+NR =  24
+Starting thread: 1
+
+Thread: 1 Doing: [653, 652, 651, 1, 0]
+NR =  651
+Starting thread: 2
+
+Thread: 2 Doing: [789, 751, 713, 38, 0]
+NR =  20
+Starting thread: 3
+
+Thread: 3 Doing: [894, 889, 884, 5, 0]
+NR =  178
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [559, 542, 525, 17, 0]
+NR =  32
+Thread: 2 Doing: [795, 764, 733, 31, 0]
+NR =  25
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [565, 543, 521, 22, 0]
+NR =  25
+Thread: 2 Doing: [801, 770, 739, 31, 0]
+NR =  25
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [565, 563, 561, 2, 0]
+NR =  281
+Thread: 2 Doing: [801, 785, 769, 16, 0]
+NR =  49
+Finish Reducing...
+Thread: 2 Doing: [804, 771, 738, 33, 0]
+NR =  24
+Finish Reducing...
+Thread: 2 Doing: [804, 785, 766, 19, 0]
+NR =  42
+Finish Reducing...
+Thread: 2 Doing: [809, 801, 793, 8, 0]
+NR =  100
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Thread: 2 Doing: [810, 783, 756, 27, 0]
+NR =  29
+Finish Reducing...
+Thread: 2 Doing: [811, 808, 805, 3, 0]
+NR =  269
+Finish Reducing...
+Thread: 3 Doing: [897, 862, 827, 35, 0]
+NR =  25
+Finish Reducing...
+Thread: 3 Doing: [897, 895, 893, 2, 0]
+NR =  447
+Thread: 0 Doing: [569, 561, 553, 8, 0]
+NR =  70
+Finish Reducing...
+Thread: 0 Doing: [571, 549, 527, 22, 0]
+NR =  25
+Finish Reducing...
+Thread: 0 Doing: [572, 545, 518, 27, 0]
+NR =  21
+Finish Reducing...
+Thread: 0 Doing: [573, 563, 553, 10, 0]
+NR =  57
+Finish Reducing...
+Thread: 0 Doing: [580, 579, 578, 1, 0]
+NR =  578
+Finish Reducing...
+Finish Reducing...
+Thread: 2 Doing: [818, 779, 740, 39, 0]
+NR =  20
+Finish Reducing...
+Thread: 2 Doing: [819, 784, 749, 35, 0]
+NR =  23
+Finish Reducing...
+Thread: 2 Doing: [820, 785, 750, 35, 0]
+NR =  23
+Finish Reducing...
+Thread: 2 Doing: [820, 789, 758, 31, 0]
+NR =  26
+Finish Reducing...
+Thread: 2 Doing: [821, 819, 817, 2, 0]
+NR =  409
+Finish Reducing...
+Finish Reducing...
+Thread: 1 Doing: [663, 658, 653, 5, 0]
+NR =  132
+Finish Reducing...
+Thread: 3 Doing: [900, 865, 830, 35, 0]
+NR =  25
+Finish Reducing...
+Thread: 3 Doing: [906, 883, 860, 23, 0]
+NR =  39
+Finish Reducing...
+Thread: 3 Doing: [913, 893, 873, 20, 0]
+NR =  45
+Thread: 0 Doing: [582, 561, 540, 21, 0]
+NR =  27
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [596, 585, 574, 11, 0]
+NR =  54
+Finish Reducing...
+Thread: 3 Doing: [930, 899, 868, 31, 0]
+NR =  29
+Finish Reducing...
+Thread: 0 Doing: [604, 595, 586, 9, 0]
+NR =  66
+Thread: 3 Doing: [933, 904, 875, 29, 0]
+NR =  32
+Finish Reducing...
+Finish Reducing...
+Thread: 3 Doing: [935, 906, 877, 29, 0]
+NR =  32
+Finish Reducing...
+Thread: 3 Doing: [948, 935, 922, 13, 0]
+NR =  72
+Thread: 0 Doing: [611, 589, 567, 22, 0]
+NR =  27
+Finish Reducing...
+Thread: 0 Doing: [611, 604, 597, 7, 0]
+NR =  87
+Thread: 1 Doing: [667, 661, 655, 6, 0]
+NR =  110
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Thread: 3 Doing: [949, 924, 899, 25, 0]
+NR =  37
+Thread: 0 Doing: [613, 599, 585, 14, 0]
+NR =  43
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [615, 587, 559, 28, 0]
+NR =  21
+Thread: 3 Doing: [955, 913, 871, 42, 0]
+NR =  22
+Finish Reducing...
+Thread: 0 Doing: [617, 593, 569, 24, 0]
+NR =  25
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [630, 609, 588, 21, 0]
+NR =  29
+Thread: 3 Doing: [958, 929, 900, 29, 0]
+NR =  32
+Finish Reducing...
+Finish Reducing...
+Thread: 0 Doing: [636, 633, 630, 3, 0]
+NR =  211
+Thread: 3 Doing: [961, 914, 867, 47, 0]
+NR =  20
+Finish Reducing...
+Thread: 3 Doing: [961, 926, 891, 35, 0]
+NR =  27
+Finish Reducing...
+Thread: 1 Doing: [670, 641, 612, 29, 0]
+NR =  23
+Finish Reducing...
+Thread: 1 Doing: [684, 657, 630, 27, 0]
+NR =  25
+Thread: 3 Doing: [964, 929, 894, 35, 0]
+NR =  27
+Finish Reducing...
+Thread: 1 Doing: [685, 656, 627, 29, 0]
+NR =  23
+Finish Reducing...
+Finish Reducing...
+Thread: 1 Doing: [691, 669, 647, 22, 0]
+NR =  31
+Thread: 3 Doing: [971, 964, 957, 7, 0]
+NR =  138
+Finish Reducing...
+Thread: 1 Doing: [69-i
+-o
+-t
+Input file is " pol_n.txt
+Output file is " sai_pol_n.txt
+number of threds 6
+6
+si + 1
+starting....
+i = 0
+j = 1
+i = 1
+j = 2
+i = 2
+j = 3
+i = 3
+j = 4
+i = 4
+j = 5
+i = 5
+j = 6
+Starting thread: 0
+
+Thread: 0 Doing: [783, 782, 781, 1, 0]
+NR =  781
+Starting thread: 1
+
+Thread: 1 Doing: [975, 974, 973, 1, 0]
+NR =  973
+Starting thread: 2
+
+Thread: 2 Doing: [407, 403, 399, 4, 0]
+NR =  101Starting thread: 3
+
+Thread: 3 Doing: [212, 211, 210, 1, 0]
+NR =  210
+
+Starting thread: 4
+
+Thread: 4 Doing: [543, 539, 535, 4, 0]
+NR =  135
+Starting thread: 5
+
+Thread: 5 Doing: [380, 379, 378, 1, 0]
+NR =  378
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finish Reducing...
+Finished.
