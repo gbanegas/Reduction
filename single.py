@@ -39,19 +39,23 @@ def recoverfile(saved, readed):
 def main(argv):
     inputfile = ''
     outputfile = ''
+    debug = False
     try:
-        opts, args = getopt.getopt(argv,"hi:o:",["ifile=","ofile="])
+        opts, args = getopt.getopt(argv,"hi:o:d",["ifile=","ofile="])
     except getopt.GetoptError:
         print 'single.py -i <inputfile> -o <outputfile>'
         sys.exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print 'single.py -i <inputfile> -o <outputfile> '
+            print 'single.py -i <inputfile> -o <outputfile> -d for debug'
             sys.exit()
+        elif opt in ("-d", "--debug"):
+            debug = True
         elif opt in ("-i", "--ifile"):
             inputfile = arg
         elif opt in ("-o", "--ofile"):
             outputfile = arg
+        
 
     try:
         fi = open(inputfile,"r")
@@ -79,7 +83,7 @@ def main(argv):
     print len(pols)
     for pol in pols:
         if len(pol.coefs()) > 1:
-            red = Reduction()
+            red = Reduction(debug)
             count = red.reduction(pol.coefs())
             result =  str(pol.coefs()) + ":" + str(count)
             print result

@@ -13,7 +13,7 @@ from xlsx import Xslxsaver
 NULL = -1
 class Ot(object):
 
-    def optimize(self, matrix, degree, xls=None):
+    def optimize(self, matrix, degree, xls=None, debug=False):
         self.matrix = matrix
         self.m = defaultdict()
         self.variable = 2*degree -1
@@ -27,7 +27,8 @@ class Ot(object):
         #for i in xrange(0,1):
 
             pair, is_break = self._generate_all_pairs(self.matrix)
-            self.xls.save(self.matrix, str(i))
+            if debug:
+                self.xls.save(self.matrix, str(i))
             i += 1
             #pairs_removed = self._remove_repets(pairs)
             #pair, is_break = self._max_matches(pairs_removed)

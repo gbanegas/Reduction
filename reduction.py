@@ -18,11 +18,15 @@ mdegree = 0;
 
 class Reduction(object):
 
+    def __init__(self, debug):
+        self.debug = debug
+
 
 
     def reduction(self,exp):
         xls = Xslxsaver()
-        xls.create_worksheet(exp)
+        if self.debug:
+            xls.create_worksheet(exp)
         self.otimizator = Ot()
         exp_sorted = sorted(exp, reverse=True)
         self.mdegree = exp_sorted[0]
@@ -35,42 +39,38 @@ class Reduction(object):
         for i in range(0,len(exp_sorted)):
             self._reduce_first(self.matrix, exp_sorted[i])
 
-        xls.save(self.matrix, 'step_reduction_'+str(j))
+        if self.debug:
+            xls.save(self.matrix, 'step_reduction_'+str(j))
         j = j+1
         for i in range(0,nr):
             self._reduce_others(self.matrix,exp_sorted)
             j = j+1
-            xls.save(self.matrix, 'step_reduction_'+str(j))
+            if self.debug:
+                xls.save(self.matrix, 'step_reduction_'+str(j))
 
-        #print "Sem remocoes"
-        #print_matrix(self.matrix)
-       # print "Size of Columns ", len(self.matrix)
-        print "Finish Reducing..."
-
-
-        #self.matrix_copy = copy.deepcopy(self.matrix)
-        #xls.save(self.matrix, 'Not Optimized_1')
-        #print_matrix(self.matrix)
-        #t = self.reduce_matrix(self.mdegree, self.matrix)
-        #print_matrix(t)
+        
         self._remove_repeat(self.matrix)
         self.clean(self.matrix)
- #       xls.save_complete(self.matrix)
         self.matrix = self.otimizator.sort(self.matrix)
         self.clean(self.matrix)
         self.matrix = self.reduce_matrix(self.mdegree, self.matrix)
-        #print_matrix(self.matrix)
-        xls.save(self.matrix, 'Not Optimized')
-        self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree, xls)
+        if self.debug:
+            xls.save(self.matrix, 'Not Optimized')
+        if not self.debug:
+            self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree)
+        if self.debug:
+            self.p, self.matrix = self.otimizator.optimize(self.matrix, self.mdegree, xls, self.debug)
         self._remove_one(self.matrix)
         #print_matrix(self.matrix)
         row = [-1 for x in xrange(self.mdegree)]
         self.matrix.append(row)
         count = self._count_xor(self.matrix,self.p)
         #count = count + self.countMatchs(otimizator.matches)
-        xls.save(self.matrix, 'Optimized')
+        if self.debug:
+            xls.save(self.matrix, 'Optimized')
         #self.p_, self.matrix_copy = otimizator.optimize(self.matrix_copy, self.mdegree, 1)
-        xls.save_matches(self.p)
+        if self.debug:
+            xls.save_matches(self.p)
         #print_matrix(self.matrix)
         #print self.p
         del self.matrix
