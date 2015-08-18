@@ -12,9 +12,10 @@ To run the project it is needed to install  Xlsxwriter from http://xlsxwriter.re
 
 ### Single Thread
 To use the single thread the usage is:
-<pre><code>python single.py -i inputfile -o outputfile</code></pre>
+<pre><code>python single.py -i inputfile -o outputfile -d </code></pre>
 inputfile - It is the input file with polynomials 
 outputfile - It is the file with the results of the number of xors for each polynomial in the inputfile
+d is for debug (optional)
 
 ### Multiple Threads
 To use the multiple thread the usage is:
