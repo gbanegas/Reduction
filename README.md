@@ -6,6 +6,10 @@ The project idea is an algorithm to determine the number of XORs performed in th
 ## Usage
 It is possible to use the program. It is possible to use one single thread or multiples threads. 
 
+
+## Dependences
+To run the project it is needed to install  Xlsxwriter from http://xlsxwriter.readthedocs.org/en/latest/getting_started.html
+
 ### Single Thread
 To use the single thread the usage is:
 <pre><code>python single.py -i inputfile -o outputfile</code></pre>
